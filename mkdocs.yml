@@ -1,11 +1,7 @@
 site_name: My CGMSIM Website
 pages:
-
     - Home: index.md
     - About: about.md
     - Blog: blog.md
-
-
 theme: readthedocs
-
-site_url: https://example.com/
+site_url: https://lsandini.github.io/cgmsim-site

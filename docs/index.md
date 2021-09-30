@@ -2,6 +2,8 @@
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
+The content about CGMSIM will be added here
+
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.

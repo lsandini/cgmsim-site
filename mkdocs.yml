@@ -5,3 +5,5 @@ pages:
     - Blog: blog.md
 theme: readthedocs
 site_url: https://lsandini.github.io/cgmsim-site
+extra_css:
+  - 'css/extra.css'

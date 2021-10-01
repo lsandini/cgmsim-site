@@ -8,3 +8,12 @@ highlightjs: true
 site_url: https://lsandini.github.io/cgmsim-site
 extra_css:
   - 'css/extra.css'
+markdown_extensions:
+    - admonition
+    - attr_list
+    - toc:
+        permalink: ⌁
+nav:
+- Home: 'index.md'
+- Build App:
+    - Overview: 'build/overview.md'

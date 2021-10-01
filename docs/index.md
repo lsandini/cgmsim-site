@@ -16,13 +16,16 @@ This is a warning box
 
 This is a danger box
 
-!!! danger ""
-    It's really easy to panic if Loop fails to build or if you are having trouble using your Loop app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question. You might get an answer immediately.
+!!! danger "Danger"
+    It's really easy to panic if CGMSIM fails to build or if you are having trouble using your app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question.
 
 
 This is an info box
 
 !!! info "Take it one step at a time..."
+    The info goes here...
+
+And more text here.
 
 ```code something
 ```

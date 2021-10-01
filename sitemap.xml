@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://lsandini.github.io/cgmsim-site/contribute/</loc>
+         <lastmod>2021-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://lsandini.github.io/cgmsim-site/build/Nightscout/</loc>
          <lastmod>2021-10-01</lastmod>
          <changefreq>daily</changefreq>

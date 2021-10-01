@@ -1,6 +1,5 @@
 site_name: CGMSIM - reatime CGM trace generator mimicking T1D 
 theme: flatly
-highlightjs: true
 site_url: https://lsandini.github.io/cgmsim-site
 extra_css:
   - 'css/extra.css'

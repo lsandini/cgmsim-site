@@ -16,27 +16,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/folder1/step1/</loc>
+         <loc>https://lsandini.github.io/cgmsim-site/build/Nightscout/</loc>
          <lastmod>2021-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/folder1/step2/</loc>
+         <loc>https://lsandini.github.io/cgmsim-site/build/details/</loc>
          <lastmod>2021-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/folder2/step1/</loc>
+         <loc>https://lsandini.github.io/cgmsim-site/build/machine/</loc>
          <lastmod>2021-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/folder2/step2/</loc>
+         <loc>https://lsandini.github.io/cgmsim-site/build/overview/</loc>
          <lastmod>2021-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/folder2/step3/</loc>
+         <loc>https://lsandini.github.io/cgmsim-site/use/food/</loc>
+         <lastmod>2021-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/use/insulin/</loc>
          <lastmod>2021-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

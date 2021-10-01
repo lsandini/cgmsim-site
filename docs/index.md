@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Welcome to the CGMSIM documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+For full documentation visit [Github CGMSIM repo](https://github.com/lsandini/cgmsim).
 
 The content about CGMSIM will be added here
 

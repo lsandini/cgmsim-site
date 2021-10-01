@@ -3,7 +3,7 @@ pages:
     - Home: index.md
     - About: about.md
     - Blog: blog.md
-theme: Flatly
+theme: flatly
 highlightjs: true
 site_url: https://lsandini.github.io/cgmsim-site
 extra_css:

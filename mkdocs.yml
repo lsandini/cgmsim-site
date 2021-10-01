@@ -1,8 +1,4 @@
-site_name: My CGMSIM Website
-pages:
-    - Home: index.md
-    - About: about.md
-    - Blog: blog.md
+site_name: CGMSIM - reatime CGM trace generator mimicking T1D 
 theme: flatly
 highlightjs: true
 site_url: https://lsandini.github.io/cgmsim-site
@@ -15,5 +11,14 @@ markdown_extensions:
         permalink: ⌁
 nav:
 - Home: 'index.md'
-- Build App:
+- What you need:
     - Overview: 'build/overview.md'
+    - Details: 'build/details.md'
+- Installation:
+    - Ubuntu: 'build/linux machine.md'
+    - Nightscout: 'build/Nightscout.md'
+- Using the simulator:
+    - Food: 'use/food.md'
+    - Insulin: 'use/insulin.md'
+- Contribute: 'contribute.md'
+

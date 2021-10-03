@@ -35,9 +35,9 @@ To understand the mechanics of such a simulation, a few things must be considere
 ## why build a simulator ???
 
 !!! danger "Healthcare Professionals - HCPs"
-Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute and life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.
+    Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute and life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.
 
-Living with incertainty 24/7, facing reports of treatment "success" will teach us all some humility and empathy.
+    Living with incertainty 24/7, facing reports of treatment "success" will teach us all some humility and empathy.
 
 CGMSIM runs in real time and it requires time and dedication to reach its goal. It's not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time. 
 

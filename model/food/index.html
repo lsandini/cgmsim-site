@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/model/mealtime/">
+        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/model/food/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Mealtime Insulin - CGMSIM</title>
+        <title>Carb absorption from the gut - CGMSIM</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -47,7 +47,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Mealtime Insulin</a>
+    <a href="../mealtime/" class="dropdown-item">Mealtime Insulin</a>
 </li>
                                     
 <li>
@@ -55,7 +55,7 @@
 </li>
                                     
 <li>
-    <a href="../food/" class="dropdown-item">Carb absorption from the gut</a>
+    <a href="./" class="dropdown-item active">Carb absorption from the gut</a>
 </li>
                                     
 <li>
@@ -133,12 +133,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../overview/" class="nav-link">
+                                <a rel="prev" href="../la-agonists/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../la-agonists/" class="nav-link">
+                                <a rel="next" href="../liver/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -160,7 +160,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#modeling-the-activity-of-mealtime-insulins" class="nav-link">Modeling the activity of mealtime insulins</a>
+            <li class="nav-item" data-level="1"><a href="#modeling-the-absorption-of-carbs-from-the-gut" class="nav-link">Modeling the absorption of Carbs from the gut</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -169,8 +169,9 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="modeling-the-activity-of-mealtime-insulins">Modeling the activity of mealtime insulins<a class="headerlink" href="#modeling-the-activity-of-mealtime-insulins" title="Permanent link">⌁</a></h1>
-<p>This has been done has been done extensively for aspart, lispro (and glulisine), and the model provided here: (https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473 ). This is the model I use to compute the activity of each mealtime insulin dose (called "bolus" from now on). I selected a peak time of 55 minutes and a DIA of 300 min. Please notice that these settings may vary, but they are used by the mathematical model and do not always reflect the perception of the duration of activity of a single dose. They can be easily modified in the code, should the user prefer a shorter time to peak, e.g. for faster aspart insulin Fiasp®.</p></div>
+<h1 id="modeling-the-absorption-of-carbs-from-the-gut">Modeling the absorption of Carbs from the gut<a class="headerlink" href="#modeling-the-absorption-of-carbs-from-the-gut" title="Permanent link">⌁</a></h1>
+<p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book "Think Like a Pancreas" by Gary Scheiner, and used in Perceptus' Glucodyn simulator will do for now. https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf .</p>
+<p>To make the absorption of carbs from meals more realistic, I divided each meal in fast and slow absorbing parts. The ratio of fast absorbing carbs is randomly computed to be 10-40 % of the whole meal. <strong>However, since todays June 10th 2021, the first 40 g of each meal will always be fast absorbing, so all small snacks will be fast carbs !!!</strong>. In the current version of the algorithm, the fast carbs will be abosrbed according to the bilinear model mentioned above, in a period of time of one hour. The remaining (slow) carbs are absorbed in a similar fashion, but over a period of 4 hours. </p></div>
             </div>
         </div>
 

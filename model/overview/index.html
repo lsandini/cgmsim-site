@@ -55,6 +55,10 @@
 </li>
                                     
 <li>
+    <a href="../food/" class="dropdown-item">Carb absorption from the gut</a>
+</li>
+                                    
+<li>
     <a href="../liver/" class="dropdown-item">Endogenous Glucose production</a>
 </li>
                                     
@@ -155,12 +159,29 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⌁</a></h1>
+<p>Here you'll find details about the sequence of events happening in the simulation. When your simulation has been kickstarted, 3 sensor glucose values of 5 mmol/l or 90 md/dl (sgv) have been uploaded to your Nightscout (NS) website. </p>
+<p>The "inner clock" of the computer hosting the simulation will trigger the execution of various scripts at regular intervals. </p>
+<ol>
+<li>gather previous sensor glucose values </li>
+<li>gather previous "treatments" (food and/or insulin doses)</li>
+<li>compute the endogenous glucose production (EGP)</li>
+<li>compute a random variability factor (RND)</li>
+<li>compute the global impact of treatments, EGP and RND on glucose values (delta)</li>
+<li>compute the direction of arrows based on the previous deltas</li>
+<li>upload a new sensor glucose value and arrow to NS every 5 minutes</li>
+<li>repeat the cycle</li>
+</ol></div>
             </div>
         </div>
 

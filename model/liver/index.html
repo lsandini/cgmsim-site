@@ -55,6 +55,10 @@
 </li>
                                     
 <li>
+    <a href="../food/" class="dropdown-item">Carb absorption from the gut</a>
+</li>
+                                    
+<li>
     <a href="./" class="dropdown-item active">Endogenous Glucose production</a>
 </li>
                                     
@@ -129,7 +133,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../la-agonists/" class="nav-link">
+                                <a rel="prev" href="../food/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -155,12 +159,22 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#modeling-the-endogenous-glucose-production-egp-by-the-liver" class="nav-link">Modeling the Endogenous Glucose Production (EGP) by the liver</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="modeling-the-endogenous-glucose-production-egp-by-the-liver">Modeling the Endogenous Glucose Production (EGP) by the liver<a class="headerlink" href="#modeling-the-endogenous-glucose-production-egp-by-the-liver" title="Permanent link">⌁</a></h1>
+<p>While this is absolutely neither true nor realistic, for the time being the EGP is modeled as a linear function of time. It equivalents to 10g of absorbed carbs/hour, so depending on the user's insulin sensitivity factor (ISF, mmol/l/U) and carb ratio (CR, g/U), an the EGP effect is EGP * ISF * CR expressed in mmol/l/g. </p>
+<p>The EGP is significantly affected but the insulin activity, since in the repleted rested state, insulin decreases the liver glucose production more than it increases the peripheral glucose uptake. Moreover other factor like the ingestion of alcohol will significantly decrease the EGP, which could be simple modeled in the future.</p>
+<p><strong>16.05.2021</strong> This feature is not yet in use, but a sinusoidal function is added, with which the liver blood glucose impact can be set to vary in a sinusoidal or cosinusoidal manner. The file <strong><em>sinus.js</em></strong> creates the waveforms, and <strong><em>liver.js</em></strong> computes and writes <strong><em>latest_liver.json</em></strong>, not in use yet. This can be added to <strong><em>sgv_start.js</em></strong> later.</p>
+<p><strong>17.05.2021</strong> Now sinusoidal variation of liver glucose production is in testing phase. If the ISF is 2mmol/l/U and the CR is 10g/U, then the Carb Factor (CF) is 2mmol/l/10g. Since 10g are produced per hour, the increase in BG due to the liver glucose production is 2mmol/l/h or 0.1666 mmol/l/5min. Multiplying this by a sinusoidal value oscillating from 0.8 to 1.2 will make this impact on BG vary from 0.1333 to 0.2000 mmol/l/5min. the sinus cycle starts at midnight, is maximal at 6 AM (mimicking a dawn effect), back to baseline at 12 AM, minimal at 6 PM (mimicking the effect of light physical activity), and back to baseline at midnight.</p>
+<p><img alt="595142-20200914215212221-2008104967" src="https://user-images.githubusercontent.com/18611419/118400717-71af4580-b66b-11eb-9356-abb859db304f.jpg" /></p></div>
             </div>
         </div>
 

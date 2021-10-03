@@ -10,6 +10,14 @@ Since even the most accurate physiological simulators can at best provide only a
 
 The treatment goal in T1D is keeping the blood sugar or CGM curve values as close as possible to that of halthy people. In realistic terms it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.
 
+!!! warning "Important"
+    Please understand that this simulation cannot:
+
+    - predict individual response to treatment
+    - replace traditional patient/caregiver education
+
+    **This is work in progress, and all feedback is welcome !**
+
 ## Physiology
 
 To understand the mechanics of such a simulation, a few things must be considered.
@@ -24,22 +32,15 @@ To understand the mechanics of such a simulation, a few things must be considere
 
 5. The very intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulins from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle and the alignment of the planets in the solra system all play a role. Adding a touch of randomness or chaos brings some realism in the simulation.  
 
-!!! warning "Important"
-    Please understand that this simulation cannot:
 
-    - predict individual response to treatment
-    - replace traditional patient/caregiver education
+## Why build a simulator ?
 
-    **This is work in progress, and all feedback is welcome !**
-
-## why build a simulator ???
+CGMSIM runs in real time and it requires time and dedication to reach its goal. It's not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time, making team training possible. 
 
 !!! danger "Healthcare Professionals - HCPs"
     Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute and life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.
 
     Living with incertainty 24/7, facing reports of treatment "success" will teach us all some humility and empathy.
-
-CGMSIM runs in real time and it requires time and dedication to reach its goal. It's not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time. 
 
 
 !!! info "Not all patients are equal..."

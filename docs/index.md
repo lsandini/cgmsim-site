@@ -8,7 +8,7 @@ This application simulates very basically in real time the effects of food and v
 
 Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a biological organism, the goal of this simulation is not even to try to match reality, but to provide a practising, learning and/or teaching tool.
 
-The treatment goal in T1D is keeping the blood sugar or CGM curve values as close as possible to that of halthy people. In realistic terms it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.
+The treatment goal in T1D is keeping the blood sugar or CGM curve values as close as possible to that of healthy people. In realistic terms, it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.
 
 !!! warning "Important"
     Please understand that this simulation cannot:
@@ -33,7 +33,7 @@ To understand the mechanics of such a simulation, a few things must be considere
 5. The very intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulins from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle and the alignment of the planets in the solra system all play a role. Adding a touch of randomness or chaos brings some realism in the simulation.  
 
 
-## Why build a simulator ?
+## Why use a simulator ?
 
 CGMSIM runs in real time and it requires time and dedication to reach its goal. It's not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time, making team training possible. 
 

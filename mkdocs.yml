@@ -11,14 +11,21 @@ markdown_extensions:
         permalink: ⌁
 nav:
 - Home: 'index.md'
-- What you need:
-    - Overview: 'build/overview.md'
-    - Details: 'build/details.md'
-- Installation:
-    - Ubuntu: 'build/linux machine.md'
-    - Nightscout: 'build/Nightscout.md'
-- Using the simulator:
-    - Food: 'use/food.md'
-    - Insulin: 'use/insulin.md'
-- Contribute: 'contribute.md'
+- Model: 'model/overview.md'
+    - Mealtime Insulin: 'model/mealtime.md'
+    - Long-acting insulin Agonists: 'model/la-agonists.md'
+    - Endogenous Glucose production: 'model/liver.md'
+    - Random variation: 'model/random.md'
+    - Physical activity: 'model/physical.md'
+- Install: 'build/overview.md'
+    - Nightscout: 'build/nightscout.md'
+    - Linux/Ubuntu: 'build/linux.md'
+    - Download: 'build/clone.md'
+    - Setup: 'build/setupscript.md'
+    - Kickstart: 'build/kickstart.md'
+- Operate: 'operate/overview.md'
+    - Declaring insulin doses: 'operate/insulins.md'
+    - Declaring meals: 'operate/meals.md'
+    - View reports: 'operate/reports.md'
+
 

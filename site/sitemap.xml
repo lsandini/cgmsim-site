@@ -2,52 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lsandini.github.io/cgmsim-site/</loc>
-         <lastmod>2021-10-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://lsandini.github.io/cgmsim-site/about/</loc>
-         <lastmod>2021-10-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://lsandini.github.io/cgmsim-site/blog/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lsandini.github.io/cgmsim-site/contribute/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lsandini.github.io/cgmsim-site/build/Nightscout/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/build/clone/</loc>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lsandini.github.io/cgmsim-site/build/details/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/build/kickstart/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/build/linux/</loc>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lsandini.github.io/cgmsim-site/build/machine/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/build/nightscout/</loc>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lsandini.github.io/cgmsim-site/build/overview/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/use/food/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <loc>https://lsandini.github.io/cgmsim-site/build/setupscript/</loc>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/use/insulin/</loc>
-         <lastmod>2021-10-01</lastmod>
+         <loc>https://lsandini.github.io/cgmsim-site/model/general/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/model/la-agonists/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/model/liver/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/model/mealtime/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/model/physical/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/model/random/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/operate/insulin/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/operate/meals/</loc>
+         <lastmod>2021-10-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lsandini.github.io/cgmsim-site/operate/reports/</loc>
+         <lastmod>2021-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -12,24 +12,24 @@ markdown_extensions:
 nav:
 
 - Home: 'index.md'
-- Model: 
+- Mathematical Model: 
     - Overview: 'model/overview.md'
     - Mealtime Insulin: 'model/mealtime.md'
     - Long-acting insulin Agonists: 'model/la-agonists.md'
     - Endogenous Glucose production: 'model/liver.md'
     - Random variation: 'model/random.md'
     - Physical activity: 'model/physical.md'
-- Install: 
+- Installation: 
     - Overview: 'build/overview.md'
     - Nightscout: 'build/nightscout.md'
     - Linux/Ubuntu: 'build/linux.md'
     - Download: 'build/clone.md'
     - Setup: 'build/setupscript.md'
     - Kickstart: 'build/kickstart.md'
-- Operate:
+- Using the simulator:
     - Overview: 'operate/overview.md'
     - Declaring insulin doses: 'operate/insulin.md'
     - Declaring meals: 'operate/meals.md'
     - View reports: 'operate/reports.md'
-
+- Contact me: 'contact.md'
 

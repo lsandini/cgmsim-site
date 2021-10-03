@@ -158,7 +158,15 @@
             
             <li class="nav-item" data-level="1"><a href="#welcome-to-the-cgmsim-documentation" class="nav-link">Welcome to the CGMSIM documentation</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#physiology" class="nav-link">Physiology</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#who-needs-a-simulator" class="nav-link">Who needs a simulator ???</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -174,29 +182,32 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="welcome-to-the-cgmsim-documentation">Welcome to the CGMSIM documentation<a class="headerlink" href="#welcome-to-the-cgmsim-documentation" title="Permanent link">⌁</a></h1>
-<p>For full documentation visit <a href="https://github.com/lsandini/cgmsim">Github CGMSIM repo</a>.</p>
-<p>This application is simulating in real time and in an extremely basic way the effects food and various insulin analogs on continuous glucose monitor (CGM) curve in type 1 diabetes (T1D). It uses Nightscout (NS) as an input and visualization method.</p>
-<p>Since even accurate physiological simulators can at best provide only an approximation of what happens in a biological organism, the goal is not even to try to match reality, but to provide a tool helping to visualize the fluctuations of glucose sensor values in response to various insulin analogs and food.</p>
-<p>The simulation can be used as a learning and practicing tool, with a goal of keeping the CGM curve values as much of possible in certain range. The target range is 3.9 – 10 mmol/l or 70-180 mg/dl, and the target Time In Range (TIR) is 70%.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⌁</a></h2>
+<p>This application is simulating in real time and in an extremely basic way the effects of food and various insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). In place of showing blood gluce values as one would measure with a finger-prick blood sugar measuring device (or "glucometer"), it displays a continuous glucose sensor (CGM) trace using Nightscout (NS) as visualization tool.</p>
+<p>Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a biological organism, the goal of this simulation is not even to try to match reality, but to provide a practising, learning and/or teaching tool.</p>
+<p>The treatment goal is keeping the CGM curve values as much of possible in the range, which is 3.9 – 10 mmol/l or 70-180 mg/dl. The target Time In Range (TIR) is at least 70%.</p>
+<h2 id="physiology">Physiology<a class="headerlink" href="#physiology" title="Permanent link">⌁</a></h2>
 <p>To understand the mechanics of such a simulation, just a few things must be considered.</p>
-<p>a) The liver releases glucose into the bloodstream by either releasing its stores (glycogenolysis) or synthesizing new glucose from amino acids (gluconeogenesis). This is called the endogenous glucose production (EGP), and various biological states can affect it (not only alcohol!).</p>
-<p>b) The ingestion of food and the digestion and absorption of carbohydrates will also increase the blood glucose. After a short delay, the CGM will reflect the increase of blood glucose.</p>
-<p>c) This tool does not (yet) model the effect of exercise.</p>
-<p>d) Mealtime insulins have a short duration of activity (DIA -around 3 hours), while basal insulins are meant to be injected once or twice a day, and hence have a much longer duration of activity. Both will lower blood glucose and thus sensor glucose values.</p>
-<p>This is a warning box</p>
+<p>a) The liver releases glucose into the bloodstream by either releasing its stores (glycogenolysis) or synthesizing new glucose from amino acids (neoglucogenesis). The kidneys are also able to produce glucose in small amount. This is called the endogenous glucose production (EGP). Various biological states and hormones can affect this (not only alcohol!). As glucose is released into the blood stream, the blood glucose concentration increases.</p>
+<p>b) The ingestion of food and the digestion and absorption of carbohydrates will also increase the blood glucose. Since insulin replacement is administered subcutaneously and not into the hepatic portal vein, some of the ingested food will be absorbed into the main bloodstream directly. After a short delay, the CGM will reflect the increase of blood glucose.</p>
+<p>c) Physical exercise affects blood glucose in many ways. Intensive bouts of physical activity will trigger the release of adrenalin, which releases increases the EGP. In turn, the increased uptake of glucose in the muscle tissue will lower thew blood glucose as physical activity continues, but also during the post exercise phase, until the muscle glycogen stores are repleted.</p>
+<p>d) Mealtime insulins have a short duration of activity (DIA -around 3 hours), while long-acting insulin analogs are meant to be injected once or twice a day. Both will lower blood glucose and thus sensor glucose values.</p>
+<p>e) The very intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulins from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle and the alignment of the planets in the solra system all play a role. Adding a touch of randomness or chaos brings some realism in the simulation.  </p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Please understand that this project:</p>
+<p>Please understand that this simulation cannot:</p>
 <ul>
-<li>Is highly experimental</li>
-<li>Is not approved for therapy</li>
+<li>predict individual response to treatment</li>
+<li>replace traditional patient/caregiver education</li>
 </ul>
-<p><strong>You take full responsibility for building and running this system and do so at your own risk.</strong></p>
+<p><strong>This is work in progress, and all feedback is welcome !</strong></p>
 </div>
-<p>This is a danger box</p>
+<h2 id="who-needs-a-simulator">Who needs a simulator ???<a class="headerlink" href="#who-needs-a-simulator" title="Permanent link">⌁</a></h2>
 <div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>It's really easy to panic if CGMSIM fails to build or if you are having trouble using your app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question.</p>
+<p class="admonition-title">Med Students</p>
+<p>It's really easy to panic if CGMSIM fails to build or if you are having trouble using your app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question.
+"Nurses"
+Test test test</p>
 </div>
 <p>This is an info box</p>
 <div class="admonition info">
@@ -205,13 +216,6 @@
 </div>
 <p>And more text here.</p>
 <p><code>code something</code></p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">⌁</a></h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
 <h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">⌁</a></h2>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
@@ -298,5 +302,5 @@ docs/
 
 <!--
 MkDocs version : 1.2.1
-Build Date UTC : 2021-10-03 10:16:27.432020+00:00
+Build Date UTC : 2021-10-03 10:58:21.248718+00:00
 -->

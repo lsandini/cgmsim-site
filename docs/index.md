@@ -1,38 +1,41 @@
 # Welcome to the CGMSIM documentation
 
-For full documentation visit [Github CGMSIM repo](https://github.com/lsandini/cgmsim).
+##Introduction
 
-This application is simulating in real time and in an extremely basic way the effects food and various insulin analogs on continuous glucose monitor (CGM) curve in type 1 diabetes (T1D). It uses Nightscout (NS) as an input and visualization method.
+This application is simulating in real time and in an extremely basic way the effects of food and various insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). In place of showing blood gluce values as one would measure with a finger-prick blood sugar measuring device (or "glucometer"), it displays a continuous glucose sensor (CGM) trace using Nightscout (NS) as visualization tool.
 
-Since even accurate physiological simulators can at best provide only an approximation of what happens in a biological organism, the goal is not even to try to match reality, but to provide a tool helping to visualize the fluctuations of glucose sensor values in response to various insulin analogs and food.
+Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a biological organism, the goal of this simulation is not even to try to match reality, but to provide a practising, learning and/or teaching tool.
 
-The simulation can be used as a learning and practicing tool, with a goal of keeping the CGM curve values as much of possible in certain range. The target range is 3.9 – 10 mmol/l or 70-180 mg/dl, and the target Time In Range (TIR) is 70%.
+The treatment goal is keeping the CGM curve values as much of possible in the range, which is 3.9 – 10 mmol/l or 70-180 mg/dl. The target Time In Range (TIR) is at least 70%.
+
+## Physiology
 
 To understand the mechanics of such a simulation, just a few things must be considered.
 
-a) The liver releases glucose into the bloodstream by either releasing its stores (glycogenolysis) or synthesizing new glucose from amino acids (gluconeogenesis). This is called the endogenous glucose production (EGP), and various biological states can affect it (not only alcohol!).
+a) The liver releases glucose into the bloodstream by either releasing its stores (glycogenolysis) or synthesizing new glucose from amino acids (neoglucogenesis). The kidneys are also able to produce glucose in small amount. This is called the endogenous glucose production (EGP). Various biological states and hormones can affect this (not only alcohol!). As glucose is released into the blood stream, the blood glucose concentration increases.
 
-b) The ingestion of food and the digestion and absorption of carbohydrates will also increase the blood glucose. After a short delay, the CGM will reflect the increase of blood glucose.
+b) The ingestion of food and the digestion and absorption of carbohydrates will also increase the blood glucose. Since insulin replacement is administered subcutaneously and not into the hepatic portal vein, some of the ingested food will be absorbed into the main bloodstream directly. After a short delay, the CGM will reflect the increase of blood glucose.
 
-c) This tool does not (yet) model the effect of exercise.
+c) Physical exercise affects blood glucose in many ways. Intensive bouts of physical activity will trigger the release of adrenalin, which releases increases the EGP. In turn, the increased uptake of glucose in the muscle tissue will lower thew blood glucose as physical activity continues, but also during the post exercise phase, until the muscle glycogen stores are repleted.
 
-d) Mealtime insulins have a short duration of activity (DIA -around 3 hours), while basal insulins are meant to be injected once or twice a day, and hence have a much longer duration of activity. Both will lower blood glucose and thus sensor glucose values.
+d) Mealtime insulins have a short duration of activity (DIA -around 3 hours), while long-acting insulin analogs are meant to be injected once or twice a day. Both will lower blood glucose and thus sensor glucose values.
 
-This is a warning box
+e) The very intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulins from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle and the alignment of the planets in the solra system all play a role. Adding a touch of randomness or chaos brings some realism in the simulation.  
 
 !!! warning "Important"
-    Please understand that this project:
+    Please understand that this simulation cannot:
 
-    - Is highly experimental
-    - Is not approved for therapy
+    - predict individual response to treatment
+    - replace traditional patient/caregiver education
 
-    **You take full responsibility for building and running this system and do so at your own risk.**
+    **This is work in progress, and all feedback is welcome !**
 
-This is a danger box
+## Who needs a simulator ???
 
-!!! danger "Danger"
+!!! danger "Med Students"
     It's really easy to panic if CGMSIM fails to build or if you are having trouble using your app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question.
-
+    "Nurses"
+    Test test test
 
 This is an info box
 
@@ -43,13 +46,6 @@ And more text here.
 
 ```code something
 ```
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
 ## Project layout
 

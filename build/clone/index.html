@@ -159,12 +159,46 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#downloading-the-simulator" class="nav-link">Downloading the simulator</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#cloning-the-repository" class="nav-link">Cloning the repository</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#installing-dependencies" class="nav-link">Installing dependencies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="downloading-the-simulator">Downloading the simulator<a class="headerlink" href="#downloading-the-simulator" title="Permanent link">⌁</a></h1>
+<h2 id="cloning-the-repository">Cloning the repository<a class="headerlink" href="#cloning-the-repository" title="Permanent link">⌁</a></h2>
+<p>Log into your Ubuntu terminal, and then run this command :</p>
+<pre><code>git clone https://github.com/lsandini/cgmsim.git
+</code></pre>
+<p>That's it. A folder called cgmsim has been made for you and all the needed files are in there.</p>
+<p>If you'd like to run more simulators on the same machine, just run:</p>
+<pre><code>git clone https://github.com/lsandini/cgmsim.git cgmsim2
+</code></pre>
+<p>... and a separate folder called "cgmsim2" is made, identical to "cgmsim" </p>
+<h2 id="installing-dependencies">Installing dependencies<a class="headerlink" href="#installing-dependencies" title="Permanent link">⌁</a></h2>
+<p>Enter the installation directory of your choice with the cd command (cd = change directory): </p>
+<pre><code>cd cgmsim
+</code></pre>
+<p>or </p>
+<pre><code>cd cgmsim2
+</code></pre>
+<p>... or whatever your named your install folder.</p>
+<p>In your linux terminal, type: </p>
+<pre><code>sudo bash install_dependencies.sh
+</code></pre>
+<p>Your password will be required. You might see warnings during the installation and it might take a little while. Disregard the warnings and just wait for the process to complete.</p></div>
             </div>
         </div>
 

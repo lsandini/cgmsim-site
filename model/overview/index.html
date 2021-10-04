@@ -170,8 +170,10 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⌁</a></h1>
-<p>Here you'll find details about the sequence of events happening in the simulation. When your simulation has been kickstarted, 3 sensor glucose values of 5 mmol/l or 90 md/dl (sgv) have been uploaded to your Nightscout (NS) website. </p>
+<p>Here you'll find details about the sequence of events happening in the simulation. When your simulation has been <a href="../../build/kickstart/">kickstarted</a>, 3 sensor glucose values of 5 mmol/l or 90 md/dl (sgv) have been uploaded to your Nightscout (NS) website. </p>
 <p>The "inner clock" of the computer hosting the simulation will trigger the execution of various scripts at regular intervals. </p>
+<div class="admonition info">
+<p class="admonition-title">Sequence of events</p>
 <ol>
 <li>gather previous sensor glucose values </li>
 <li>gather previous "treatments" (food and/or insulin doses)</li>
@@ -180,8 +182,9 @@
 <li>compute the global impact of treatments, EGP and RND on glucose values (delta)</li>
 <li>compute the direction of arrows based on the previous deltas</li>
 <li>upload a new sensor glucose value and arrow to NS every 5 minutes</li>
-<li>repeat the cycle</li>
-</ol></div>
+<li>repeat the cycle indefinitely</li>
+</ol>
+</div></div>
             </div>
         </div>
 

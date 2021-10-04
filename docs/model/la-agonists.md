@@ -5,11 +5,13 @@ For detemir and glargine instead, mathematical models are missing. Based on clam
 Since the goal is not to make a perfect model, I first decided to use a sinusoidal curve to model detemir, and a half-ellipse for glargine. The obvious reasons are that the mathematics are simple 😬
 
 
-## Switching to biexponential models 
+## Using biexponential models 
 
 While the very basic mathematical models of long acting insulin analogs are good enough for training (see blow), getting closer to published "curves" and physiological activity is necessary. I decided to adopt the biexponential [model used for mealtime insulins](mealtime.md) to long-acting insulin agonists.
 
 The activity of detemir and glargine-U100 depend on the absolute amount (units), but also on the dose in relation to the patient's weight (U/kg). Also, the peak of action is achieved at different timepoints. The DIA of detemir is more variable and dose dependent than that of glargine.
+
+Models for glargine U300 and degludec will be added later on, if anyone finds them useful.
 
 !!! danger "Bi-exponential models"
     For detemir, the duration of action is 14h + (24* dose/weight), and the peak is at duration/3.
@@ -18,10 +20,18 @@ The activity of detemir and glargine-U100 depend on the absolute amount (units),
 
 ![models 3](https://user-images.githubusercontent.com/18611419/135437260-89bf584b-e412-41d9-bcba-026e6b27d3cc.jpg)
 
+Here are some activity curves as depicted in many publications. Notice that the curve colours are different, and some of the activity curves seem to derived from steady-state euglycemic clamps. :
+
 ![nature](https://user-images.githubusercontent.com/18611419/135437277-8fe8c4d8-9bea-4466-8820-1240de922e2c.jpg)
 
-Notice that the curve colours are different, and some of the activity curves seem to derived from steady-state euglycemic clamps.
 
+<br>
+<br>
+
+# OLD MODELS !
+
+!!! warning "Important"
+    The old models for detemir and glargine U100 are still in use in the current version of the simulator, so here is the technical explanation for those still using them. They will be deprecated after the new model have been thouroughly tested.
 
 ## Modeling Levemir (Levemir®)
 

@@ -1,5 +1,6 @@
 site_name: CGMSIM 
 theme: flatly
+    highlightjs: true
 site_url: https://lsandini.github.io/cgmsim-site
 extra_css:
     - stylesheets/admonitions.css

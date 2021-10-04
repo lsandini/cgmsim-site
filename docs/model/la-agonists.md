@@ -1,13 +1,31 @@
-#Modeling the activities of the long-acting agonists
+# Modeling the activities of the long-acting agonists
 
 For detemir and glargine instead, mathematical models are missing. Based on clamp studies in T1D, the intra-individual day-to-day variation is an important factor affecting the predictability of a single repeated dose. Moreover, the inter-individual variability makes modeling even more a challenge. Even with the best curve-fitting tools, no “global model” was achieved.
 
-Since the goal is not to make a perfect model, I first decided to use a sinusoidal curve to model detemir, and a half-ellipse for glargine. The obvious reasons are that the mathematics are simple 😂
+Since the goal is not to make a perfect model, I first decided to use a sinusoidal curve to model detemir, and a half-ellipse for glargine. The obvious reasons are that the mathematics are simple 😬
 
 
-Modeling Levemir (Levemir®)
-============================
-The clamp studies show that the dose-response curve is linear. With increasing doses from 0.1U/kg to 1.6U/kg, the total activity, or area under the curve (AUC) of the glucose infusion rate (GIR) needed to maintain normal blood glucose is a straight line.
+## Switching to biexponential models 
+
+While the very basic mathematical models of long acting insulin analogs are good enough for training (see blow), getting closer to published "curves" and physiological activity is necessary. I decided to adopt the biexponential [model used for mealtime insulins](mealtime.md) to long-acting insulin agonists.
+
+The activity of detemir and glargine-U100 depend on the absolute amount (units), but also on the dose in relation to the patient's weight (U/kg). Also, the peak of action is achieved at different timepoints. The DIA of detemir is more variable and dose dependent than that of glargine.
+
+!!! danger "Bi-exponential models"
+    For detemir, the duration of action is 14h + (24* dose/weight), and the peak is at duration/3.
+
+    For glargine U100, the duration of action is 22h + (12* dose/weight), and the peak is at duration/2.5.
+
+![models 3](https://user-images.githubusercontent.com/18611419/135437260-89bf584b-e412-41d9-bcba-026e6b27d3cc.jpg)
+
+![nature](https://user-images.githubusercontent.com/18611419/135437277-8fe8c4d8-9bea-4466-8820-1240de922e2c.jpg)
+
+Notice that the curve colours are different, and some of the activity curves seem to derived from steady-state euglycemic clamps.
+
+
+## Modeling Levemir (Levemir®)
+
+The clamp studies show that the dose-response curve is linear. With increasing doses from 0.1U/kg to 1.6U/kg, the total activity, or area under the curve (AUC) of the glucose infusion rate (GIR) needed to maintain normal blood glucose follows a straight line.
  
 ![image](https://user-images.githubusercontent.com/18611419/109794079-26fe5f80-7c1e-11eb-916c-3944d259f2a3.png)
  
@@ -57,19 +75,3 @@ Here is a visual aid illustrating the differences between the activity curves of
  
 ![image](https://user-images.githubusercontent.com/18611419/109794249-5745fe00-7c1e-11eb-9d94-839c4a34d706.png)
 
-
-Switching to biexponential models 
-=================================
-__30.09.2021__ While the very basic mathematical models of long acting insulin analogs are good enough for training, getting closer to published "curves" and physiological activity is necessary. I decided to adapt the biexponential model used for mealtimes insulins.
-
-The activity of detemir and glargine-U100 depend on the absolute dose, but also on the dose in relation to the patient's weight. Also, the peak of action is achieved at different timepoints. The DIA of detemir is more variable and dose dependent than that of glargine:
-
-For detemir, the duration of action is 14h + (24* dose/weight), and the peak is at duration/3.
-
-For glargine U100, the duration of action is 22h + (12* dose/weight), and the peak is at duration/2.5.
-
-![models 3](https://user-images.githubusercontent.com/18611419/135437260-89bf584b-e412-41d9-bcba-026e6b27d3cc.jpg)
-
-![nature](https://user-images.githubusercontent.com/18611419/135437277-8fe8c4d8-9bea-4466-8820-1240de922e2c.jpg)
-
-Notice that the curve colours are different, and some of the activity curves seem to derived from steady-state euglycemic clamps.

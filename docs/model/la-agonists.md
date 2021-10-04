@@ -2,7 +2,7 @@
 
 For detemir and glargine instead, mathematical models are missing. Based on clamp studies in T1D, the intra-individual day-to-day variation is an important factor affecting the predictability of a single repeated dose. Moreover, the inter-individual variability makes modeling even more a challenge. Even with the best curve-fitting tools, no “global model” was achieved.
 
-Since the goal is not to make a perfect model, I first decided to use a sinusoidal curve to model detemir, and a half-ellipse for glargine. The obvious reasons are that the mathematics are simple :grin:
+Since the goal is not to make a perfect model, I first decided to use a sinusoidal curve to model detemir, and a half-ellipse for glargine. The obvious reasons are that the mathematics are simple 😂
 
 
 Modeling Levemir (Levemir®)

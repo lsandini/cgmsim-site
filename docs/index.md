@@ -2,7 +2,7 @@
 
 ##Introduction
 
-This application simulates very basically in real time the effects of food and insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). Rather than blood glucose (BG) values, it displays a continuous glucose sensor (CGM) trace using [Nightscout](https://nightscout.github.io/) as visualization tool. <a href="http://example.com/" target="_blank">example</a>
+This application simulates very basically in real time the effects of food and insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). Rather than blood glucose (BG) values, it displays a continuous glucose sensor (CGM) trace using <a href="https://nightscout.github.io/" target="_blank">Nightscout</a> as visualization tool. 
 
 ![Animation2](img/CGMSIM.gif)
 

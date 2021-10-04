@@ -9,6 +9,9 @@ markdown_extensions:
     - attr_list
     - toc:
         permalink: ⌁
+    - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 nav:
 
 - Home: 'index.md'

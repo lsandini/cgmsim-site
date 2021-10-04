@@ -166,7 +166,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#physiology" class="nav-link">Physiology</a>
+            <li class="nav-item" data-level="2"><a href="#human-physiology" class="nav-link">Human physiology</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -183,50 +183,51 @@
 
 <h1 id="welcome-to-the-cgmsim-documentation">Welcome to the CGMSIM documentation<a class="headerlink" href="#welcome-to-the-cgmsim-documentation" title="Permanent link">⌁</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⌁</a></h2>
-<p>This application simulates very basically in real time the effects of food and various insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). Rather that blood glucose values, it displays a continuous glucose sensor (CGM) trace using Nightscout (NS) as visualization tool.</p>
+<p>This application simulates very basically in real time the effects of food and insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). Rather than blood glucose (BG) values, it displays a continuous glucose sensor (CGM) trace using Nightscout (NS) as visualization tool.</p>
 <p><img alt="Animation2" src="img/CGMSIM.gif" /></p>
-<p>Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a biological organism, the goal of this simulation is not even to try to match reality, but to provide a practising, learning and/or teaching tool.</p>
-<p>The treatment goal in T1D is keeping the blood sugar or CGM curve values as close as possible to that of healthy people. In realistic terms, it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.</p>
+<p>Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a living organism, the goal of this simulation is not even to try to match reality, but to provide a framework for practising, learning and/or teaching.</p>
+<p>The treatment goal in type 1 diabetes is to keep the BG or CGM curve values as close as possible to that of a healthy person. In realistic terms, it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.</p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>Please understand that this simulation cannot:</p>
 <ul>
 <li>predict individual response to treatment</li>
 <li>replace traditional patient/caregiver education</li>
+<li>does not depict 100% realistically human physiology</li>
 </ul>
 <p><strong>This is work in progress, and all feedback is welcome !</strong></p>
 </div>
-<h2 id="physiology">Physiology<a class="headerlink" href="#physiology" title="Permanent link">⌁</a></h2>
-<p>To understand the mechanics of such a simulation, a few things must be considered.</p>
+<h2 id="human-physiology">Human physiology<a class="headerlink" href="#human-physiology" title="Permanent link">⌁</a></h2>
+<p>To understand the mechanics of the simulation, a few things must be considered.</p>
 <ol>
 <li>
-<p>The ingestion of food and the digestion and absorption of carbohydrates will also increase the blood glucose. Since insulin replacement is administered subcutaneously and not into the hepatic portal vein, some of the ingested food will be absorbed into the main bloodstream directly. After a short delay, the CGM will reflect the increase of blood glucose.</p>
+<p>After eating the <strong>absorption of carbohydrates</strong> from the gut will also increase the blood glucose. Since insulin replacement is administered subcutaneously and not directly into the hepatic portal vein, some of the ingested food will be absorbed into the main bloodstream directly, bypassing the liver. After a short delay, the CGM will reflect the increase of blood glucose.</p>
 </li>
 <li>
-<p>The liver releases glucose into the bloodstream by either releasing its stores (glycogenolysis) or synthesizing new glucose from amino acids (neoglucogenesis). The kidneys are also able to produce glucose in small amount. This is called the endogenous glucose production (EGP). Various biological states and hormones can affect this (not only alcohol!). As glucose is released into the blood stream, the blood glucose concentration increases.</p>
+<p>The <strong>endogenous glucose production</strong> (EGP) is mainly du to the liver release of glucose into the bloodstream. Either releasing stores (glycogenolysis) or synthesizing new glucose (neoglucogenesis). Various biological states, alcohol and hormones can affect EGP. As glucose is released into the blood stream, the blood glucose concentration increases.</p>
 </li>
 <li>
-<p>Physical exercise affects blood glucose in many ways. Intensive bouts of physical activity will trigger the release of adrenalin, which releases increases the EGP. In turn, the increased uptake of glucose in the muscle tissue will lower thew blood glucose as physical activity continues, but also during the post exercise phase, until the muscle glycogen stores are repleted.</p>
+<p><strong>Physical exercise</strong> affects blood glucose in many ways. Short bouts of intense physical activity will trigger the release of adrenalin, which in turn increases the EGP. In turn, the increased peripheral uptake of glucose in the muscle tissue will lower the blood glucose as physical activity continues. The same continues also during the post exercise phase, until the muscle glycogen stores are repleted.</p>
 </li>
 <li>
-<p>Mealtime insulins have a short duration of activity (DIA -around 3 hours), while long-acting insulin analogs are meant to be injected once or twice a day. Both will lower blood glucose and thus sensor glucose values.</p>
+<p>Mealtime <strong>insulins</strong> have a short duration of activity (DIA, ~3 hours), while long-acting insulin analogs are meant to be injected once or twice a day. Both will lower blood glucose and thus sensor glucose values.</p>
 </li>
 <li>
-<p>The very intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulins from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle and the alignment of the planets in the solra system all play a role. Adding a touch of randomness or chaos brings some realism in the simulation.  </p>
+<p>The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle and the alignment of planets and stars all seem to play a role. Adding a touch of <strong>random variation</strong> (or chaos) brings some realism in the simulation.  </p>
 </li>
 </ol>
 <h2 id="why-use-a-simulator">Why use a simulator ?<a class="headerlink" href="#why-use-a-simulator" title="Permanent link">⌁</a></h2>
-<p>CGMSIM runs in real time and it requires time and dedication to reach its goal. It's not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time, making team training possible. </p>
+<p>Many scenario-based simulators have been written in the past, like <a href="http://www.2aida.org/">AIDA</a> or the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4454102/">UVA/Padova T1DMS</a>. In contrast, CGMSIM runs in <strong>real time</strong> like a "serious game". It requires time and dedication to reach its goal. It's not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time, making team training possible.</p>
 <div class="admonition danger">
 <p class="admonition-title">Healthcare Professionals - HCPs</p>
-<p>Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute and life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.</p>
-<p>Living with incertainty 24/7, facing reports of treatment "success" will teach us all some humility and empathy.</p>
+<p>Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.</p>
+<p>Living with incertainty 24/7, and facing reports of treatment "success" will teach some humility and empathy.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Not all patients are equal...</p>
 <p>Every simulated patient can be defined in terms of weight, insulin sensitivity, amplitude of EGP variability.</p>
 </div>
-<p>This website will describe step by step how to install and kickstart the simulation as an administrator, and how to use it.</p></div>
+<p>This website will describe step by step how to install and kickstart the simulation as an administrator, and how to use it as an end-user.</p></div>
             </div>
         </div>
 
@@ -307,5 +308,5 @@
 
 <!--
 MkDocs version : 1.2.1
-Build Date UTC : 2021-10-03 13:44:09.189777+00:00
+Build Date UTC : 2021-10-04 15:20:32.537485+00:00
 -->

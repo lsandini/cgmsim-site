@@ -15,18 +15,18 @@ $$
 
 Let's get rid of the "h" : 
 
-In the increasing phase of absorption :
+In the **increasing** phase of absorption :
 $$
 CAR(t) = {2 \times h} \times {t \over AT} => {4 \times Dose \over AT^2} \times t
 $$
 
-And in the decreasing phase:
+And in the **decreasing** phase:
 
 $$
 CAR(t) = {2 \times h} \times {(1 - t) \over AT} => {4 \times Dose \over AT} \times {(1 - t) \over AT }
 $$
 
-
+<br>
 To make the absorption of carbs from meals more realistic, I divided each meal in fast and slow absorbing parts. The ratio of fast absorbing carbs is randomly computed to be 10-40% of the whole meal. However, since todays June 10th 2021, the first 40 g of each meal will always be fast absorbing, so all small snacks will be fast carbs. 
 
 In the current version of the algorithm, the fast carbs will be absorbed according to the bilinear model mentioned above, in a period of time of one hour. The remaining (slow) carbs are absorbed in a similar fashion, but over a period of 4 hours. 

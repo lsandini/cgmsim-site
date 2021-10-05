@@ -7,6 +7,12 @@ There are many complicated and more or less precise published models of carb abs
 
 ![Carb Absorption Rate](../img/CAR.jpg)
 
+So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. It can be represented with the following equation:
+
+$$
+Dose = AT \times h \over 2
+$$
+
 
 
 $$
@@ -14,6 +20,6 @@ E = mc^2
 $$
 
 
-To make the absorption of carbs from meals more realistic, I divided each meal in fast and slow absorbing parts. The ratio of fast absorbing carbs is randomly computed to be 10-40 % of the whole meal. __However, since todays June 10th 2021, the first 40 g of each meal will always be fast absorbing, so all small snacks will be fast carbs !!!__. 
+To make the absorption of carbs from meals more realistic, I divided each meal in fast and slow absorbing parts. The ratio of fast absorbing carbs is randomly computed to be 10-40% of the whole meal. However, since todays June 10th 2021, the first 40 g of each meal will always be fast absorbing, so all small snacks will be fast carbs. 
 
 In the current version of the algorithm, the fast carbs will be absorbed according to the bilinear model mentioned above, in a period of time of one hour. The remaining (slow) carbs are absorbed in a similar fashion, but over a period of 4 hours. 

@@ -9,7 +9,9 @@ In the current version of the algorithm, the fast carbs will be abosrbed accordi
 
 <br>
 
-![Carb Absorption Rate](./img/CAR.jpg)
+![Carb Absorption Rate](../img/CAR.jpg)
+
+
 
 $$
 E = mc^2

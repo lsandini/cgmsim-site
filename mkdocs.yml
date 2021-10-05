@@ -11,6 +11,8 @@ markdown_extensions:
     - attr_list
     - toc:
         permalink: ⌁
+    - pymdownx.arithmatex:
+      generic: true
 nav:
 
 - Home: 'index.md'

@@ -10,7 +10,7 @@ There are many complicated and more or less precise published models of carb abs
 So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. It can be represented with the following equation:
 
 $$
-{AT \times h} \over 2
+Dose = {AT \times h} \over 2
 $$
 
 

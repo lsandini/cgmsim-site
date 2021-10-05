@@ -3,6 +3,10 @@ theme:
     name: flatly
     highlightjs: true
 site_url: https://lsandini.github.io/cgmsim-site
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
     - stylesheets/admonitions.css
     - stylesheets/extra.css

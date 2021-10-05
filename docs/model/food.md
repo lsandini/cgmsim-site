@@ -9,10 +9,7 @@ In the current version of the algorithm, the fast carbs will be abosrbed accordi
 
 <br>
 
-
-$$
-\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
-$$
+![Carb Absorption Rate](img/CAR.jpg)
 
 $$
 E = mc^2

@@ -28,6 +28,8 @@ $$
 
 <br>
 !!! Danger "Mixed meals and Snacks"
-    To make the absorption of carbs more realistic, the first 40 g of each meal will always be fast absorbing. I divided biggers meals in fast and slow absorbing parts. The ratio of fast absorbing carbs is **randomly computed to be 10-40 % of the whole meal**. So a meal declared as 100g of carbs can be absorbed as 40% fast - 60% slow, or 70% fast - 30% slow. You'll find out sooner or later.
+    To make the absorption of carbs more realistic, the first 40 g of each meal will always be **fast absorbing**.
+    
+    For bigger meals, the excess carbs over 40g are divided in fast and slow absorbing parts. The ratio of fast absorbing carbs is **randomly computed to be 10-40 % of the carb excess**. So for a meal declared as 100g, the first 40 are fast carbs. The remaining 60g will be divided randomly in slow and fast parts. You'll find out sooner or later.
 
 In the current version of the algorithm, the fast carbs will be absorbed according to the bilinear model mentioned above, over a period of time of one hour (!). The remaining (slow) carbs are absorbed in a similar fashion, but over a period of 4 hours. This can be set in the interactive setup script !

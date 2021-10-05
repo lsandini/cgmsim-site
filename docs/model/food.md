@@ -23,7 +23,7 @@ $$
 And in the decreasing phase:
 
 $$
-CAR(t) = {2 \times h} \times {[1 - t] \over AT} => 
+CAR(t) = {2 \times h} \times {(1 - t) \over AT} => 
 $$
 
 

@@ -9,9 +9,11 @@ In the current version of the algorithm, the fast carbs will be abosrbed accordi
 
 <br>
 
-<div style="text-align: left"> 
+
 $$
 \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
 $$
-</div>
 
+$$
+E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
+$$

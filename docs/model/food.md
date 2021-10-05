@@ -3,7 +3,9 @@ Modeling the absorption of Carbs from the gut
 
 There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book [Think Like a Pancreas](https://www.amazon.com/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147) by Gary Scheiner, and used in [Perceptus' Glucodyn](https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf) simulator will do for now.  .
 
-
+<p class="aligncenter">
+    <img src="../img/CAR.jpg" alt="centered image" />
+</p>
 
 ![Carb Absorption Rate](../img/CAR.jpg)
 

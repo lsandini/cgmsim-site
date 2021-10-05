@@ -172,14 +172,18 @@
 <h1 id="modeling-the-absorption-of-carbs-from-the-gut">Modeling the absorption of Carbs from the gut<a class="headerlink" href="#modeling-the-absorption-of-carbs-from-the-gut" title="Permanent link">⌁</a></h1>
 <p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book <a href="https://www.amazon.com/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147">Think Like a Pancreas</a> by Gary Scheiner, and used in <a href="https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf">Perceptus' Glucodyn</a> simulator will do for now.  .</p>
 <p><img alt="Carb Absorption Rate" src="../../img/CAR.jpg" /></p>
-<p>So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. It can be represented with the following equation:</p>
+<p>So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. The peak absorption rate is "h". It can be represented with the following equation:</p>
 <div class="arithmatex">\[
 Dose = {AT \times h \over 2}
 \]</div>
-<p>So in the increasing phase of absorption :
+<p>Let's get rid of the "h" : In the increasing phase of absorption :
 $$
-CAR(t) = {2 \times h \times t \over AT } = {4 \times Dose \times time \over AT^2}
+CAR(t) = {2 \times h \times t \over AT } or {4 \times Dose \times t \over AT^2}
 $$</p>
+<p>And in the decreasing phase:</p>
+<div class="arithmatex">\[
+CAR(t) = {2 \times h \times (1 - [t\over AT])} or {4 \times Dose \over AT } \times {1 - (t \over AT)}
+\]</div>
 <p>To make the absorption of carbs from meals more realistic, I divided each meal in fast and slow absorbing parts. The ratio of fast absorbing carbs is randomly computed to be 10-40% of the whole meal. However, since todays June 10th 2021, the first 40 g of each meal will always be fast absorbing, so all small snacks will be fast carbs. </p>
 <p>In the current version of the algorithm, the fast carbs will be absorbed according to the bilinear model mentioned above, in a period of time of one hour. The remaining (slow) carbs are absorbed in a similar fashion, but over a period of 4 hours. </p></div>
             </div>

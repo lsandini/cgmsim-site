@@ -171,6 +171,10 @@
 
 <h1 id="modeling-the-absorption-of-carbs-from-the-gut">Modeling the absorption of Carbs from the gut<a class="headerlink" href="#modeling-the-absorption-of-carbs-from-the-gut" title="Permanent link">⌁</a></h1>
 <p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book <a href="https://www.amazon.com/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147">Think Like a Pancreas</a> by Gary Scheiner, and used in <a href="https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf">Perceptus' Glucodyn</a> simulator will do for now.  .</p>
+<p class="aligncenter">
+    <img src="../img/CAR.jpg" alt="centered image" />
+</p>
+
 <p><img alt="Carb Absorption Rate" src="../../img/CAR.jpg" /></p>
 <p>So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. The peak absorption rate is "h". It can be represented with the following equation:</p>
 <div class="arithmatex">\[

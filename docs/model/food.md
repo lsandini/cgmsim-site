@@ -17,7 +17,7 @@ Let's get rid of the "h" :
 
 In the increasing phase of absorption :
 $$
-CAR(t) = {2 \times h \times t \over AT } => {4 \times Dose \times t \over AT^2}
+CAR(t) = {2 \times h \times t \over AT } => {4 \times Dose \over AT^2} \times t. 
 $$
 
 And in the decreasing phase:

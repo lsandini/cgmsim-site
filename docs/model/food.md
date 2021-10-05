@@ -21,7 +21,7 @@ $$
 And in the decreasing phase:
 
 $$
-CAR(t) = {(2 \times h) \times (1 - [t\over AT])} = {4 \times Dose \over AT } \times {1 - (t \over AT)}
+CAR(t) = (2 \times h) \times (1 - (t\over AT)) = {4 \times Dose \over AT } \times {1 - (t \over AT)}
 $$
 
 

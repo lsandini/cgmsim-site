@@ -13,15 +13,17 @@ $$
 Dose = {AT \times h \over 2}
 $$
 
-Let's get rid of the "h" : In the increasing phase of absorption :
+Let's get rid of the "h" : 
+
+In the increasing phase of absorption :
 $$
-CAR(t) = {2 \times h \times t \over AT } = {4 \times Dose \times t \over AT^2}
+CAR(t) = {2 \times h \times t \over AT } => {4 \times Dose \times t \over AT^2}
 $$
 
 And in the decreasing phase:
 
 $$
-CAR(t) = (2 \times h) \times (1 - (t\over AT)) 
+CAR(t) = {(2 \times h)} \times {(1 - (t\over AT)) }
 $$
 
 

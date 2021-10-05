@@ -13,12 +13,10 @@ $$
 Dose = {AT \times h \over 2}
 $$
 
-
-
+So in the increasing phase of absorption :
 $$
-E = mc^2
+CAR(t) = {2 \times h \times t \over AT } = {4 \times Dose \times time \over AT^2}
 $$
-
 
 To make the absorption of carbs from meals more realistic, I divided each meal in fast and slow absorbing parts. The ratio of fast absorbing carbs is randomly computed to be 10-40% of the whole meal. However, since todays June 10th 2021, the first 40 g of each meal will always be fast absorbing, so all small snacks will be fast carbs. 
 

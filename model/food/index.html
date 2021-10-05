@@ -170,7 +170,7 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="modeling-the-absorption-of-carbs-from-the-gut">Modeling the absorption of Carbs from the gut<a class="headerlink" href="#modeling-the-absorption-of-carbs-from-the-gut" title="Permanent link">⌁</a></h1>
-<p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book "Think Like a Pancreas" by Gary Scheiner, and used in Perceptus' Glucodyn simulator will do for now. https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf .</p>
+<p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book <a href="https://www.amazon.com/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147">Think Like a Pancreas</a> by Gary Scheiner, and used in <a href="https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf">Perceptus' Glucodyn</a> simulator will do for now.  .</p>
 <p>To make the absorption of carbs from meals more realistic, I divided each meal in fast and slow absorbing parts. The ratio of fast absorbing carbs is randomly computed to be 10-40 % of the whole meal. <strong>However, since todays June 10th 2021, the first 40 g of each meal will always be fast absorbing, so all small snacks will be fast carbs !!!</strong>. In the current version of the algorithm, the fast carbs will be abosrbed according to the bilinear model mentioned above, in a period of time of one hour. The remaining (slow) carbs are absorbed in a similar fashion, but over a period of 4 hours. </p></div>
             </div>
         </div>
@@ -184,6 +184,9 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
+        <script src="../../javascripts/config.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">

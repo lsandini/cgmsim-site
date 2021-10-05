@@ -14,7 +14,8 @@ The "inner clock" of the computer hosting the simulation will trigger the execut
     6. compute the direction of arrows based on the previous deltas
     7. upload a new sensor glucose value and arrow to NS every 5 minutes
     8. repeat the cycle indefinitely
-
+<br>
+<br>
 ## ISF, CR, CF, BGI
 
 The **Insulin Sensitivity Factor** (ISF) represents the impact on BG attributable to the effect of 1 unit of insulin. Its measurement usint is mmol/l/U. So an ISF of 2 means that the blood sugar concentration decreases 2 mmol/l for each given insulin unit.
@@ -27,9 +28,13 @@ The BGI or **Blood Glucose Impact** is the absolute change in BG concentration d
 
     With an ISF of 2.5, the BGI of 4 units of insulin is 4U * 2.5mmol/l/U = 10 mmol/l (decrease in BG)
     With a CF of 1.8, the BGI of 50 grams of carbs is 50g * 1.8 mmol/l/g = 9 mmol/l (increase in BG)
-
+<br>
+<br>
 ## Linear, polynomial, exponential models
 
-The cumulative BGI of all these factors combined is called the "delta", or change from the previous BG value. Is is calculated for 5 minute intervals, then added (or substracted from the previous sensor glucose value). **It does not describe how fast the change is happening**. The Blood Glucose Impact of 1 unit of mealtime insulin is achieved at the end of the duration os action of insulin (DIA), and the BGI of 50g of carbs is achieved as the whole meal is absorbed, sometimes only 6 hours after the meal is comsumed. Describing the intensity of the effect of insulin or carbs along time is called modeling.
+The cumulative BGI of all these factors combined is called the "delta", or change from the previous BG value. Is is calculated for 5 minute intervals, then added (or substracted from the previous sensor glucose value). **It does not describe how fast the change is happening**. 
 
-Next we'll see in detail how various insulins, food, endogenous glucose production and random effect can be modeled mathematically.
+The Blood Glucose Impact of 1 unit of mealtime insulin is achieved at the end of the duration os action of insulin (DIA), and the BGI of 50g of carbs is achieved as the whole meal is absorbed, sometimes only 6 hours after the meal is comsumed. Describing the intensity of the effect of insulin or carbs along time is called modeling.
+
+!!! danger "Mdels in detail"
+    Next we'll see in detail how various insulins, food, endogenous glucose production and random effect can be modeled mathematically.

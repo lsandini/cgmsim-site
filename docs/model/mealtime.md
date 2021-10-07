@@ -13,10 +13,10 @@ In simple terms, this means that the effect of insulin will increase from the mo
 Parameters: td = duration, Ia(td)=0, IOB(td)=0, tp = peak activity time, both expressed in minutes.
 
 $$
-Time constant of exp decay = \tau
+Time_constant_of_exp_decay = \tau
 $$
 
-klsjudbfö
+
 
 $$
  \tau = tp \times {(1-tp/td)} \over {(1-2*tp/td)}

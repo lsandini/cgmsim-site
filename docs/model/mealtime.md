@@ -16,7 +16,7 @@ $$
 Time constant of exp decay = \tau
 $$
 
-<br>
+klsjudbfö
 
 $$
  \tau = tp \times {(1-tp/td)} \over {(1-2*tp/td)}

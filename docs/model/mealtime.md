@@ -9,15 +9,17 @@ I use model to this compute the activity of each mealtime insulin dose. I select
 
 In simple terms, this means that the effect of insulin will increase from the moment of injection until it reaches a maximum "peak", and then decrease to 0 at the end of the DIA. 
 
-
 Parameters: td = duration, Ia(td)=0, IOB(td)=0, tp = peak activity time, both expressed in minutes.
 
-Time constant of exponential decay = $\tau$
+Time constant of exponential decay = $\tau$ .
 
 $$
-{tp\times {(1-tp/td)}\over {(1-2 \times tp/td)}  
+\tau = {tp\times {(1-tp/td)}\over {(1-2 \times tp/td)}  
 $$
 
+$$
+dfag
+$$
 
 
 Rise time factor: a = 2*tau/td

@@ -14,7 +14,8 @@ Parameters: td = duration, Ia(td)=0, IOB(td)=0, tp = peak activity time, both ex
 
 $$
 Time constant of exp decay = \tau
-
+$$
+$$
  \tau = tp \times {(1-tp/td)} \over {(1-2*tp/td)}
 $$
 

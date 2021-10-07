@@ -15,7 +15,9 @@ Parameters: td = duration, Ia(td)=0, IOB(td)=0, tp = peak activity time, both ex
 Time constant of exponential decay =$\tau
 
 
-$$ \tau = {{tp \times {(1-tp/td)} \over {(1-2 \times tp/td)}} $$
+$$
+\tau = {tp \times {(1-tp/td)} \over {(1-2 \times tp/td)} 
+$$
 
 
 

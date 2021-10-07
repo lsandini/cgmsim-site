@@ -28,6 +28,6 @@ $$
 
 
 $$
-\text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {(1 - {t \over td)}} \times \exp({-t \over \tau})
+\text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {(1 - {t \over td})} \times \exp({-t \over \tau})
 $$
 

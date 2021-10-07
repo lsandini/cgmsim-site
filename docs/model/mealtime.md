@@ -24,6 +24,9 @@ $$
 \text{Auxiliary scale factor = } S = {1 \over {(1 -a) + (1 + a)\times {\exp({-t\over \tau})}}}
 $$
 
-Auxiliary scale factor: S = 1/(1-a+(1+a)*exp(-td/tau))
+
+$$
+\text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {1 - {t \over td}} \times \exp({-t \over \tau})
+$$
 
 Insulin activity curve: Ia(t) = (S/tau^2)*t*(1-t/td)*exp(-t/tau)

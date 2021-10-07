@@ -11,17 +11,16 @@ In simple terms, this means that the effect of insulin will increase from the mo
 
 Parameters: td = duration, Ia(td)=0, IOB(td)=0, tp = peak activity time, both expressed in minutes.
 
-Time constant of exponential decay = $\tau$ .
 
 $$
-\text{Time constant of exponential decay  } \tau = { tp \times {(1-tp/td)}\over {(1-2 \times tp/td)} }
+\text{Time constant of exponential decay = } \tau = { tp \times {(1-tp/td)}\over {(1-2 \times tp/td)} }
 $$
 
 $$
-\text{Rise time factor } a = { 2 \times \tau \over td}
+\text{Rise time factor = } a = { 2 \times {\tau \over td}}
 $$
 
 
-Rise time factor: a = 2*tau/td
+Rise time factor: a = 2tau/td
 Auxiliary scale factor: S = 1/(1-a+(1+a)*exp(-td/tau))
 Insulin activity curve: Ia(t) = (S/tau^2)*t*(1-t/td)*exp(-t/tau)

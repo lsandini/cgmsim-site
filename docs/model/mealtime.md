@@ -14,11 +14,11 @@ Parameters: td = duration, Ia(td)=0, IOB(td)=0, tp = peak activity time, both ex
 Time constant of exponential decay = $\tau$ .
 
 $$
-\text{Time constant of exponential decay} \tau = { tp \times {(1-tp/td)}\over {(1-2 \times tp/td)} }
+\text{Time constant of exponential decay  } \tau = { tp \times {(1-tp/td)}\over {(1-2 \times tp/td)} }
 $$
 
 $$
-dfag
+\text{Rise time factor } a = { 2 \times \tau \over td}
 $$
 
 

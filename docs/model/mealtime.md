@@ -20,7 +20,9 @@ $$
 \text{Rise time factor = } a = { 2 \times {\tau \over td}}
 $$
 
+$$
+\text{Auxiliary scale factor = } S = {1 \over {(1 -a) + (1 + a)\times \exp(-t\over \tau)}}
+$$
 
-Rise time factor: a = 2tau/td
 Auxiliary scale factor: S = 1/(1-a+(1+a)*exp(-td/tau))
 Insulin activity curve: Ia(t) = (S/tau^2)*t*(1-t/td)*exp(-t/tau)

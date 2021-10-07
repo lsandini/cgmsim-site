@@ -8,3 +8,14 @@ I use model to this compute the activity of each mealtime insulin dose. I select
     You will be able to set your own time-to-peak and DIA values during the interactive setup, along with other "patient-related" variables.
 
 In simple terms, this means that the effect of insulin will increase from the moment of injection until it reaches a maximum "peak", and then decrease to 0 at the end of the DIA. 
+
+
+Parameters: td = duration, Ia(td)=0, IOB(td)=0, tp = peak activity time, both expressed in minutes.
+
+$$
+Time constant of exp decay \tau = tp \times {(1-tp/td)} \over {(1-2*tp/td)}
+$$
+
+Rise time factor: a = 2*tau/td
+Auxiliary scale factor: S = 1/(1-a+(1+a)*exp(-td/tau))
+Insulin activity curve: Ia(t) = (S/tau^2)*t*(1-t/td)*exp(-t/tau)

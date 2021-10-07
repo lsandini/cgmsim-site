@@ -16,7 +16,7 @@ Time constant of exponential decay =
  $$ \tau $$
 
 
-$$ \tau = {tp \times {(1-tp/td)} \over {(1-2 \times tp/td)} $$
+$$ \tau = {{tp \times {(1-tp/td)} \over {(1-2 \times tp/td)}} $$
 
 Rise time factor: a = 2*tau/td
 Auxiliary scale factor: S = 1/(1-a+(1+a)*exp(-td/tau))

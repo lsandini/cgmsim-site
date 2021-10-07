@@ -16,16 +16,19 @@ $$
 \text{Time constant of exponential decay = } \tau = { tp \times {{(1-tp/td)}\over {(1-2 \times tp/td)} } }
 $$
 
+<br>
 
 $$
 \text{Rise time factor = } a = { 2 \times {\tau \over td}}
 $$
 
+<br>
 
 $$
 \text{Auxiliary scale factor = } S = {1 \over {(1 -a) + (1 + a)\times {\exp({-t\over \tau})}}}
 $$
 
+<br>
 
 $$
 \text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {(1 - {t \over td})} \times \exp({-t \over \tau})

@@ -13,9 +13,10 @@ In simple terms, this means that the effect of insulin will increase from the mo
 
    
 
-Parameters: 
-td = duration
-tp = peak activity time
+Parameters:  
+-----------
+**td** = duration duration of insulin activity (DIA)  
+**tp** = peak activity time
 
 
 $$

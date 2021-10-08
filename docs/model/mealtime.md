@@ -11,10 +11,9 @@ I use model to this compute the activity of each mealtime insulin dose. I select
 
 In simple terms, this means that the effect of insulin will increase from the moment of injection until it reaches a maximum "peak", and then decrease to 0 at the end of the DIA. 
 
-   
 
-Parameters:  
------------
+### Parameters  
+----------
 **td** = duration duration of insulin activity (DIA)  
 **tp** = peak activity time
 

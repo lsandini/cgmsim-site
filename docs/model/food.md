@@ -10,9 +10,9 @@ There are many complicated and more or less precise published models of carb abs
 So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. The peak absorption rate is "h". It can be represented with the following equation:
 
 $$
-Dose = {AT \times h \over 2}
+Dose = {AT \times h \over 2} \text{   or   } h = {2 \times Dose } \over AT
 $$
-
+<br>
 Let's get rid of the "h" : 
 
 In the **increasing** phase of absorption :
@@ -35,10 +35,3 @@ $$
 
 In the current version of the algorithm, the fast carbs will be absorbed according to the bilinear model mentioned above, over a period of time of one hour. The remaining (slow) carbs are absorbed in a similar bilinear fashion, but over a period of 4 hours. This can be set in the interactive setup script during installation.
 
-!!! Danger "Math inside admonition: test"
-    To make the absorption of carbs more realistic, the first 40 g of each meal will always be **fast absorbing**. 
-    $$
-    Dose = {AT \times h \over 2}
-    $$
-
-something ...

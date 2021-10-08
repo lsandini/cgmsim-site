@@ -27,14 +27,14 @@ Let's get rid of the "h", and describe the Carbs Absorption Rate (CAR) as a func
 - In the **increasing** phase of absorption :
 
 $$
-CAR(t) = {2 \times h} \times {t \over AT } => { 4 \times Dose \over AT^2} \times t
+CAR(t) = {2 \times h} \times {t \over AT }\text{  } => \text{  } { 4 \times Dose \over AT^2} \times t
 $$
 
 <br>
 - And in the **decreasing** phase:
 
 $$
-CAR(t) = {2 \times h} \times {(1 - t) \over AT } \text{ } => \text{ } { 4 \times Dose \over AT} \times {(1 - {t \over AT})}
+CAR(t) = {2 \times h} \times {(1 - t) \over AT } \text{  } => \text{  } { 4 \times Dose \over AT} \times {(1 - {t \over AT})}
 $$
 
 <br>
@@ -43,5 +43,5 @@ $$
     
     For bigger meals, the excess carbs over 40g are divided in fast and slow absorbing parts. The ratio of fast absorbing carbs is **randomly computed to be 10-40 % of the carb excess**. So for a meal declared as 100g, the first 40 are fast carbs. The remaining 60g will be divided randomly in slow and fast parts. You'll find out sooner or later.
 
-In the current version of the algorithm, the fast carbs will be absorbed according to the bilinear model mentioned above, over a period of time of one hour. The remaining (slow) carbs are absorbed in a similar bilinear fashion, but over a period of 4 hours. This can be set in the interactive setup script during installation.
+In the current version of the simulator, fast carbs will be absorbed according to the bilinear model mentioned above, **over a period of time of one hour**. The remaining (slow) carbs are absorbed in a similar bilinear fashion, but over a period of 4 hours. This can be set in the interactive setup script during installation.
 

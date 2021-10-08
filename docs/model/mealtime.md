@@ -9,7 +9,11 @@ I use model to this compute the activity of each mealtime insulin dose. I select
 !!! info ""
     You will be able to set your own time-to-peak and DIA values during the interactive setup, along with other "patient-related" variables.
 
-In simple terms, this means that the effect of insulin will increase from the moment of injection until it reaches a maximum "peak", and then decrease to 0 at the end of the DIA. For 
+In simple terms, this means that the effect of insulin will increase from the moment of injection until it reaches a maximum "peak", and then decrease to 0 at the end of the DIA. 
+
+<div style="text-align: left">
+
+   
 
 Parameters: 
 td = duration
@@ -38,6 +42,4 @@ $$
 \text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {(1 - {t \over td})} \times \exp({-t \over \tau})
 $$
 
-..
-
-..
+</div>

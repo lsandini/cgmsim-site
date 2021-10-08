@@ -10,21 +10,29 @@ There are many complicated and more or less precise published models of carb abs
 So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. The peak absorption rate is "h". It can be represented with the following equation:
 
 $$
-Dose = {AT \times h \over 2} \text{   or   } h = {2 \times Dose } \over AT
+Dose = {AT \times h \over 2}
 $$
+
 <br>
+
+$$
+h = {{2 \times Dose } \over AT}
+$$
+
+<br>
+
 Let's get rid of the "h" : 
 
 In the **increasing** phase of absorption :
 
 $$
-CAR(t) = {2 \times h} \times {t \over AT} => {4 \times Dose \over AT^2} \times t
+CAR(t) = {2 \times h} \times {t \over AT } ==> { 4 \times Dose \over AT^2} \times t
 $$
 
 And in the **decreasing** phase:
 
 $$
-CAR(t) = {2 \times h} \times {(1 - t) \over AT} => {4 \times Dose \over AT} \times {(1 - {t \over AT})}
+CAR(t) = {2 \times h} \times {(1 - t) \over AT } ==> { 4 \times Dose \over AT} \times {(1 - {t \over AT})}
 $$
 
 <br>

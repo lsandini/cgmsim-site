@@ -37,5 +37,5 @@ In the current version of the algorithm, the fast carbs will be absorbed accordi
 
 !!! Danger "Math inside admonition: test"
     To make the absorption of carbs more realistic, the first 40 g of each meal will always be **fast absorbing**. $$
-Dose = {AT \times h \over 2}
-$$
+    Dose = {AT \times h \over 2}
+    $$

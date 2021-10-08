@@ -36,6 +36,9 @@ $$
 In the current version of the algorithm, the fast carbs will be absorbed according to the bilinear model mentioned above, over a period of time of one hour. The remaining (slow) carbs are absorbed in a similar bilinear fashion, but over a period of 4 hours. This can be set in the interactive setup script during installation.
 
 !!! Danger "Math inside admonition: test"
-    To make the absorption of carbs more realistic, the first 40 g of each meal will always be **fast absorbing**. $$
+    To make the absorption of carbs more realistic, the first 40 g of each meal will always be **fast absorbing**. 
+    $$
     Dose = {AT \times h \over 2}
     $$
+
+something ...

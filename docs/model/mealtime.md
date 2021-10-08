@@ -40,4 +40,4 @@ $$
 \text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {(1 - {t \over td})} \times \exp({-t \over \tau})
 $$
 
-![Image](/site/img/DM.jpg){width="300"}
+![Image](https://user-images.githubusercontent.com/12002177/28603367-d54aed1c-7180-11e7-800e-f43c0ca17042.jpg){width="300"}

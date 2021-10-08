@@ -173,18 +173,22 @@
 <p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book <a href="https://www.amazon.com/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147">Think Like a Pancreas</a> by Gary Scheiner, and used in <a href="https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf">Perceptus' Glucodyn</a> simulator will do for now.  .</p>
 <p><img align="center" alt="Carb Absorption Rate" src="../../img/CAR.jpg" /></p>
 <p>So if the absorption time (AT) were 4 hours, the absorption rate increases linearly until it reaches and peak, then decreases linearly to the end. The surface area of the triangle represents the Dose, or the amount of ingested carbs. The peak absorption rate is "h". It can be represented with the following equation:</p>
-<p>$$
-Dose = {AT \times h \over 2} \text{   or   } h = {2 \times Dose } \over AT
-$$
-<br>
-Let's get rid of the "h" : </p>
+<div class="arithmatex">\[
+Dose = {AT \times h \over 2}
+\]</div>
+<p><br></p>
+<div class="arithmatex">\[
+h = {{2 \times Dose } \over AT}
+\]</div>
+<p><br></p>
+<p>Let's get rid of the "h" : </p>
 <p>In the <strong>increasing</strong> phase of absorption :</p>
 <div class="arithmatex">\[
-CAR(t) = {2 \times h} \times {t \over AT} =&gt; {4 \times Dose \over AT^2} \times t
+CAR(t) = {2 \times h} \times {t \over AT } ==&gt; { 4 \times Dose \over AT^2} \times t
 \]</div>
 <p>And in the <strong>decreasing</strong> phase:</p>
 <div class="arithmatex">\[
-CAR(t) = {2 \times h} \times {(1 - t) \over AT} =&gt; {4 \times Dose \over AT} \times {(1 - {t \over AT})}
+CAR(t) = {2 \times h} \times {(1 - t) \over AT } ==&gt; { 4 \times Dose \over AT} \times {(1 - {t \over AT})}
 \]</div>
 <p><br></p>
 <div class="admonition danger">

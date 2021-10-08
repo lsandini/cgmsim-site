@@ -39,7 +39,8 @@ $$
 $$
 \text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {(1 - {t \over td})} \times \exp({-t \over \tau})
 $$
-
+<br>
+<br>
 ----  
 
 As can be seen on the picture below, with a DIA of 300 min and tp = 55 min (dark orange curves), 80\% of the insulin has been absorbed and its activity has declined to 10\% of its peak value after 180 min:  

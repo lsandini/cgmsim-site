@@ -21,18 +21,20 @@ $$
 
 <br>
 
-Let's get rid of the "h" : 
+Let's get rid of the "h", and describe the Carbs Absorption Rate (CAR) as a function of time : 
+<br>
 
 - In the **increasing** phase of absorption :
 
 $$
-CAR(t) = {2 \times h} \times {t \over AT } ==> { 4 \times Dose \over AT^2} \times t
+CAR(t) = {2 \times h} \times {t \over AT } => { 4 \times Dose \over AT^2} \times t
 $$
 
+<br>
 - And in the **decreasing** phase:
 
 $$
-CAR(t) = {2 \times h} \times {(1 - t) \over AT } ==> { 4 \times Dose \over AT} \times {(1 - {t \over AT})}
+CAR(t) = {2 \times h} \times {(1 - t) \over AT } \text{ } => \text{ } { 4 \times Dose \over AT} \times {(1 - {t \over AT})}
 $$
 
 <br>

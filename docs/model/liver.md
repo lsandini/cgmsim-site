@@ -3,7 +3,7 @@ Modeling the Endogenous Glucose Production (EGP) by the liver
 
 In an adult person with T1D, the EGP is about 100-120mg/kg/h, which means 8-10g/h for a 80kg person. Every day, the liver releases 200-240g of carbs into the bloodstream. 
 
-The EGP is significantly affected but the insulin activity, since in the repleted rested state, insulin decreases the liver glucose production more than it increases the peripheral glucose uptake. Moreover, other factors like the ingestion of alcohol, a faster or repleted state, will significantlyincrease or decrease the EGP.
+The EGP is significantly affected but the insulin activity, since in the repleted and rested state, insulin decreases the liver glucose production more than it increases  peripheral glucose uptake. Moreover, other factors like the ingestion of alcohol, a faster or repleted state, will significantlyincrease or decrease the EGP.
 
 The EGP is modeled here in a sinusoidal function. If the ISF is 2mmol/l/U and the CR is 10g/U, then the Carb Factor (CF) is 2mmol/l/10g. Since 10g are produced per hour, the increase in BG due to the liver glucose production is 2mmol/l/h or 0.1666 mmol/l/5min. 
 

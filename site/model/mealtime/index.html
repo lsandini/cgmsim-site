@@ -176,27 +176,39 @@
 <div class="admonition info">
 <p>You will be able to set your own time-to-peak and DIA values during the interactive setup, along with other "patient-related" variables.</p>
 </div>
-<p>In simple terms, this means that the effect of insulin will increase from the moment of injection until it reaches a maximum "peak", and then decrease to 0 at the end of the DIA. For </p>
-<p>Parameters: 
+<p>In simple terms, this means that the effect of insulin will increase from the moment of injection until it reaches a maximum "peak", and then decrease to 0 at the end of the DIA. </p>
+<div style="text-align: left">
+
+
+
+Parameters: 
 td = duration
-tp = peak activity time</p>
-<div class="arithmatex">\[
+tp = peak activity time
+
+
+$$
 \text{Time constant of exponential decay = } \tau = { tp \times {{(1-tp/td)}\over {(1-2 \times tp/td)} } }
-\]</div>
-<p><br></p>
-<div class="arithmatex">\[
+$$
+
+<br>
+
+$$
 \text{Rise time factor = } a = { 2 \times {\tau \over td}}
-\]</div>
-<p><br></p>
-<div class="arithmatex">\[
+$$
+
+<br>
+
+$$
 \text{Auxiliary scale factor = } S = {1 \over {(1 -a) + (1 + a)\times {\exp({-t\over \tau})}}}
-\]</div>
-<p><br></p>
-<div class="arithmatex">\[
+$$
+
+<br>
+
+$$
 \text{Insulin activity curve = } Ia(t) = {S \over \tau^2} \times t \times {(1 - {t \over td})} \times \exp({-t \over \tau})
-\]</div>
-<p>..</p>
-<p>..</p></div>
+$$
+
+</div></div>
             </div>
         </div>
 

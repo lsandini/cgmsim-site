@@ -12,10 +12,10 @@ Since even the most accurate physiological simulators can at best provide only a
 The treatment goal in type 1 diabetes is to keep the BG or CGM curve values as close as possible to that of a healthy person. In realistic terms, it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.
 
 !!! warning "Important"
-    Please understand that this simulation cannot:
+    Please understand that this simulation:
 
-    - predict individual response to treatment
-    - replace traditional patient/caregiver education
+    - cannot predict individual response to treatment
+    - cannot replace traditional patient/caregiver education
     - does not depict 100% realistically human physiology
 
     **This is work in progress, and all feedback is welcome !**
@@ -25,7 +25,7 @@ The treatment goal in type 1 diabetes is to keep the BG or CGM curve values as c
 
 To understand the mechanics of the simulation, a few things must be considered.
 
-1. After eating the __absorption of carbohydrates__ from the gut will also increase the blood glucose. Since insulin replacement is administered subcutaneously and not directly into the hepatic portal vein, some of the ingested food will be absorbed into the main bloodstream directly, bypassing the liver. After a short delay, the CGM will reflect the increase of blood glucose.
+1. After a meal, the __absorption of carbohydrates__ from the gut will also increase the blood glucose. Since insulin replacement is administered subcutaneously and not directly into the hepatic portal vein, some of the ingested food will be absorbed into the main bloodstream directly, bypassing the liver. After a short delay, the CGM will reflect the increase of blood glucose.
 
 2. The __endogenous glucose production__ (EGP) is mainly du to the liver release of glucose into the bloodstream. Either releasing stores (glycogenolysis) or synthesizing new glucose (neoglucogenesis). Various biological states, alcohol and hormones can affect EGP. As glucose is released into the blood stream, the blood glucose concentration increases.
 
@@ -33,7 +33,7 @@ To understand the mechanics of the simulation, a few things must be considered.
 
 4. Mealtime __insulins__ have a short duration of activity (DIA, ~3 hours), while long-acting insulin analogs are meant to be injected once or twice a day. Both will lower blood glucose and thus sensor glucose values.
 
-5. The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle and the alignment of planets and stars all seem to play a role. Adding a touch of __random variation__ (or chaos) brings some realism in the simulation.  
+5. The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle, the moon phase and the alignment of planets all seem to play a role. Adding a touch of __random variation__ (or chaos) brings some realism in the simulation.  
 
 
 ## Why use a simulator ?

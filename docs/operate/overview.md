@@ -13,9 +13,9 @@ Click on the lock and you will be prompted to enter your APISECRET
 
 ![Authorization](../img/auth.jpg)
 
-Tick the "Remember this device", so you won't have to do this every time, and click **Authenticate**. You will have to repeat this step whenever you open your Nightscout website on a different browser or device.
+Enter your API secret or Nightscout password. Tick the "Remember this device", so you won't have to do this every time, and click **Authenticate**. You will have to repeat this step whenever you open your Nightscout website on a different browser or device.
 
-When it's done, the lock on the upper-right corner has been replaced with a "+" mark.
+When it's done, the lock on the upper-right corner has been replaced with a **"+"** mark.
 
 ![Careportal](../img/careportal.jpg)
 

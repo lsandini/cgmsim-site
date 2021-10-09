@@ -166,6 +166,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#kickstart-the-simulation" class="nav-link">Kickstart the simulation !</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -183,11 +187,20 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
 </code></pre>
-<p>For this, in your Linux terminal, type crontab -e (and select nano or vi as your favourite text editor). Look at the sample file, and copy the lines in your own crontab.</p>
-<p>the first line reinitialises the perlin noise generator every 6 hours.</p>
-<p>the second line launches the downloading process of previous SGV data etc, every 5 minutes</p>
-<p>the third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.</p>
-<p>2 more lines are commented out, but allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc...</p></div>
+<p>For this, in your Linux terminal, type:</p>
+<pre><code>crontab -e 
+</code></pre>
+<p>Select nano (or vi) as your favourite text editor. Look at the sample file, and copy the lines in your own crontab.</p>
+<p><strong>Replace MYUSERNAME with your Linux username !</strong></p>
+<p>The first line reinitialises the perlin noise generator every 6 hours.</p>
+<p>The second line launches the downloading process of previous SGV data, treatments, etc, every 5 minutes.</p>
+<p>The third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.</p>
+<p>The sample file contains 2 more lines, that are commented out. They allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc... This requires other modifications to the code not presented here. I'll add details later on request.</p>
+<h2 id="kickstart-the-simulation">Kickstart the simulation !<a class="headerlink" href="#kickstart-the-simulation" title="Permanent link">⌁</a></h2>
+<p>It's time to upload your first Sensor Glucose Values (SGVs) to your Nightscout website. This way CGMSIM will have a starting point for its first calculations. In your terminal, type :</p>
+<pre><code>bash kickstart.sh
+</code></pre>
+<p>In a second or two, your Nightscout website should display 3 SGVs of 5 mmol/l or 80 mg/dl. Yay ! 😃</p></div>
             </div>
         </div>
 

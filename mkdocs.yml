@@ -38,7 +38,7 @@ nav:
     - Nightscout: 'build/nightscout.md'
     - Linux/Ubuntu: 'build/linux.md'
     - Download: 'build/clone.md'
-    - Setup: 'build/setupscript.md'
+    - Setup script: 'build/setupscript.md'
     - Kickstart: 'build/kickstart.md'
 - Using the simulator:
     - Overview: 'operate/overview.md'

@@ -159,13 +159,35 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#installing-linux-ubuntu" class="nav-link">Installing Linux Ubuntu</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#raspberry-pi" class="nav-link">Raspberry Pi</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
+<h1 id="installing-linux-ubuntu">Installing Linux Ubuntu<a class="headerlink" href="#installing-linux-ubuntu" title="Permanent link">⌁</a></h1>
+<p>Two major options are available. </p>
+<ol>
+<li>
+<p>A cloud-based solution like <a href="https://www.digitalocean.com/products/linux-distribution/ubuntu/">Digital Ocean</a> or <a href="https://www.mvps.net/configure">MVPS</a>. They provide a virtual machines that you can create in seconds with just a few clicks, for a few euros/month.</p>
+</li>
+<li>
+<p>A computer running Linux at home.
+<br></p>
+</li>
+</ol>
+<h2 id="raspberry-pi">Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permanent link">⌁</a></h2>
 <p>I recommend using a <a href="https://www.raspberrypi.com/products/">Raspberry Pi (RPi)</a> device, as it is the cheapest and most energy efficient solution. I currently host 10 simulated patients on a headless RPi3, without any monthly cost other than my broadband internet subscription. The price of a Raspberry Pi Zero is less than 10 EUR, and if you prefer a more robust solution a Raspberry Pi 4 starter kit including a charger, a preloaded SD card costs less than 100 EUR).</p>
-<p>I do not recommend running the simulation as the <strong>root</strong> user. Instead, create a regular user with sudo privileges, in my case "lorenzo". There are plenty of tutorials for that.</p></div>
+<p>Linux Ubuntu is completely free and comes with all the software you need. Here are the <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview">instructions for installing Ubuntu Server on a Raspberry 2, 3 or 4</a>. You don't need to connect your RPi to a monitor, a keyboard or a mouse. Your installation won't even have a desktop interface. As soon as your linux computer is connected to your home network with LAN or WLAN, you will need a separate computer in order to login into your Linux computer remotely through the network.</p>
+<p>I do not recommend running the simulation as the <strong>root</strong> user. <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-20-04-quickstart">Instead, create a regular user with sudo privileges.</a></p></div>
             </div>
         </div>
 

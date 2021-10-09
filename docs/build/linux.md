@@ -29,4 +29,4 @@ All the steps are described above in detail, and it will also take you some time
    
 6. [Create a regular new user with sudo privileges.](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-20-04-quickstart) and reboot.
 
-When you finally login as the new user, you are ready to download and deploy CGMSIM.
+When you finally login as the new user, you are ready to download and deploy CGMSIM, yay ! :sweat_smile:

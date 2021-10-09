@@ -16,8 +16,6 @@ The mean variation is 0, which means that this background noise will cause tempo
 
 ## Astronomy
 
-Did I say something about the influence of the moon phase and planet alignment earlier? Well, this might very well be integrated here very soon.
+Did I say something about the influence of the moon phase and planet alignment earlier? Well, this might very well be integrated here very soon... :smile:
 
 <img src="https://user-images.githubusercontent.com/24463821/90344480-44543f00-dfe8-11ea-9b99-a640c0f26136.gif" alt="Solar system" width="300"/>
-
-:smile:

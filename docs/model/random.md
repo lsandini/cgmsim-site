@@ -9,6 +9,6 @@ Every five minutes, as the next SGV value is computed, the latest perlin noise v
 
 <script language="javascript" type="text/javascript" src="/javascripts/sketch.js"></script>
 
-(Testing emojis   :smile: )
+(Testing emojis since I am happy   :smile: )
 
 

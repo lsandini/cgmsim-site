@@ -159,12 +159,21 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#setting-up-your-personal-environment" class="nav-link">Setting up your personal environment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="setting-up-your-personal-environment">Setting up your personal environment<a class="headerlink" href="#setting-up-your-personal-environment" title="Permanent link">⌁</a></h1>
+<p>The "environment" means the details of the simulated subject, and the Nightscout website URL and API secret. They are centralized and stored in the simulator's folder, in a file called .env. This file's contents are later called from various scripts. Creating this file is simplified by launching this interactive this script:</p>
+<pre><code>bash install_env.sh
+</code></pre>
+<p>To verify that the .env file has been created correctly, just type cat .env in your terminal. Finally, and since the perlin noise generator runs automatically but only every few hours, it will be launched for the first time at the end of this script.</p></div>
             </div>
         </div>
 

@@ -5,7 +5,7 @@ There are quite a few good reasons to contact me:
 !!! warning "Development ideas"
     Integrating physical activity data from Apple Watch, Android Wear and other activity sensors into the model.
 
-    Offering CGMSIM as a service, so anyone could link a simulated patient to their own Nightscout page.
+    Offering CGMSIM as a centralized service, so anyone could link a simulated patient to their own Nightscout page.
 
     Developing CGMSIM as a standalone Android or iOS app
 

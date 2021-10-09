@@ -1,4 +1,6 @@
-# Declaring meals
+# Declaring meals and mealtime insulins
+
+## Declaring food alone
 
 Open Careportal by pressing the **"+"** sign on the upper right corner of Nightscout.
 
@@ -20,3 +22,12 @@ You are presented with the option to "Log a Treatment". Next to "Event Type", a 
 Now you should see the meal appear on the Nightscout curve. Placing your cursor on top of the meal marker, the details shoulsd appear.
 
 ![Meal2](../img/meal2.jpg)
+<br>
+
+## Declaring food and insulin
+
+To declare mealtime insulin at the same time as carbs, the Event Type should be either "Snack Bolus" or "Meal Bolus". (Combo Bolus is not supported !).
+
+You will have to specify the "Carb Time", which is the time of the meal in relation to the insulin injection. So if you inject first, and eat 20 minutes later, Carb Time should be "20 min later". When submitting the entry, the time of the entry is the time of the insulin injection. 
+
+![Meal3](../img/meal3.jpg)

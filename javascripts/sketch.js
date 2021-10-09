@@ -4,6 +4,7 @@ var start = 0;
 
 function setup() {
   createCanvas(300, 300);
+  canvas.parent('sketch-holder')
 }
 
 function draw() {

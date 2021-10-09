@@ -18,6 +18,9 @@ Found a bug in the [source code](https://github.com/lsandini/cgmsim)? Squish it 
 If you have other suggestions or would like to contribute, feel free to contact me by email **<lsandini@gmail.com>**.
 
 Thank you !
+<br>
+
+## Donate
 
 !!! danger "Coffee ... :coffee:"
     This project was not funded in any way and was written completely during my free time. It required quite some coffee, staying up at night, testing the code on virtual machines and various Raspberry Pi's. 

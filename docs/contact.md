@@ -1,6 +1,6 @@
 # Contact me !
 
-There a few good reasons to contact me:
+There are quite a few good reasons to contact me:
 
 !!! warning "Development ideas"
     Integrating physical activity data from Apple Watch, Android Wear and other activity sensors into the model.
@@ -9,7 +9,9 @@ There a few good reasons to contact me:
 
     Developing CGMSIM as a standalone Android or iOS app
 
-Found a bug? Squish it !  It took me a while to learn to write code, and I am sure a pro would smile nervously reading my scripts.
+    Interested in the CSII (insulin pump) features of the sim ? :wink:
+
+Found a bug in the [source code](https://github.com/lsandini/cgmsim)? Squish it ! It took me a while to learn to write code, and I am sure a pro would smile nervously reading my scripts.
 
 If you have suggestions or would like to contribute, feel free to contact me by email **<lsandini@gmail.com>**.
 

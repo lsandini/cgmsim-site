@@ -19,7 +19,7 @@
     <div id="canvasForHTML"></div>
     <p>Move your mouse around to see circles.</h1>
     </body>
-</html>
+
 
 Random effects
 ==============
@@ -31,3 +31,4 @@ Since random number generators produce very jumpy values with various distributi
 Every five minutes, as the next SGV value is computed, the latest perlin noise value in the last 5 minutes is taken into account. For now, the best settings are amplitude 0.3, octaves 1 and persistance 0.3. The values are multiplied by 10, and then again by 18 to get mg/dl, then added to the SGV jst before upload.
 
 :smile:
+</html>

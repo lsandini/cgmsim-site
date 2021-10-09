@@ -10,14 +10,14 @@ In order to use this simulator, you'll need an instance of Nightscout (NS). If y
 The simulator itself works in a Linux Ubuntu 20.04 LTS environment. You'll need a computer (or a virtual machine) running Ubuntu in order to complete the CGMSIM installation. If you don't have any experience, this will be a good opportunity to learn. Basic use is easier than you think. You can either rent a cloud-based Linux computer for a few euros/month, or rather [run Linux at home on a Raspberry Pi](linux.md).
 
 
-The next steps are descibed separately and they involve: 
+The next steps are described separately and involve: 
 
 1. downloading all the files from this Github repository
-2. installating the dependencies necessary for running the simulator
+2. installing the dependencies necessary for running the simulator
 3. setting up the environment variables
 4. kickstarting the simulator
-5. scheduling the tasks
+5. scheduling the repetitive tasks
 
 ## Using CGMSIM in a browser
 
-Nightscout is broadly compatible with a wide range of browsers, both on desktop/laptop computers and handheld devices. The use of CGMSIM happens is a browser, and it doesn't require any app installation by its user.
+Nightscout is broadly compatible with a wide range of browsers, both on desktop/laptop computers and handheld devices. The use of CGMSIM happens is a browser, and it doesn't require any app installation by its user. So you can be the administrator of 10 Nightscout websites, host 10 instances of CGM sim on a single Linux computer, and distribute 10 simulated patients to your team for example. 

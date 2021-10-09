@@ -1,0 +1,3 @@
+I recommend using a [Raspberry Pi (RPi)](https://www.raspberrypi.com/products/) device, as it is the cheapest and most energy efficient solution. I currently host 10 simulated patients on a headless RPi3, without any monthly cost other than my broadband internet subscription. The price of a Raspberry Pi Zero is less than 10 EUR, and if you prefer a more robust solution a Raspberry Pi 4 starter kit including a charger, a preloaded SD card costs less than 100 EUR).
+
+I do not recommend running the simulation as the __root__ user. Instead, create a regular user with sudo privileges, in my case "lorenzo". There are plenty of tutorials for that.

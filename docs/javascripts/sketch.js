@@ -16,7 +16,7 @@ function draw() {
   var xoff = start;
   stroke(255);
   for (var x = 0; x < width; x++) {
-    stroke(255);
+    stroke(0,255,0);
     //var y = random(height);
     var y = noise(xoff) * height;
     vertex(x, y);

@@ -16,3 +16,7 @@ You are presented with the option to "Log a Treatment". Next to "Event Type", a 
 8. Submit the form. You will be prompted to review the details and accept.
 
 ![Meal](../img/meal.jpg)
+
+Now you should see the meal appear on the Nightscout curve. Placing your cursor on top of the meal marker, the details shoulsd appear.
+
+![Meal2](../img/meal2.jpg)

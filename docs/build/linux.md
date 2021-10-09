@@ -13,7 +13,9 @@ I recommend using a [Raspberry Pi (RPi)](https://www.raspberrypi.com/products/) 
 
 You don't need to connect your RPi to a monitor, a keyboard or a mouse. Your installation won't even have a desktop interface. As soon as your linux computer is connected to your home network with LAN or WLAN, you will need a separate computer in order to login into your Linux computer remotely through the network.
 
-Linux Ubuntu is completely free and comes with all the software you need. Here are the [full instructions for installing Ubuntu Server on a Raspberry 2, 3 or 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview). All the steps are described in detail, and it will also take you some time, be patient.
+Linux Ubuntu is completely free and comes with all the software you need. Here are the [full instructions for installing Ubuntu Server on a Raspberry 2, 3 or 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview). 
+
+All the steps are described above in detail, and it will also take you some time, grab a cup of :coffee: and be patient.
 
 1. Use the Raspberry Pi imager Tool to create the SD card with the onboard operating system
    

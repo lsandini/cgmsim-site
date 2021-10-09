@@ -15,7 +15,7 @@ There are quite a few good reasons to contact me:
 
 Found a bug in the [source code](https://github.com/lsandini/cgmsim)? Squish it ! It took me a while to learn to write code, and I am sure a pro would smile nervously reading my scripts.
 
-If you have suggestions or would like to contribute, feel free to contact me by email **<lsandini@gmail.com>**.
+If you have other suggestions or would like to contribute, feel free to contact me by email **<lsandini@gmail.com>**.
 
 Thank you !
 

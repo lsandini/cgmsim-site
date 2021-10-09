@@ -34,6 +34,6 @@ The sample file contains 2 more lines, that are commented out. They allow to use
 It's time to upload your first Sensor Glucose Values (SGVs) to your Nightscout website. This way CGMSIM will have a starting point for its first calculations. In your terminal, type :
 
 ```
-bash kickstart.sh
+node kickstart-simulation.js
 ```
 In a second or two, your Nightscout website should display 3 SGVs of 5 mmol/l or 80 mg/dl. Yay ! :smiley:

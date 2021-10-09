@@ -9,8 +9,7 @@ Every five minutes, as the next SGV value is computed, the latest perlin noise v
 
 <style>
 h1 {text-align: left;}
-p {text-align: center;}
-
+script {text-align: center;}
 <script language="javascript" type="text/javascript" src="/javascripts/sketch.js"></script>
 </style>
 

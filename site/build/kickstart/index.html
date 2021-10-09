@@ -159,12 +159,35 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#starting-the-simulation" class="nav-link">Starting the Simulation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#scheduling-tasks" class="nav-link">Scheduling tasks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="starting-the-simulation">Starting the Simulation<a class="headerlink" href="#starting-the-simulation" title="Permanent link">⌁</a></h1>
+<h2 id="scheduling-tasks">Scheduling tasks<a class="headerlink" href="#scheduling-tasks" title="Permanent link">⌁</a></h2>
+<p>In Linux, a service called cron will execute the commands that you have specified in your settings. I added a <a href="https://github.com/lsandini/cgmsim/blob/main/crontab.txt"><strong>crontab.txt</strong></a> sample file to thegithub repository and to your install folder for reference. It should look like this:</p>
+<pre><code>SHELL=/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+
+0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
+</code></pre>
+<p>For this, in your Linux terminal, type crontab -e (and select nano or vi as your favourite text editor). Look at the sample file, and copy the lines in your own crontab.</p>
+<p>the first line reinitialises the perlin noise generator every 6 hours.</p>
+<p>the second line launches the downloading process of previous SGV data etc, every 5 minutes</p>
+<p>the third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.</p>
+<p>2 more lines are commented out, but allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc...</p></div>
             </div>
         </div>
 

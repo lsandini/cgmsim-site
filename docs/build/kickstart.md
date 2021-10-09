@@ -12,12 +12,27 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 */5 * * * * cd /home/MYUSERNAME/cgmsim && /bin/bash upload-cgmsim.sh
 ```
 
-For this, in your Linux terminal, type crontab -e (and select nano or vi as your favourite text editor). Look at the sample file, and copy the lines in your own crontab.
+For this, in your Linux terminal, type:
+```
+crontab -e 
+```
+Select nano (or vi) as your favourite text editor. Look at the sample file, and copy the lines in your own crontab.
 
-the first line reinitialises the perlin noise generator every 6 hours.
+**Replace MYUSERNAME with your Linux username !**
 
-the second line launches the downloading process of previous SGV data etc, every 5 minutes
+The first line reinitialises the perlin noise generator every 6 hours.
 
-the third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.
+The second line launches the downloading process of previous SGV data, treatments, etc, every 5 minutes.
 
-2 more lines are commented out, but allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc...
+The third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.
+
+The sample file contains 2 more lines, that are commented out. They allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc... This requires other modifications to the code not presented here. I'll add details later on request.
+
+## Kickstart the simulation !
+
+It's time to upload your first Sensor Glucose Values (SGVs) to your Nightscout website. This way CGMSIM will have a starting point for its first calculations. In your terminal, type :
+
+```
+bash kickstart.sh
+```
+In a second or two, your Nightscout website should display 3 SGVs of 5 mmol/l or 80 mg/dl. Yay ! :smiley:

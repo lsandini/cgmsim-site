@@ -1,8 +1,3 @@
-<head>
-  <script language="javascript" type="text/javascript" src="/javascripts/p5.js"></script>
-  <script language="javascript" type="text/javascript" src="/javascripts/sketch.js"></script>
-</head>
-
 Random effects
 ==============
 

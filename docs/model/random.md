@@ -1,6 +1,6 @@
 Random effects
 ==============
-<br>
+
 ## Perlin noise
 
 Since random number generators produce very jumpy values with various distributions between defined limits, I preferred trying a smoother, more "organic" noise function curve. 

@@ -31,8 +31,8 @@ nav:
     - Long-acting insulin Agonists: 'model/la-agonists.md'
     - Carb absorption from the gut: 'model/food.md'
     - Endogenous Glucose production: 'model/liver.md'
-    - Random variation: 'model/random.md'
     - Physical activity: 'model/physical.md'
+    - Random variation: 'model/random.md'
 - Installation: 
     - Overview: 'build/overview.md'
     - Nightscout: 'build/nightscout.md'

@@ -37,3 +37,7 @@ It's time to upload your first Sensor Glucose Values (SGVs) to your Nightscout w
 node kickstart-simulation.js
 ```
 In a second or two, your Nightscout website should display 3 SGVs of 5 mmol/l or 80 mg/dl. Yay ! :smiley:
+
+Now wait for a new value. It might take up to 5-10 minutes for the next value to appear, but without intervention from you, the glucose level will climb slowly due to the endogenous glucose production (EGP), until it reaches 22.2 mmol/l or 400 mg/dl. (A low limit of 2.2 mmol/l or 40 mg/dl has also set, to avoid interruptions in the Nightscout SGV curve).
+
+You are now in charge of your virtual T1D patient, who needs food and insulin to survive. Next we'll see how to declare meals and insulins in nightscout, and how to review the treatment results.

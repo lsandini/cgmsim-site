@@ -2,7 +2,7 @@ site_name: CGMSIM
 theme: 
     name: flatly
     highlightjs: true
-    favicon: images/favicon.png
+    logo: 'logo.png'
 site_url: https://lsandini.github.io/cgmsim-site
 extra_javascript:
   - javascripts/config.js

@@ -173,7 +173,42 @@
 <p>The "environment" means the details of the simulated subject, and the Nightscout website URL and API secret. They are centralized and stored in the simulator's folder, in a file called .env. This file's contents are later called from various scripts. Creating this file is simplified by launching this interactive this script:</p>
 <pre><code>bash install_env.sh
 </code></pre>
-<p>To verify that the .env file has been created correctly, just type cat .env in your terminal. Finally, and since the perlin noise generator runs automatically but only every few hours, it will be launched for the first time at the end of this script.</p></div>
+<p>You will be presented with the 9 following questions</p>
+<ol>
+<li>
+<p>What is the weight in kg ?</p>
+</li>
+<li>
+<p>What is the longest absorption time for slowly absorbing meals (in minutes) ?</p>
+</li>
+<li>
+<p>What is the peak action time (e.g. 55 min for Fiasp, 75 min for Novorapid) ?</p>
+</li>
+<li>
+<p>What is the total duration of insulin action or DIA (e.g. 5 hours for Fiasp or Novorapid) ?</p>
+</li>
+<li>
+<p>What is your typical ISF ? </p>
+</li>
+<li>
+<p>What is your typical CR (carb ratio, in g/U)?</p>
+</li>
+<li>
+<p>What is your the MYNIGHTSCOUT part of your Nightscout site URL? (i.e. https://MYNIGHTSCOUT.herokuapp.com)?</p>
+</li>
+<li>
+<p>What is your Nightscout API_SECRET (i.e. myplaintextsecret; It should be at least 12 characters long)?</p>
+</li>
+</ol>
+<p>When all questions are answered, a (hidden) file named <strong>.env</strong> is created.</p>
+<p>If necessary, to verify that the .env file has been created correctly, type the following command and the contents of the file will be displayed.</p>
+<pre><code>cat .env 
+</code></pre>
+<p>If you have made errors when answering the 9 questions, you can edit the file by typing:</p>
+<pre><code>nano .env
+</code></pre>
+<p>After editing the .env file, close nano by pressing CTRL+X, and when prompted to save the modifications, press Y.</p>
+<p>Finally, and since the perlin noise generator runs automatically but only once a day, it will be launched for the first time at the end of this script. Now the environment is set, and we still need to <a href="../kickstart/">kickstart the simulation, and set timers to make sure all the scripts are run every 5 minutes</a>.</p></div>
             </div>
         </div>
 

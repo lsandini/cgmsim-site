@@ -1,5 +1,4 @@
-Random effects
-==============
+# Random effects
 
 ## Perlin noise
 

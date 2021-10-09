@@ -14,8 +14,8 @@ Every five minutes, as the next SGV value is computed, the latest perlin noise v
     <meta charset="utf-8">
     <title>Map</title>
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="/javascripts/p5.js"></script>
-    <script type="text/javascript" src="/javascripts/sketch.js"></script>
+    <script type="text/javascript" src="../javascripts/p5.js"></script>
+    <script type="text/javascript" src="../javascripts/sketch.js"></script>
 </head>
 <body>
  BODY

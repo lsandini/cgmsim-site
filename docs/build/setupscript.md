@@ -30,6 +30,8 @@ If necessary, to verify that the .env file has been created correctly, type the 
 ```
 cat .env 
 ```
+## Editing the .env file
+
 If you have made errors when answering the 9 questions, you can edit the file by typing:
 
 ```

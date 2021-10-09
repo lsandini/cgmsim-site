@@ -7,12 +7,11 @@ Since random number generators produce very jumpy values with various distributi
 
 Every five minutes, as the next SGV value is computed, the latest perlin noise value in the last 5 minutes is taken into account. For now, the best settings are amplitude 0.3, octaves 1 and persistance 0.3. The values are multiplied by 10, and then again by 18 to get mg/dl, then added to the SGV jst before upload.
 
-<style>
-h1 {text-align: left;}
-script {text-align: center;}
-<script language="javascript" type="text/javascript" src="/javascripts/sketch.js"></script>
-</style>
 
+
+<div id="sketch-holder"></div>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+<script language="javascript" type="text/javascript" src="/javascripts/sketch.js"></script>
 
 (Testing emojis since I am happy   :smile: )
 

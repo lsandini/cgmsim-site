@@ -18,6 +18,8 @@ markdown_extensions:
         permalink: ⌁
     - pymdownx.arithmatex:
         generic: true
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_png
 nav:
 
 - Home: 'index.md'

@@ -40,8 +40,8 @@ nav:
     - Kickstart: 'build/kickstart.md'
 - Using the simulator:
     - Overview: 'operate/overview.md'
-    - Declaring meals: 'operate/meals.md'
-    - Declaring insulin doses: 'operate/insulin.md'
+    - Declaring meals and mealtime insulin: 'operate/meals.md'
+    - Declaring long-acting insulins: 'operate/insulin.md'
     - View reports: 'operate/reports.md'
 - Contact me: 'contact.md'
 

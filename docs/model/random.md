@@ -18,7 +18,7 @@ Every five minutes, as the next SGV value is computed, the latest perlin noise v
     <script type="text/javascript" src="../javascripts/sketch.js"></script>
 </head>
 <body>
- BODY
+ BODY2
     <canvas>sketch.js</canvas>
 </body>
 </html>

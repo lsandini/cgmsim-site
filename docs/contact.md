@@ -20,8 +20,6 @@ Thank you !
     
     During the initial testing phase, 10 Nightscout websites on hobby dynos were run simultaneously for my courageous medical students, colleagues and nurses who tested the simulation.
 
-
-
 <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="business" value="XHKH4ATJDS5AG" />
 <input type="hidden" name="no_recurring" value="1" />
@@ -31,4 +29,6 @@ Thank you !
 <img alt="" border="0" src="https://www.paypal.com/en_FI/i/scr/pixel.gif" width="1" height="1" />
 </form>
 
-Thank you for supporting me, and alternatively consider making a donation to [Tidepool](https://tidepool.salsalabs.org/tidepool-donate/index.html), the [Nightscout Foundation](https://www.nightscoutfoundation.org/donate), the [JDRF](https://www2.jdrf.org/site/Donation2?2376.donation=form1&df_id=2376&s_src=jdrf.org&s_subsrc=siteMenuButton) or any charitable organisation of your choice !
+Click the Donate button above to support my work, if you feel it was worth the effort. All donations will be used **strictly for Nightscout hosting fees**. 
+
+Alternatively consider making a donation to [Tidepool](https://tidepool.salsalabs.org/tidepool-donate/index.html), the [Nightscout Foundation](https://www.nightscoutfoundation.org/donate), the [JDRF](https://www2.jdrf.org/site/Donation2?2376.donation=form1&df_id=2376&s_src=jdrf.org&s_subsrc=siteMenuButton) or any charitable organisation of your choice !

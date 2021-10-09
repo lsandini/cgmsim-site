@@ -3,11 +3,11 @@ var inc = 0.01;
 var start = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(300, 300);
 }
 
 function draw() {
-  background(51);
+  background(0);
   stroke(255);
   noFill();
 

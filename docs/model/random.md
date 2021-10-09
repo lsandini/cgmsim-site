@@ -12,6 +12,7 @@ Using a [one-dimensional perlin-noise generator](https://github.com/andrewrk/nod
 The mean variation is 0, which means that this background noise will cause temporary increases and decreases in BG, without major interference on the deflections caused by insulin, food or EGP.
 
 <iframe style="width: 600px; height: 200px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/lsandini/embed/F1CtK8SNk"></iframe>
+<br>
 
 ## Astronomy
 

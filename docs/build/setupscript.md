@@ -6,7 +6,7 @@ The "environment" means the details of the simulated subject, and the Nightscout
 bash install_env.sh
 ```
 
-You will be presented with the 9 following questions
+You will be presented with the 9 following questions:
 
 1. What is the weight in kg ?
    
@@ -20,7 +20,7 @@ You will be presented with the 9 following questions
    
 6.  What is your typical CR (carb ratio, in g/U)?
    
-7.  What is your the MYNIGHTSCOUT part of your Nightscout site URL? (i.e. https://MYNIGHTSCOUT.herokuapp.com)?
+7.  What is your "MYNIGHTSCOUT" part of your Nightscout site URL? (i.e. https://MYNIGHTSCOUT.herokuapp.com)?
    
 8.  What is your Nightscout API_SECRET (i.e. myplaintextsecret; It should be at least 12 characters long)?
 

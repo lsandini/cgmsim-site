@@ -19,7 +19,7 @@ markdown_extensions:
     - pymdownx.arithmatex:
         generic: true
     - pymdownx.emoji:
-        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+        emoji_generator: !!python/name:pymdownx.emoji.to_alt
 nav:
 
 - Home: 'index.md'

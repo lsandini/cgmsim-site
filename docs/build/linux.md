@@ -11,16 +11,20 @@ Two major options are available.
 
 I recommend using a [Raspberry Pi (RPi)](https://www.raspberrypi.com/products/) micro-computer, as it is the cheapest and most energy efficient solution. I currently host 10 simulated patients on a headless RPi3, without any monthly cost other than my broadband internet subscription. The price of a Raspberry Pi Zero is less than 10 EUR, and if you prefer a more robust solution a Raspberry Pi 4 starter kit including a charger and a preloaded SD card, it costs less than 100 euros.
 
-Linux Ubuntu is completely free and comes with all the software you need. Here are the [instructions for installing Ubuntu Server on a Raspberry 2, 3 or 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview). All the steps are described here in detail.
+You don't need to connect your RPi to a monitor, a keyboard or a mouse. Your installation won't even have a desktop interface. As soon as your linux computer is connected to your home network with LAN or WLAN, you will need a separate computer in order to login into your Linux computer remotely through the network.
+
+Linux Ubuntu is completely free and comes with all the software you need. Here are the [instructions for installing Ubuntu Server on a Raspberry 2, 3 or 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview). All the steps are described in detail.
 
 1. Use the Raspberry Pi imager Tool to create the SD card with the onboard operating system
    
 2. Edit the network-config file so that your Rpi finds your WLAN
    
-3. Boot your Linux machine
+3. Boot your Linux machine, (wait 3-4 minutes!)
    
-4. Locate it on your network
+4. Locate it on your network, determine its IP address
+   
+5. Your username is **ubuntu** and password **ubuntu**. Connect to your Rpi with a SSH client like [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).  **You will be prompted to change your password on first login attempt**.
+   
+6. [Create a regular new user with sudo privileges.](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-20-04-quickstart) and reboot.
 
-You don't need to connect your RPi to a monitor, a keyboard or a mouse. Your installation won't even have a desktop interface. As soon as your linux computer is connected to your home network with LAN or WLAN, you will need a separate computer in order to login into your Linux computer remotely through the network.
-
-I do not recommend running the simulation as the __root__ user. [Instead, create a regular user with sudo privileges.](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-20-04-quickstart)
+When you finally login as the new user, you are ready to download and deploy CGMSIM.

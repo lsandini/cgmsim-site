@@ -10,4 +10,4 @@ Every five minutes, as the next SGV value is computed, the latest perlin noise v
 (Testing smileys :smile: )
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
-  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="/javascritps/sketch.js"></script>

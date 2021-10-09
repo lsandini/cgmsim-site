@@ -37,3 +37,5 @@ sudo bash install_dependencies.sh
 ```
 
 Your password will be required. You might see warnings during the installation and it might take a little while. Disregard the warnings and just wait for the process to complete.
+
+Now we can move on to [executing the interactive setup script](setupscript.md), that will set the simulated T1D person's physical properties and link this "virtual patient" to their own Nightscout website. 

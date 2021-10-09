@@ -18,7 +18,7 @@ crontab -e
 ```
 Select nano (or vi) as your favourite text editor. Look at the sample file, and copy the lines in your own crontab.
 
-**Replace MYUSERNAME with your Linux username !**
+**Replace MYUSERNAME with your own Linux username !**
 
 1. The first line reinitialises the perlin noise generator every 6 hours.
    

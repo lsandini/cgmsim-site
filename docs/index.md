@@ -51,3 +51,7 @@ Many scenario-based simulators have been written in the past, like [AIDA](http:/
     Every simulated patient can be defined in terms of weight, insulin sensitivity, amplitude of EGP variability.
 
 This website will describe step by step how to install and kickstart the simulation as an administrator, and how to use it as an end-user.
+
+## where is the source code ?
+
+**The source code and more technical details on how various scripts are excecuted and interact with each other can be found in the [CGMSIM projet's repository](https://github.com/lsandini/cgmsim)**

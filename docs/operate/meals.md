@@ -23,6 +23,7 @@ Now you should see the meal appear on the Nightscout curve. Placing your cursor 
 
 ![Meal2](../img/meal2.jpg)
 <br>
+<br>
 
 ## Declaring food and insulin
 

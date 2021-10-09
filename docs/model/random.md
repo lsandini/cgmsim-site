@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P5.js Example</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+        <script>
+            function setup(){
+                var canvas = createCanvas(400, 400);
+                canvas.parent('canvasForHTML');
+            }
+            
+            function draw(){
+                background(127);
+            }
+        </script>
+    </head>
+    <body>
+    <h1>Canvas for visualization</h1>
+    <div id="canvasForHTML"></div>
+    <p>Move your mouse around to see circles.</h1>
+    </body>
+</html>
+
 Random effects
 ==============
 
@@ -8,17 +31,3 @@ Since random number generators produce very jumpy values with various distributi
 Every five minutes, as the next SGV value is computed, the latest perlin noise value in the last 5 minutes is taken into account. For now, the best settings are amplitude 0.3, octaves 1 and persistance 0.3. The values are multiplied by 10, and then again by 18 to get mg/dl, then added to the SGV jst before upload.
 
 :smile:
-
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Map</title>
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="../javascripts/p5.js"></script>
-    <script type="text/javascript" src="../javascripts/sketch.js"></script>
-</head>
-<body>
- BODY2
-    <canvas>sketch.js</canvas>
-</body>
-</html>

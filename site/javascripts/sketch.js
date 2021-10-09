@@ -3,7 +3,7 @@ var inc = 0.01;
 var start = 0;
 
 function setup() {
-  createCanvas(400, 200);
+  createCanvas(600, 200);
   canvas.parent('sketch-holder')
 }
 

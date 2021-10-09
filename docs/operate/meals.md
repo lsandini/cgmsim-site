@@ -32,3 +32,6 @@ To declare mealtime insulin at the same time as carbs, the Event Type should be 
 You will have to specify the "Carb Time", which is the time of the meal in relation to the insulin injection. So if you inject first, and eat 20 minutes later, Carb Time should be "20 min later". When submitting the entry, the time of the entry is the time of the insulin injection. 
 
 ![Meal3](../img/meal3.jpg)
+
+Let's move on to [declaring long acting insulin agonist injections (detemir and glargine).](insulin.md)
+

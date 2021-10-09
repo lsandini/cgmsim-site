@@ -21,3 +21,12 @@ Thank you !
     During the initial testing phase, 10 Nightscout websites on hobby dynos were run simultaneously for my courageous medical students, colleagues and nurses who tested the simulation.
 
 If you want to donate to the project or pay me a coffee
+
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="business" value="XHKH4ATJDS5AG" />
+<input type="hidden" name="no_recurring" value="1" />
+<input type="hidden" name="item_name" value="Type 1 Diabetes Simulator" />
+<input type="hidden" name="currency_code" value="EUR" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_FI/i/scr/pixel.gif" width="1" height="1" />
+</form>

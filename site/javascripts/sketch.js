@@ -3,7 +3,7 @@ var inc = 0.01;
 var start = 0;
 
 function setup() {
-  createCanvas(200, 400);
+  createCanvas(400, 400);
 }
 
 function draw() {

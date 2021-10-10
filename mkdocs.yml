@@ -21,6 +21,9 @@ markdown_extensions:
         generic: true
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_alt
+        options:
+            custom_icons:
+                - overrides/.icons
 nav:
 - Home: 'index.md'
 - Mathematical Model: 

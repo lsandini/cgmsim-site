@@ -1,7 +1,5 @@
 # Contact me ! 
 
-![pigscout_white](img/pigscout_white144.png)
-
 There are quite a few good reasons to contact me:
 
 !!! warning "Development ideas"

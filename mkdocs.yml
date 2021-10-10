@@ -12,6 +12,10 @@ extra_javascript:
 extra_css:
     - stylesheets/admonitions.css
     - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/kinkkuporsas
 markdown_extensions:
     - admonition
     - attr_list

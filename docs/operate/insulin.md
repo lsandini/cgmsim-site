@@ -10,6 +10,7 @@ In the "notes" field, please write down the selected insulin first, and then the
 
 ![Long](../img/longacting1.jpg)
 
+<br>
 The announced injection will appear as an orange dot on the SGV curve:
 
 ![Long2](../img/longacting2.jpg)

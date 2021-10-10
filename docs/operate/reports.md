@@ -18,4 +18,4 @@ Select an item from the various options, such as "Day to Day" or "Distribution",
 <br>
 That's it. You can close to report by clicking on the **X** button on the top right corner of the window.
 
-Next take a moment to [contact me](../contact.md) if your have questions or suggestions, or if you want to contribute in some way, thank you !  :smile:
+Next take a moment to [contact me](../contact.md) if you have questions or suggestions, or if you want to contribute in some way, thank you !  :smile:

@@ -10,6 +10,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 0 */6 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash perlin.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim && /bin/bash get-all.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim && /bin/bash upload-cgmsim.sh
+#30 23 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash surprise.sh
 ```
 
 For this, in your Linux terminal, type:
@@ -18,13 +19,17 @@ crontab -e
 ```
 Select nano (or vi) as your favourite text editor. Look at the sample file, and copy the lines in your own crontab.
 
-**Replace MYUSERNAME with your own Linux username !**
+**Replace "MYUSERNAME" with your own Linux username !**
+
+**Replace "cgmsim" with your own CGMSIM installation folder name !**
 
 1. The first line reinitialises the perlin noise generator every 6 hours.
    
 2. The second line launches the downloading process of previous SGV data, treatments, etc, every 5 minutes.
    
 3. The third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.
+   
+4. The fourth line is commented out with a **#** sign by default. If you remove the **#** sign, CGMSIM will compute at 11:30PM the total amount of carbs eaten during the day, and issue a meal completing the 200g grams target for the 24h period, without mealtime insulin !
 
 The sample file contains 2 more lines, that are commented out. They allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc... This requires other modifications to the code not presented here. I'll add details later on request.
 

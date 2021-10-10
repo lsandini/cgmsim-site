@@ -17,6 +17,9 @@ When logging the injection in Careportal, select "Announcement" in the drop-down
         - Glargine 18 Units  
 
 <br>
+
+### Example
+
 ![Long](../img/longacting1.jpg)
 
 <br>

@@ -18,7 +18,7 @@ When logging the injection in Careportal, select "Announcement" in the drop-down
 
 <br>
 
-### Example
+## Example
 
 ![Long](../img/longacting1.jpg)
 

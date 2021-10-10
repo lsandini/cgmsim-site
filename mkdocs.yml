@@ -16,6 +16,8 @@ extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/kinkkuporsas
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<lsandini@gmail.com>
 markdown_extensions:
     - admonition
     - attr_list

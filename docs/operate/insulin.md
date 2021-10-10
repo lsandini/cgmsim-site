@@ -1,6 +1,7 @@
 # Long acting insulin agonists
 
 As there is no dedicated feature in Nightscout for declaring long-acting insulin injections, you will have to do it as an "Announcement" in Careportal.
+<br>
 
 ## Announcements
 

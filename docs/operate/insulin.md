@@ -11,10 +11,10 @@ When logging the injection in Careportal, select "Announcement" in the drop-down
 
     Valid entries are for example:  
 
-        - detemir 12  
-        - Detemir 14 U  
-        - glargine 22  
-        - Glargine 18 Units  
+    - detemir 12  
+    - Detemir 14 U  
+    - glargine 22  
+    - Glargine 18 Units  
 
 ![Long](../img/longacting1.jpg)
 

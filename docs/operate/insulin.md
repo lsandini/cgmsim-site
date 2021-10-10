@@ -6,14 +6,14 @@ As there is no dedicated feature in Nightscout for declaring long-acting insulin
 
 When logging the injection in Careportal, select "Announcement" in the drop-down list. Again, check "Sensor", under Glucose Reading, so that the entry will be superimposed with the SGV curve. **The syntax for the entry is important, as CGMSIM is not very error-tolerant.**
 
-!!! warning "Mind teh Syntax !"
+!!! warning "Mind the spelling and syntax !"
     In the "notes" field, please write down the selected insulin first, and then the number of units, separated by a single space. No need to add anything after (e.g. U or units...):
 
     Valid entries are for example:
-    - detemir 12
-    - Detemir 14 U
-    - glargine 22
-    - Glargine 18 Units
+        - detemir 12
+        - Detemir 14 U
+        - glargine 22
+        - Glargine 18 Units
 
 ![Long](../img/longacting1.jpg)
 

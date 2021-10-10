@@ -10,4 +10,10 @@ On the top of the Menu list, select Reports
 
 ## Time in Range
 
-picture here
+Select an item from the various options, such as "Day to Day" or "Distribution", and the preiod for which you want to generate a report. The press the SHOW button.
+
+![Reports2](../img/report1.jpg)
+
+That's it. You can close to reports by clicking on the **x** ison on the top right corner of the window.
+
+Next take a moment to [contact me](../contact.md) if your have questions or suggestion, or if you want to contribute in some way, thank you !  :smile:

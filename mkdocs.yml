@@ -1,6 +1,6 @@
 site_name: CGMSIM
 theme: 
-    name: flatly
+    name: materials
     highlightjs: true
     logo: 'logo.png'
 site_url: https://lsandini.github.io/cgmsim-site

@@ -9,8 +9,8 @@ When logging the injection in Careportal, select "Announcement" in the drop-down
 !!! warning "Mind the spelling and syntax !"
     In the "notes" field, please write down the selected insulin first, and then the number of units, separated by a single space. No need to add anything after (e.g. U or units...):
 
-    Valid entries are for example:
-    
+    Valid entries are for example:  
+
         - detemir 12  
         - Detemir 14 U  
         - glargine 22  

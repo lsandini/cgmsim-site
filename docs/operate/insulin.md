@@ -27,3 +27,6 @@ The announced injection will appear as an orange dot on the SGV curve:
 
 ![Long2](../img/longacting2.jpg)
 
+<br>
+After a while you'll want to look at your treatment results. Nightscout provides a [very convenient and flexible tool for that](reports.md).
+

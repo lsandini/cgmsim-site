@@ -10,5 +10,3 @@ If physical activity continues, the PGU remains higher also in the post-exercise
 Quantifying activity requires motion sensors, heart rate sensors, etc... There is work in progress not yet described here, mainly involving smart watches counting steps and heart rate. 
 
 **Modeling physical activity is not included in this currentt version of the simulation**.
-
-![Animation](../img/running.gif)

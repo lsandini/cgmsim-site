@@ -2,7 +2,7 @@
 
 ## Scheduling tasks
 
-In Linux, a service called cron will execute the commands that you have specified in your settings. I added a [**crontab.txt**](https://github.com/lsandini/cgmsim/blob/main/crontab.txt) sample file to thegithub repository and to your install folder for reference. It should look like this:
+In Linux, a service called cron will execute the commands that you have specified in your settings. I added a [**crontab.txt**](https://github.com/lsandini/cgmsim/blob/main/crontab.txt) sample file to the Github repository and to your install folder for reference. It should look like this:
 ```
 SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
@@ -13,15 +13,17 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 #30 23 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash surprise.sh
 ```
 
-For this, in your Linux terminal, type:
-```
-crontab -e 
-```
-Select nano (or vi) as your favourite text editor. Look at the sample file, and copy the lines in your own crontab.
+You will need to edit this lines to match your personal settings, then copy-paste the edited lines in your own crontab. I suggest you first copy-pase these lines into notepad or the text editor of your choice in Windows or MacOS. 
 
 **Replace "MYUSERNAME" with your own Linux username !**
 
 **Replace "cgmsim" with your own CGMSIM installation folder name !**
+
+Then, in your Linux terminal, type:
+```
+crontab -e 
+```
+Select nano (or vi) as your favourite text editor. You can now delete the whole content of the crontab file, then copy-paste your own modified lines from your windows/MacOS text editor into your crontab. Close crontab by pressing CRTL + X, when prompted to save the new file, enter Y.
 
 1. The first line reinitialises the perlin noise generator every 6 hours.
    
@@ -32,6 +34,10 @@ Select nano (or vi) as your favourite text editor. Look at the sample file, and 
 4. The fourth line is commented out with a **#** sign by default. If you remove the **#** sign, CGMSIM will compute at 11:30PM the total amount of carbs eaten during the day, and issue a meal completing the 200g grams target for the 24h period, without mealtime insulin !
 
 The sample file contains 2 more lines, that are commented out. They allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc... This requires other modifications to the code not presented here. I'll add details later on request.
+
+!!! warning "Hosting many simulators on one Linux machine ?"
+    In case your Raspberry Pi is hosting many instances of the simulator, new lines are added after the previous ones, since the crontab will orchestrate all the simulators in one file.
+
 
 <br>
 ## Kickstart the simulation !

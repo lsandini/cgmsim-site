@@ -170,8 +170,8 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="modeling-the-absorption-of-carbs-from-the-gut">Modeling the absorption of Carbs from the gut<a class="headerlink" href="#modeling-the-absorption-of-carbs-from-the-gut" title="Permanent link">⌁</a></h1>
-<p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book <a href="https://www.amazon.com/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147">Think Like a Pancreas</a> by Gary Scheiner, and used in <a href="https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf">Perceptus' Glucodyn</a> simulator will do for now.  .</p>
-<p><img align="center" alt="Carb Absorption Rate" src="../../img/CAR.jpg" /></p>
+<p>There are many complicated and more or less precise published models of carb absorption, but for the purpose of this simulation, a simple bilinear model like the one found in the book <a href="https://www.amazon.com/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147">Think Like a Pancreas</a> by Gary Scheiner, and used in <a href="https://github.com/Perceptus/GlucoDyn/blob/master/basic_math.pdf">Perceptus' Glucodyn</a> simulator will do for now.</p>
+<p><img alt="Carb Absorption Rate" src="../../img/CAR.jpg" /></p>
 <p>So if the total absorption time (AT) is 4 hours, the absorption rate increases linearly until it reaches its peak, then decreases linearly to the end. The surface area of the triangle represents the amount of ingested carbs (the "Dose"). The peak absorption rate is "h". This can be represented with the equivalent following equations:</p>
 <div class="arithmatex">\[
 Dose = {AT \times h \over 2}
@@ -198,7 +198,7 @@ CAR(t) = {2 \times h} \times {(1 - t) \over AT } \text{  } =&gt; \text{  } { 4 \
 <div class="admonition danger">
 <p class="admonition-title">Mixed meals and Snacks</p>
 <p>To make the absorption of carbs more realistic, the first 40 g of each meal will always be <strong>fast absorbing</strong>.</p>
-<p>For bigger meals, the excess carbs over 40g are divided in fast and slow absorbing parts. The ratio of fast absorbing carbs is <strong>randomly computed to be 10-40 \% of the carb excess</strong>. So for a meal declared as 100g, the first 40 are fast carbs. The remaining 60g will be divided randomly in slow and fast parts. You'll find out sooner or later.</p>
+<p>For bigger meals, the excess carbs over 40g are divided in fast and slow absorbing parts. The ratio of fast absorbing carbs is <strong>randomly computed to be 10-40 % of the carb excess</strong>. So for a meal declared as 100g, the first 40 are fast carbs. The remaining 60g will be divided randomly in slow and fast parts. You'll find out sooner or later.</p>
 </div>
 <p>In the current version of the simulator, fast carbs will be absorbed according to the bilinear model mentioned above, <strong>over a period of time of one hour</strong>. The remaining (slow) carbs are absorbed in a similar bilinear fashion, but over a period of 4 hours. This can be set in the interactive setup script during installation.</p></div>
             </div>

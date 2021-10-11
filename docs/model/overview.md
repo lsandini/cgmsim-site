@@ -34,7 +34,9 @@ The BGI or **Blood Glucose Impact** is the absolute change in BG concentration d
 
 The cumulative BGI of all these factors combined is called the "delta", or change from the previous BG value. Is is calculated for 5 minute intervals, then added (or substracted) from the previous sensor glucose value. **It does not describe how fast the change is happening**. 
 
-The Blood Glucose Impact of 1 unit of mealtime insulin is achieved at the end of the duration os action of insulin (DIA), and the BGI of 50g of carbs is achieved as the whole meal is absorbed, sometimes only 6 hours after the meal is consumed. Describing the intensity of the effect of insulin or carbs along time is called modeling.
+The Blood Glucose Impact of 1 unit of mealtime insulin is achieved at the end of the duration os action of insulin (DIA), and the BGI of 50g of carbs is achieved as the whole meal is absorbed, sometimes only 6 hours after the meal is consumed. 
+
+Describing mathematically the intensity of the effect of insulin or carbs at any instant in time is called "modeling".
 
 !!! danger "Models in detail"
     Next we'll see in detail how various insulins, food, endogenous glucose production and random effect can be modeled mathematically.

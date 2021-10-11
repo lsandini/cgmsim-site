@@ -6,7 +6,7 @@ Nightscout requires a database to run, where all the food and insulin "treatment
 
 Please go over to [Nightscout's installation guide for new users](https://nightscout.github.io/nightscout/new_user). The whole installation is well explained, step by step.
 
-Make sure to follow all the steps and perform this installation first. It will take you some time, probably about 60 minutes. Write down the URL of your Nightscout website and the password or APISECRET (for example "MYAPISECRET1" as in the following example).
+Make sure to follow all the steps and perform this installation first. It will take you some time, probably about 60 minutes. Write down the URL of your Nightscout website and the password or API secret (or password, for example "MYAPISECRET1" as in the following example).
 
 Running Nightscout on Heroku on "free dynos" is free of charge. However, if the amount of work done on the server exceeds a certain limit, your "free dynos" will be exhausted and your site will stop working until the following month. Upgrading your account to "hobby dynos" (7 USD or 6 EUR / month) means your site will run without interruptions.
 

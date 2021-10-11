@@ -31,12 +31,12 @@ Select nano (or vi) as your favourite text editor. You can now delete the whole 
    
 3. The third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.
    
-4. The fourth line is commented out with a **#** sign by default. If you remove the **#** sign, CGMSIM will compute at 11:30PM the total amount of carbs eaten during the day, and issue a meal completing the 200g grams target for the 24h period, without mealtime insulin !
+4. The fourth line is commented out with a **#** sign by default. If you remove the **#** sign, CGMSIM will compute at 11:30 PM the total amount of carbs eaten during the day, and issue a meal completing the 200g grams target for the 24h period, without mealtime insulin.
 
 The sample file contains 2 more lines, that are commented out. They allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc... This requires other modifications to the code not presented here. I'll add details later on request.
 
 !!! warning "Hosting many simulators on one Linux machine ?"
-    In case your Raspberry Pi is hosting many instances of the simulator, new lines are added after the previous ones, since the crontab will orchestrate all the simulators in one file.
+    In case your Raspberry Pi is hosting many instances of the simulator, a set of 4 lines are added after the previous ones, since the crontab will orchestrate all the simulators in one file.
 
 
 <br>
@@ -49,6 +49,6 @@ node kickstart-simulation.js
 ```
 In a second or two, your Nightscout website should display 3 SGVs of 5 mmol/l or 80 mg/dl. Yay ! :smiley:
 
-Now wait for a new value. It might take up to 5-10 minutes for the next value to appear, but without intervention from you, the glucose level will climb slowly due to the endogenous glucose production (EGP), until it reaches 22.2 mmol/l or 400 mg/dl. (A low limit of 2.2 mmol/l or 40 mg/dl has also set, to avoid interruptions in the Nightscout SGV curve).
+It might take up to 5-10 minutes for the next value to appear, but without intervention from you, the glucose level will climb slowly due to the endogenous glucose production (EGP), until it reaches 22.2 mmol/l or 400 mg/dl. (A low limit of 2.2 mmol/l or 40 mg/dl has also set, to avoid interruptions in the Nightscout SGV curve).
 
 You are now in charge of your virtual T1D patient, who needs food and insulin to survive. [Next, we'll see how to declare meals and insulins in Nightscout, and how to review the treatment results](../operate/overview.md).

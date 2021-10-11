@@ -40,4 +40,6 @@ nano .env
 
 After editing the .env file, close nano by pressing CTRL+X, and when prompted to save the modifications, press Y.
 
-Finally, and since the perlin noise generator runs automatically but only once a day, it will be launched for the first time at the end of this script. Now the environment is set, and we still need to [kickstart the simulation, and set timers to make sure all the scripts are run every 5 minutes](kickstart.md).
+Finally, and since the perlin noise generator runs automatically but only once a day, it will be launched for the first time at the end of this script. 
+
+Now the environment is set, we still need to [kickstart the simulation, and set timers to make sure all the scripts are run every 5 minutes](kickstart.md).

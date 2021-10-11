@@ -179,7 +179,7 @@
 
 <h1 id="starting-the-simulation">Starting the Simulation<a class="headerlink" href="#starting-the-simulation" title="Permanent link">⌁</a></h1>
 <h2 id="scheduling-tasks">Scheduling tasks<a class="headerlink" href="#scheduling-tasks" title="Permanent link">⌁</a></h2>
-<p>In Linux, a service called cron will execute the commands that you have specified in your settings. I added a <a href="https://github.com/lsandini/cgmsim/blob/main/crontab.txt"><strong>crontab.txt</strong></a> sample file to thegithub repository and to your install folder for reference. It should look like this:</p>
+<p>In Linux, a service called cron will execute the commands that you have specified in your settings. I added a <a href="https://github.com/lsandini/cgmsim/blob/main/crontab.txt"><strong>crontab.txt</strong></a> sample file to the Github repository and to your install folder for reference. It should look like this:</p>
 <pre><code>SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
@@ -188,12 +188,13 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
 #30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 </code></pre>
-<p>For this, in your Linux terminal, type:</p>
-<pre><code>crontab -e 
-</code></pre>
-<p>Select nano (or vi) as your favourite text editor. Look at the sample file, and copy the lines in your own crontab.</p>
+<p>You will need to edit this lines to match your personal settings, then copy-paste the edited lines in your own crontab. I suggest you first copy-pase these lines into notepad or the text editor of your choice in Windows or MacOS. </p>
 <p><strong>Replace "MYUSERNAME" with your own Linux username !</strong></p>
 <p><strong>Replace "cgmsim" with your own CGMSIM installation folder name !</strong></p>
+<p>Then, in your Linux terminal, type:</p>
+<pre><code>crontab -e 
+</code></pre>
+<p>Select nano (or vi) as your favourite text editor. You can now delete the whole content of the crontab file, then copy-paste your own modified lines from your windows/MacOS text editor into your crontab. Close crontab by pressing CRTL + X, when prompted to save the new file, enter Y.</p>
 <ol>
 <li>
 <p>The first line reinitialises the perlin noise generator every 6 hours.</p>
@@ -209,6 +210,10 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 </li>
 </ol>
 <p>The sample file contains 2 more lines, that are commented out. They allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc... This requires other modifications to the code not presented here. I'll add details later on request.</p>
+<div class="admonition warning">
+<p class="admonition-title">Hosting many simulators on one Linux machine ?</p>
+<p>In case your Raspberry Pi is hosting many instances of the simulator, new lines are added after the previous ones, since the crontab will orchestrate all the simulators in one file.</p>
+</div>
 <p><br></p>
 <h2 id="kickstart-the-simulation">Kickstart the simulation !<a class="headerlink" href="#kickstart-the-simulation" title="Permanent link">⌁</a></h2>
 <p>It's time to upload your first Sensor Glucose Values (SGVs) to your Nightscout website. This way CGMSIM will have a starting point for its first calculations. In your terminal, type :</p>

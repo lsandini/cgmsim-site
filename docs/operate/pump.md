@@ -39,8 +39,6 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 <br>
 Lines starting with **#** are commented out and will not be executed. Remove the **#** to activate them !
 
-<br>
-
 !!! danger "You will need to:"
 
     - Add a first line pointing to **get-pump.sh**, so that CGMSIM will download pump data from NS  

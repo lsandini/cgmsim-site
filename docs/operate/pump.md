@@ -40,11 +40,11 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
 !!! danger "You will need to:"
 
-1.  add a first line pointing to **get-pump.sh**, so that CGMSIM will download pump data from NS  
-      
-2.  edit the 4th line, so that CGMSIM will upload a new SGV based on insulin amounts from the pump: **upload-cgmsim-pump.sh**  
-      
-3.  if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line  
+    add a first line pointing to **get-pump.sh**, so that CGMSIM will download pump data from NS  
+        
+    edit the 4th line, so that CGMSIM will upload a new SGV based on insulin amounts from the pump: **upload-cgmsim-pump.sh**  
+        
+    if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line  
       
   
 
@@ -62,4 +62,4 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 ```
 
 <br>
-Just as a reminder, the **"surprise"** feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile:  
+Just as a reminder, the **"surprise"** feature is an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile:  

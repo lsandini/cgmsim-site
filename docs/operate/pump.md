@@ -46,7 +46,6 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
       
 3.  if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line  
       
-4.  just as a reminder, the **"surprise"** feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile:  
   
 
 **It should now look like this :**
@@ -61,3 +60,6 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 #30 23 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash surprise.sh
 #0 21 * * * cd /home/MYUSERNAME/cgmsim &&/bin/bash random_meal.sh
 ```
+
+<br>
+Just as a reminder, the **"surprise"** feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile:  

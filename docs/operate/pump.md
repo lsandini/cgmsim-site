@@ -42,9 +42,9 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
     add a first line pointing to **get-pump.sh**, so that CGMSIM will download pump data from NS  
         
-    edit the 4th line, so that CGMSIM will upload a new SGV based on insulin amounts from the pump: **upload-cgmsim-pump.sh**  
+    edit the 4th line, so that CGMSIM will upload a new SGV based on pump insulin amounts: **upload-cgmsim-pump.sh**  
         
-    if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line  
+    uncomment the 6th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses
       
   
 

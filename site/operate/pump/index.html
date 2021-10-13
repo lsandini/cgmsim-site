@@ -206,7 +206,9 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
 #30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 </code></pre>
-<p>You will need to:</p>
+<p><br></p>
+<div class="admonition danger">
+<p class="admonition-title">You will need to:</p>
 <ol>
 <li>
 <p>add a first line pointing to <strong>get-pump.sh</strong>, so that CGMSIM will download pump data from NS</p>
@@ -221,6 +223,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 <p>just as a reminder, the <strong>"surprise"</strong> feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄</p>
 </li>
 </ol>
+</div>
 <p>It should now look like this :</p>
 <pre><code>SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin

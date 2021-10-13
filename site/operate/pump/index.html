@@ -187,15 +187,17 @@
 <p>This has not been yet fully tested, and you might encounter a few 🐛 along the way. You have been warned !</p>
 </div>
 <p>While this simulator was built as a training tool for Multiple Daily Injection (MDI) treatment, it can also be used to simulate Continuous Subcutaneous Insulin Infusion (CSII) or more familiarly "insulin pump" therapy. Moreover, it can be coupled to a DIYAPS solution as <a href="https://openaps.org">openAPS</a>.</p>
-<p>I have been doing this for a while on a "custom" setup, but now I added the required files to the repository for all to use.</p>
+<p>I have been doing this for a while on a "custom" setup, but now I added the required files to the repository for all to use.
+<br></p>
 <h2 id="nightscout-setup">Nightscout setup<a class="headerlink" href="#nightscout-setup" title="Permanent link">⌁</a></h2>
 <p>First of all, make sure that your instance of Nightscout is set to be used with DIAPS systems. It involves adding a few terms in the ENABLE variable of Heroku. You will want to see a pillbox with details about the APS calculations and another one with details about the pumps activity.</p>
 <p><a href="https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html">Details on how to setup Nightscout for openAPS here.</a></p>
-<p><a href="https://loopkit.github.io/loopdocs/nightscout/update_user/">Details on how to setup Nightscout for iOS Loop here.</a></p>
+<p><a href="https://loopkit.github.io/loopdocs/nightscout/update_user/">Details on how to setup Nightscout for iOS Loop here.</a>
+<br></p>
 <h2 id="cgmsim-setup">CGMSIM setup<a class="headerlink" href="#cgmsim-setup" title="Permanent link">⌁</a></h2>
-<p>A couple of modifications are required in order to compute the insulin activity based on what the pump has been administrating. The calculations include the insulin activity from basal rates and from boluses.</p>
+<p>A couple of modifications are required in order to compute the insulin activity based on what the pump has been administrating. The calculations include the insulin activity from basal rates and from boluses, and not mealtime doses and long-acting agonists anymore.</p>
 <p>If you have built an openAPS rig, it will read the pump's memory, and upload the basal profile, other settings and bolus history to Nightscout. We will first setup CGMSIM to download that data from Nightscout.</p>
-<p>In the suggested crontab for MDI mode, there were 4 lines:</p>
+<p><strong>In the suggested crontab for MDI mode, there were 4 lines:</strong></p>
 <pre><code>SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
@@ -215,8 +217,9 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 <li>
 <p>if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line</p>
 </li>
-<li></li>
-<li>just as a reminder, the <strong>"surprise"</strong> feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄</li>
+<li>
+<p>just as a reminder, the <strong>"surprise"</strong> feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄</p>
+</li>
 </ol>
 <p>It should now look like this :</p>
 <pre><code>SHELL=/bin/bash

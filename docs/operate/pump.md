@@ -1,6 +1,6 @@
 # Insulin pump mode and DIAPS
 
-!!! warning "Nerdy stuff ahead !
+!!! warning "Nerdy stuff ahead !"
     
     This has not been yet fully tested, and you might encounted a few :bug: along the way. You have been warned.
     

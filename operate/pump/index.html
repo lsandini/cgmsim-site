@@ -206,6 +206,8 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
 #30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 </code></pre>
+<p><br>
+Lines starting with <strong>#</strong> are commented out and will not be executed. Remove the <strong>#</strong> to activate them !</p>
 <p><br></p>
 <div class="admonition danger">
 <p class="admonition-title">You will need to:</p>
@@ -217,7 +219,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 <p>Edit the 4th line, so that CGMSIM will upload a new SGV based on pump insulin amounts: <strong>upload-cgmsim-pump.sh</strong>  </p>
 </li>
 <li>
-<p>Uncomment the 6th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses</p>
+<p>Add the 5th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses</p>
 </li>
 </ul>
 </div>
@@ -229,8 +231,8 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim-pump.sh
-#30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 #0 21 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
+#30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 </code></pre>
 <p><br>
 Just as a reminder, the <strong>"surprise"</strong> feature is an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄  </p></div>

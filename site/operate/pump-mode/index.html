@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/build/kickstart/">
+        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/operate/pump-mode/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Kickstart - CGMSIM</title>
+        <title>Insulin pump mode and DIAPS - CGMSIM</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -71,32 +71,32 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../overview/" class="dropdown-item">Overview</a>
+    <a href="../../build/overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../nightscout/" class="dropdown-item">Nightscout</a>
+    <a href="../../build/nightscout/" class="dropdown-item">Nightscout</a>
 </li>
                                     
 <li>
-    <a href="../linux/" class="dropdown-item">Linux/Ubuntu</a>
+    <a href="../../build/linux/" class="dropdown-item">Linux/Ubuntu</a>
 </li>
                                     
 <li>
-    <a href="../clone/" class="dropdown-item">Download</a>
+    <a href="../../build/clone/" class="dropdown-item">Download</a>
 </li>
                                     
 <li>
-    <a href="../setupscript/" class="dropdown-item">Setup script</a>
+    <a href="../../build/setupscript/" class="dropdown-item">Setup script</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Kickstart</a>
+    <a href="../../build/kickstart/" class="dropdown-item">Kickstart</a>
 </li>
                                 </ul>
                             </li>
@@ -105,23 +105,23 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../operate/overview/" class="dropdown-item">Overview</a>
+    <a href="../overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../../operate/meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+    <a href="../meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
 </li>
                                     
 <li>
-    <a href="../../operate/insulin/" class="dropdown-item">Declaring long-acting insulins</a>
+    <a href="../insulin/" class="dropdown-item">Declaring long-acting insulins</a>
 </li>
                                     
 <li>
-    <a href="../../operate/pump.md" class="dropdown-item">Pump mode and DIAPS</a>
+    <a href="../pump.md" class="dropdown-item">Pump mode and DIAPS</a>
 </li>
                                     
 <li>
-    <a href="../../operate/reports/" class="dropdown-item">View reports</a>
+    <a href="../reports/" class="dropdown-item">View reports</a>
 </li>
                                 </ul>
                             </li>
@@ -136,16 +136,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../setupscript/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../../operate/overview/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -164,13 +154,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#starting-the-simulation" class="nav-link">Starting the Simulation</a>
+            <li class="nav-item" data-level="1"><a href="#insulin-pump-mode-and-diaps" class="nav-link">Insulin pump mode and DIAPS</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#scheduling-tasks" class="nav-link">Scheduling tasks</a>
+            <li class="nav-item" data-level="2"><a href="#nightscout-setup" class="nav-link">Nightscout setup</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#kickstart-the-simulation" class="nav-link">Kickstart the simulation !</a>
+            <li class="nav-item" data-level="2"><a href="#cgmsim-setup" class="nav-link">CGMSIM setup</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -181,9 +171,19 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="starting-the-simulation">Starting the Simulation<a class="headerlink" href="#starting-the-simulation" title="Permanent link">⌁</a></h1>
-<h2 id="scheduling-tasks">Scheduling tasks<a class="headerlink" href="#scheduling-tasks" title="Permanent link">⌁</a></h2>
-<p>In Linux, a service called cron will execute the commands that you have specified in your settings. I added a <a href="https://github.com/lsandini/cgmsim/blob/main/crontab.txt"><strong>crontab.txt</strong></a> sample file to the Github repository and to your install folder for reference. It should look like this:</p>
+<h1 id="insulin-pump-mode-and-diaps">Insulin pump mode and DIAPS<a class="headerlink" href="#insulin-pump-mode-and-diaps" title="Permanent link">⌁</a></h1>
+<p>!!! warning "Nerdy stuff ahead !</p>
+<pre><code>This has not been yet fully tested, and you might encounted a few :bug: along the way. You have been warned.
+</code></pre>
+<p>While this simulator was built as a training tool for Multiple Daily Injection (MDI) treatment, it can also be used to simulate Continuous Subcutaneous Insulin Infusion (CSII) or more familiarly "insulin pump" therapy. Moreover, it can be coupled to a DIYAPS solution as <a href="https://openaps.org">openAPS</a>.</p>
+<p>I have been doing this for a while on a "custom" setup, but now I added to needed files to the repository for all to use.</p>
+<h2 id="nightscout-setup">Nightscout setup<a class="headerlink" href="#nightscout-setup" title="Permanent link">⌁</a></h2>
+<p>First of all, make sure that your instance of Nightscout is set to be used with DIAPS systems. It involves adding a few terms in the ENABLE variable of Heroku. You will want to see a pillbox with details about the APS calculations and another one with details about the pumps activity.</p>
+<p><a href="https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html">Details on how to setup Nightscout for openAPS use are here.</a></p>
+<h2 id="cgmsim-setup">CGMSIM setup<a class="headerlink" href="#cgmsim-setup" title="Permanent link">⌁</a></h2>
+<p>A couple of modifications are required in order to compute the insulin activity based on what the pump has been administrating. The calculations include the insulin activity from basal rates and from boluses.</p>
+<p>If you have built an openAPS rig, it will read the pump's memory, and upload the basal profile, other settings and bolus history to Nightscout. We will first setup CGMSIM to download that data from Nightscout.</p>
+<p>In the suggested crontab for MDI mode, there were 4 lines:</p>
 <pre><code>SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
@@ -192,40 +192,31 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
 #30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 </code></pre>
-<p>You will need to edit this lines to match your personal settings, then copy-paste the edited lines in your own crontab. I suggest you first copy-pase these lines into notepad or the text editor of your choice in Windows or MacOS. </p>
-<p><strong>Replace "MYUSERNAME" with your own Linux username !</strong></p>
-<p><strong>Replace "cgmsim" with your own CGMSIM installation folder name !</strong></p>
-<p>Then, in your Linux terminal, type:</p>
-<pre><code>crontab -e 
-</code></pre>
-<p>Select nano (or vi) as your favourite text editor. You can now delete the whole content of the crontab file, then copy-paste your own modified lines from your windows/MacOS text editor into your crontab. Close crontab by pressing CRTL + X, when prompted to save the new file, enter Y.</p>
+<p>You will need to:</p>
 <ol>
 <li>
-<p>The first line reinitialises the perlin noise generator every 6 hours.</p>
+<p>add a first line pointing to <strong>get-pump.sh</strong>, so that CGMSIM will download pump data from NS</p>
 </li>
 <li>
-<p>The second line launches the downloading process of previous SGV data, treatments, etc, every 5 minutes.</p>
+<p>edit the 4th line, so that CGMSIM will upload a new SGV based on insulin amounts from the pump: <strong>upload-cgmsim-pump.sh</strong></p>
 </li>
 <li>
-<p>The third line launches the calculations and uploads the new computed sgv values to NS, every 5 minutes.</p>
+<p>if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line</p>
 </li>
-<li>
-<p>The fourth line is commented out with a <strong>#</strong> sign by default. If you remove the <strong>#</strong> sign, CGMSIM will compute at 11:30 PM the total amount of carbs eaten during the day, and issue a meal completing the 200g grams target for the 24h period, without mealtime insulin.</p>
-</li>
+<li></li>
+<li>just as a reminder, the <strong>"surprise"</strong> feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄</li>
 </ol>
-<p>The sample file contains 2 more lines, that are commented out. They allow to use the simulator as a CSII (insulin pump) simulator and link the simulator to openAPS, Loop, FreeAPS, AndroidAPS, etc... This requires other modifications to the code not presented here. I'll add details later on request.</p>
-<div class="admonition warning">
-<p class="admonition-title">Hosting many simulators on one Linux machine ?</p>
-<p>In case your Raspberry Pi is hosting many instances of the simulator, a set of 4 lines are added after the previous ones, since the crontab will orchestrate all the simulators in one file.</p>
-</div>
-<p><br></p>
-<h2 id="kickstart-the-simulation">Kickstart the simulation !<a class="headerlink" href="#kickstart-the-simulation" title="Permanent link">⌁</a></h2>
-<p>It's time to upload your first Sensor Glucose Values (SGVs) to your Nightscout website. This way CGMSIM will have a starting point for its first calculations. In your terminal, type :</p>
-<pre><code>node kickstart-simulation.js
-</code></pre>
-<p>In a second or two, your Nightscout website should display 3 SGVs of 5 mmol/l or 80 mg/dl. Yay ! 😃</p>
-<p>It might take up to 5-10 minutes for the next value to appear, but without intervention from you, the glucose level will climb slowly due to the endogenous glucose production (EGP), until it reaches 22.2 mmol/l or 400 mg/dl. (A low limit of 2.2 mmol/l or 40 mg/dl has also set, to avoid interruptions in the Nightscout SGV curve).</p>
-<p>You are now in charge of your virtual T1D patient, who needs food and insulin to survive. <a href="../../operate/overview/">Next, we'll see how to declare meals and insulins in Nightscout, and how to review the treatment results</a>.</p></div>
+<p>It should now look like this :</p>
+<pre><code>SHELL=/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-pump.sh
+0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim-pump.sh
+#30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
+#0 21 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
+</code></pre></div>
             </div>
         </div>
 

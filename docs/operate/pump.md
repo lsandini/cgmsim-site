@@ -67,4 +67,4 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 ```
 
 <br>
-Just as a reminder, the **"surprise"** feature is an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile:  
+Just as a reminder, the **"surprise"** feature on the last line of the crontab creates an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile: 

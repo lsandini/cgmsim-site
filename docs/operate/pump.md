@@ -14,9 +14,9 @@ I have been doing this for a while on a "custom" setup, but now I added the requ
 
 First of all, make sure that your instance of Nightscout is set to be used with DIAPS systems. It involves adding a few terms in the ENABLE variable of Heroku. You will want to see a pillbox with details about the APS calculations and another one with details about the pumps activity.
 
-[Details on how to setup Nightscout for openAPS use are here.](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html)
+[Details on how to setup Nightscout for openAPS here.](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html)
 
-[Details on how to setup Nightscout for iOS Loop use are here.](https://loopkit.github.io/loopdocs/nightscout/update_user/)
+[Details on how to setup Nightscout for iOS Loop here.](https://loopkit.github.io/loopdocs/nightscout/update_user/)
 
 
 ## CGMSIM setup

@@ -1,4 +1,4 @@
-# Insulin pump mode and DIAPS
+# Insulin pump mode and DIYAPS
 
 !!! warning "Nerdy stuff ahead !"
     

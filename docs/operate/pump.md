@@ -43,9 +43,9 @@ Lines starting with **#** are commented out and will not be executed. Remove the
 
     - Add a first line pointing to **get-pump.sh**, so that CGMSIM will download pump data from NS  
         
-    - Edit the 4th line, so that CGMSIM will upload a new SGV based on pump insulin amounts: **upload-cgmsim-pump.sh**  
+    - Edit the 4th line, so that CGMSIM will upload SGVs based on pump insulin: **upload-cgmsim-pump.sh**  
         
-    - Add the 5th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses
+    - Add the 5th line if you want to run your rig unattended with meals issued automatically with matching boluses
       
 <br>  
 

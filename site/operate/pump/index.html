@@ -209,9 +209,17 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 <p><br></p>
 <div class="admonition danger">
 <p class="admonition-title">You will need to:</p>
-<p>add a first line pointing to <strong>get-pump.sh</strong>, so that CGMSIM will download pump data from NS  </p>
-<p>edit the 4th line, so that CGMSIM will upload a new SGV based on pump insulin amounts: <strong>upload-cgmsim-pump.sh</strong>  </p>
-<p>uncomment the 6th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses</p>
+<ul>
+<li>
+<p>Add a first line pointing to <strong>get-pump.sh</strong>, so that CGMSIM will download pump data from NS  </p>
+</li>
+<li>
+<p>Edit the 4th line, so that CGMSIM will upload a new SGV based on pump insulin amounts: <strong>upload-cgmsim-pump.sh</strong>  </p>
+</li>
+<li>
+<p>Uncomment the 6th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses</p>
+</li>
+</ul>
 </div>
 <p><strong>It should now look like this :</strong></p>
 <pre><code>SHELL=/bin/bash

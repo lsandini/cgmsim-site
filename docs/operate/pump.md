@@ -37,6 +37,9 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 #30 23 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash surprise.sh
 ```
 <br>
+Lines starting with **#** are commented out and will not be executed. Remove the **#** to activate them !
+
+<br>
 
 !!! danger "You will need to:"
 
@@ -44,7 +47,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
         
     - Edit the 4th line, so that CGMSIM will upload a new SGV based on pump insulin amounts: **upload-cgmsim-pump.sh**  
         
-    - Uncomment the 6th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses
+    - Add the 5th line if you want to let your rig run unattended for days with meals issued automatically with matching boluses
       
   
 
@@ -57,8 +60,8 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 0 */6 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash perlin.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim && /bin/bash get-all.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim && /bin/bash upload-cgmsim-pump.sh
-#30 23 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash surprise.sh
 #0 21 * * * cd /home/MYUSERNAME/cgmsim &&/bin/bash random_meal.sh
+#30 23 * * * cd /home/MYUSERNAME/cgmsim && /bin/bash surprise.sh
 ```
 
 <br>

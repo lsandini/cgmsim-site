@@ -209,18 +209,10 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 <p><br></p>
 <div class="admonition danger">
 <p class="admonition-title">You will need to:</p>
-</div>
-<ol>
-<li>
 <p>add a first line pointing to <strong>get-pump.sh</strong>, so that CGMSIM will download pump data from NS  </p>
-</li>
-<li>
 <p>edit the 4th line, so that CGMSIM will upload a new SGV based on insulin amounts from the pump: <strong>upload-cgmsim-pump.sh</strong>  </p>
-</li>
-<li>
 <p>if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line  </p>
-</li>
-</ol>
+</div>
 <p><strong>It should now look like this :</strong></p>
 <pre><code>SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
@@ -233,7 +225,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 #0 21 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
 </code></pre>
 <p><br>
-Just as a reminder, the <strong>"surprise"</strong> feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄  </p></div>
+Just as a reminder, the <strong>"surprise"</strong> feature is an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄  </p></div>
             </div>
         </div>
 

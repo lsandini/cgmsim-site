@@ -25,7 +25,7 @@ A couple of modifications are required in order to compute the insulin activity 
 
 If you have built an openAPS rig, it will read the pump's memory, and upload the basal profile, other settings and bolus history to Nightscout. We will first setup CGMSIM to download that data from Nightscout.
 
-**In the suggested crontab for MDI mode, there were 4 lines:**
+**In the suggested crontab for MDI mode, there were 4 lines :**
 
 ```
 SHELL=/bin/bash
@@ -49,7 +49,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
     4.  just as a reminder, the **"surprise"** feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile:  
   
 
-It should now look like this :
+**It should now look like this :**
 ```
 SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin

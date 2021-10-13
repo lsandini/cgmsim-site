@@ -21,6 +21,7 @@ First of all, make sure that your instance of Nightscout is set to be used with 
 [Details on how to setup Nightscout for openAPS here.](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html)
 
 [Details on how to setup Nightscout for iOS Loop here.](https://loopkit.github.io/loopdocs/nightscout/update_user/)
+
 <br>
 
 ## CGMSIM setup

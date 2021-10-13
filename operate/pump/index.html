@@ -220,9 +220,6 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 <li>
 <p>if you want to let your rig run unattended for days, meals can be issued automatically with matching boluses by adding and uncommenting the 6th line  </p>
 </li>
-<li>
-<p>just as a reminder, the <strong>"surprise"</strong> feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄  </p>
-</li>
 </ol>
 <p><strong>It should now look like this :</strong></p>
 <pre><code>SHELL=/bin/bash
@@ -234,7 +231,9 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim-pump.sh
 #30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 #0 21 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
-</code></pre></div>
+</code></pre>
+<p><br>
+Just as a reminder, the <strong>"surprise"</strong> feature is aan automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄  </p></div>
             </div>
         </div>
 

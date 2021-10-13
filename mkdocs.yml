@@ -51,6 +51,7 @@ nav:
     - Overview: 'operate/overview.md'
     - Declaring meals and mealtime insulin: 'operate/meals.md'
     - Declaring long-acting insulins: 'operate/insulin.md'
+    - Pump mode and DIAPS: 'operate/pump.md'
     - View reports: 'operate/reports.md'
 - Contact me: 'contact.md'
 

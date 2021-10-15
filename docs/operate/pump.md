@@ -71,9 +71,11 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
 <br>
 
+### Timezone issue on cloud-based Linux VMs
+
 The 5th line specifically triggers the execution of the bash script **random_meal.sh** at midnight 00:00 or 12PM. The 4 meals of the next day are computed (carb amounts and time of delivery).  These are saved in a file, that will be overwritten the next time the script runs, 24 hours later.
 
-The absolute time of the script execution refers to the timezome where your computer resides. If you are using a cloud-based solution, notice the time difference in your location. 
+The absolute time of the script execution refers to the **timezone where your computer running CGMSIM is located**. If you are using a cloud-based solution, notice the time difference with your location. 
 
 For me, with a DigitalOcean droplet located in Europe, the time difference is +3 hours. So I execute the sript at 21:00 o'clock "server time", which is midnight at my location. The line starts with :
 
@@ -81,12 +83,12 @@ For me, with a DigitalOcean droplet located in Europe, the time difference is +3
 #0 21 * * * cd /home ...
 ```
 
-If you are running CGMSIM on a local machine, then the line should start with :
+If you are running CGMSIM on a local machine and running the script at midnight, then the line should start with :
 ```
 #0 0 * * * cd /home ...
 ```
 
-Finally, you have to uncomment a line one of the scripts :
+Finally, you have to **uncomment** a line in one of the scripts. Edit **get-all.sh** by typing:
 ```
 nano get-all.sh
 ```
@@ -95,5 +97,10 @@ nano get-all.sh
 ```
 # node random_meal_upload.js
 ```
+
+Then save your changes. Voilà.
 <br>
-Just as a reminder, the **"surprise"** feature on the last line of the crontab creates an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution :smile: 
+
+## Surprise meals
+
+Just as a reminder, the **"surprise"** feature on the last line of the crontab creates an automatic meal completing the 200g carbs daily goal at 11:30PM. Use with caution :smile: 

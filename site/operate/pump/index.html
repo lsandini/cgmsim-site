@@ -233,8 +233,22 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
 */5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim-pump.sh
-#0 21 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
+#0 0 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
 #30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
+</code></pre>
+<p><br></p>
+<p>The 5th line specifically triggers the execution of the bash script <strong>random_meal.sh</strong> at midnight 00:00 or 12PM. The 4 meals of the next day are computed (carb amounts and time of delivery). These are saved in a file, that will be overwritten the next time the script runs, 24 hours later.</p>
+<p>The absolute time of the script execution refers to the timezome where your computer resides. If you are using a cloud-based solution, notice the time difference in your location. For me, with a DigitalOcean droplet located in europe, the time difference is +3 hours ! So I execute the sript at 21:00 o'clock server time, which is midnight at my location. The line starts with :</p>
+<pre><code>#0 21 * * * cd /home ...
+</code></pre>
+<p>If you are running CGMSIM on a local machine, then the line should start with :</p>
+<pre><code>#0 0 * * * cd /home ...
+</code></pre>
+<p>Finally, you have to uncomment a line one of the scripts :</p>
+<pre><code>nano get-all.sh
+</code></pre>
+<p>... and remove the # in front of:</p>
+<pre><code>\# node random_meal_upload.js
 </code></pre>
 <p><br>
 Just as a reminder, the <strong>"surprise"</strong> feature on the last line of the crontab creates an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄 </p></div>

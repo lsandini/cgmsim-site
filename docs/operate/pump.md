@@ -77,7 +77,7 @@ The 5th line specifically triggers the execution of the bash script **random_mea
 
 The absolute time of the script execution refers to the **timezone where your computer running CGMSIM is located**. If you are using a cloud-based solution, notice the time difference with your location. 
 
-For me, with a DigitalOcean droplet located in Europe, the time difference is +3 hours. So I execute the sript at 21:00 o'clock "server time", which is midnight at my location. The line starts with :
+For me, with a DigitalOcean droplet located in Europe, the time difference is +3 hours. So I execute the sript at 21:00 o'clock "server time", which is 24:00 at my location. The line starts with :
 
 ```
 #0 21 * * * cd /home ...
@@ -92,15 +92,19 @@ Finally, you have to **uncomment** a line in one of the scripts. Edit **get-all.
 ```
 nano get-all.sh
 ```
-... and remove the # in front of:
+... and remove the **#** in front of:
 
 ```
-# node random_meal_upload.js
+# node random_meal_upload.js  
 ```
 
 Then save your changes. Voilà.
 <br>
+<br>
 
 ## Surprise meals
 
-Just as a reminder, the **"surprise"** feature on the last line of the crontab creates an automatic meal completing the 200g carbs daily goal at 11:30PM. Use with caution :smile: 
+Just as a reminder, the **"surprise"** feature on the 6th and last line of the crontab creates an automatic meal completing the 200g carbs daily goal at 11:30PM. No automatic bolus, so your "late snack" remains untreated. Use with caution :smile:
+
+<br>
+<br>

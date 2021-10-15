@@ -174,6 +174,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#surprise-meals" class="nav-link">Surprise meals</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -238,22 +242,25 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 #30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
 </code></pre>
 <p><br></p>
+<h3 id="timezone-issue-on-cloud-based-linux-vms">Timezone issue on cloud-based Linux VMs<a class="headerlink" href="#timezone-issue-on-cloud-based-linux-vms" title="Permanent link">⌁</a></h3>
 <p>The 5th line specifically triggers the execution of the bash script <strong>random_meal.sh</strong> at midnight 00:00 or 12PM. The 4 meals of the next day are computed (carb amounts and time of delivery).  These are saved in a file, that will be overwritten the next time the script runs, 24 hours later.</p>
-<p>The absolute time of the script execution refers to the timezome where your computer resides. If you are using a cloud-based solution, notice the time difference in your location. </p>
+<p>The absolute time of the script execution refers to the <strong>timezone where your computer running CGMSIM is located</strong>. If you are using a cloud-based solution, notice the time difference with your location. </p>
 <p>For me, with a DigitalOcean droplet located in Europe, the time difference is +3 hours. So I execute the sript at 21:00 o'clock "server time", which is midnight at my location. The line starts with :</p>
 <pre><code>#0 21 * * * cd /home ...
 </code></pre>
-<p>If you are running CGMSIM on a local machine, then the line should start with :</p>
+<p>If you are running CGMSIM on a local machine and running the script at midnight, then the line should start with :</p>
 <pre><code>#0 0 * * * cd /home ...
 </code></pre>
-<p>Finally, you have to uncomment a line one of the scripts :</p>
+<p>Finally, you have to <strong>uncomment</strong> a line in one of the scripts. Edit <strong>get-all.sh</strong> by typing:</p>
 <pre><code>nano get-all.sh
 </code></pre>
 <p>... and remove the # in front of:</p>
 <pre><code># node random_meal_upload.js
 </code></pre>
-<p><br>
-Just as a reminder, the <strong>"surprise"</strong> feature on the last line of the crontab creates an automatic meal completing the 200g of carbs goal at 11:30PM, use with caution 😄 </p></div>
+<p>Then save your changes. Voilà.
+<br></p>
+<h2 id="surprise-meals">Surprise meals<a class="headerlink" href="#surprise-meals" title="Permanent link">⌁</a></h2>
+<p>Just as a reminder, the <strong>"surprise"</strong> feature on the last line of the crontab creates an automatic meal completing the 200g carbs daily goal at 11:30PM. Use with caution 😄 </p></div>
             </div>
         </div>
 

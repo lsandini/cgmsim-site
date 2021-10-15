@@ -29,4 +29,10 @@ All the steps are described above in detail, and it will also take you some time
    
 6. [Create a regular new user with sudo privileges.](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-20-04-quickstart) and reboot.
 
-When you finally login as the new user, you are ready to [download and deploy CGMSIM](clone.md), yay ! :sweat_smile:
+When you finally login as the new user, remember to update/upgrade all packages, so that your fresh installation is up-to-date. In your linux terminal, type :
+
+```
+sudo apt update && sudo apt upgrade
+```
+
+You are ready to [download and deploy CGMSIM](clone.md), yay ! :sweat_smile:

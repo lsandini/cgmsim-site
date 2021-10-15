@@ -9,9 +9,7 @@ While this simulator was built as a training tool for Multiple Daily Injection (
 
 I have been doing this for a while on a "custom" setup, but now I added the required files to the repository for all to use. 
 
-**THIS IS A LIVE UNATTENDED CGMSIM PATIENT TAKEN CARE OF BY OPENAPS !: **
-
-<span style="text-decoration: underline">**THIS IS A LIVE UNATTENDED CGMSIM PATIENT TAKEN CARE OF BY OPENAPS !: **</span>
+<span style="text-decoration: underline">**THIS IS A LIVE UNATTENDED  CGMSIM  PATIENT TAKEN CARE OF BY OPENAPS : **</span>
 
 <iframe style="width: 640px; height: 480px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://dmpkl1.herokuapp.com/"></iframe>
 <br>

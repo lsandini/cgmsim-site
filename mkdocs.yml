@@ -3,7 +3,6 @@ theme:
     name: flatly
     highlightjs: true
     logo: 'logo.png'
-    theme_dir: 'custom_theme'
 site_url: https://lsandini.github.io/cgmsim-site
 extra_javascript:
   - javascripts/config.js

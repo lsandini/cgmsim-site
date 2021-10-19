@@ -3,8 +3,8 @@ theme:
     name: flatly
     highlightjs: true
     logo: 'logo.png'
-    analytics: G-9DEJWGQQJ5
-        gtag 
+    analytics:
+        gtag : G-9DEJWGQQJ5
 site_url: https://lsandini.github.io/cgmsim-site
 
 extra_javascript:

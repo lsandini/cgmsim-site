@@ -55,3 +55,13 @@ This website will describe step by step how to install and kickstart the simulat
 ## Where is the source code ?
 
 **The source code and more technical details on how various scripts are excecuted and interact with each other can be found in the [CGMSIM project's repository](https://github.com/lsandini/cgmsim)**
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9DEJWGQQJ5');
+</script>

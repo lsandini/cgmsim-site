@@ -39,5 +39,3 @@ Thank you !
 Click the Donate button above to support my work, if you feel it was worth the effort. All donations will be used **strictly for Nightscout hosting fees** (and occasional coffee). 
 
 Alternatively consider making a donation to [Tidepool](https://tidepool.salsalabs.org/tidepool-donate/index.html), the [Nightscout Foundation](https://www.nightscoutfoundation.org/donate), the [JDRF](https://www2.jdrf.org/site/Donation2?2376.donation=form1&df_id=2376&s_src=jdrf.org&s_subsrc=siteMenuButton) or any charitable organisation of your choice !
-
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5orwkewi0pk&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>

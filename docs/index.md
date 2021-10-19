@@ -55,7 +55,3 @@ This website will describe step by step how to install and kickstart the simulat
 ## Where is the source code ?
 
 **The source code and more technical details on how various scripts are excecuted and interact with each other can be found in the [CGMSIM project's repository](https://github.com/lsandini/cgmsim)**
-
-<!-- Start of WebFreeCounter Code -->
-<a href="https://www.webfreecounter.com/" target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gpxkxa&nd=6&style=1" border="0" alt="hit counter"></a>
-<!-- End of WebFreeCounter Code -->

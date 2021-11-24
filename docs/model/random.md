@@ -12,8 +12,6 @@ The mean variation is 0, which means that this background noise will cause tempo
 
 This animation rendered in [p5.js](https://p5js.org/) illustrates a continuously oscillating perlin noise curve:
 
-<iframe style="width: 600px; height: 200px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/lsandini/embed/F1CtK8SNk"></iframe>
-
 <iframe style="width: 400px; height: 250px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/lsandini/full/F1CtK8SNk"></iframe>
 <br>
 

@@ -28,13 +28,13 @@ Adding cyclic monthly fluctuations (according to the Moon cycle), and some other
 
     ** This astronomical influence model could be replaced by any other calculation, and is mainly here as a fun factor!**  
 
-The coordinates of the Planets of the Solar System can be computed in various reference systems. Heliocentric (Sun-centered), or Geocentric (Earth-centered) for exmaple. I decided to centralize these computations in a separate application, running in the cloud here: [Astronomical Computations](https://astro6.herokuapp.com). This application uses precise formulas based on Jean Meeus 'Astronomical Algorithms' book and the VSOP87 theory. They are gathered in an [open-source bundle](https://github.com/andrmoel/astronomy-bundle-js).
+The coordinates of the Planets of the Solar System can be computed in various reference systems. Heliocentric (Sun-centered), or Geocentric (Earth-centered) for example. I decided to centralize these computations in a separate application, running in the cloud here: [Astronomical Computations](https://astro6.herokuapp.com). This application uses precise formulas based on Jean Meeus 'Astronomical Algorithms' book and the VSOP87 theory. They are gathered in an [open-source bundle](https://github.com/andrmoel/astronomy-bundle-js).
 
-CGMSIM will automatically retrieve data from that application at regular intervals. The data retieved are the geocentrical longitudes of Mercury, Venus, Mars, Jupiter, Saturn and Neptune and their distances, as seen from Earth and the phase of the Moon.
+CGMSIM will automatically retrieve the geocentrical longitudes of Mercury, Venus, Mars, Jupiter, Saturn and Neptune and their distances, as seen from Earth. The phase of the Moon is also retrieved.
 
-Using the Newton's Law of Universal Gravitation, and knowing the mass and distance of planets, their individual gravitational attraction force applied to the simulated subject is computed. Since every planet is attracting the subject in a different direction, a global attraction vector is computed.
+Using Newton's Law of Universal Gravitation, and using the mass and distance data, each planet's individual gravitational attraction force applied to the simulated subject is computed. Since every planet is attracting the subject in a different direction, a global attraction vector is computed.
 
-If all planets were "aligned", they all would be pulling in the same direction. This happens once in a gazillion years, and not in the near future. So I computed a "conjunction factor", describing how the planets are dispersed around us, or oppositely: "in conjunction". A low dispersion (or high conjuction) will further amplify the gravitational force. 
+If all planets were "aligned", they all would be pulling in the same direction. This happens once in a gazillion years, and not in the near future... So I computed a "conjunction factor", describing how the planets are dispersed around us. A low dispersion (or high conjuction) will further amplify the apparent gravitational force. 
 
 Finally, the phase of the Moon will influence the CGM curve. The Moon's illumination factor is 100% at the Full Moon, and 0% at the New Moon. The Moon cycle is 29.53 days...
 

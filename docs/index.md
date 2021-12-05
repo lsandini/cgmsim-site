@@ -1,6 +1,8 @@
 # Welcome to the CGMSIM  v2.5  documentation
 
-This new version includes **pseudo-random variability based on real time astronomical calculations !** [Read further here for details.](model/random.md#astronomy)
+This new version includes **pseudo-random variability based on real time astronomical calculations !** 
+
+[Read further here for details.](model/random.md#astronomy)
 
 ##Introduction
 

@@ -1,10 +1,9 @@
 # Welcome to the CGMSIM  v2.5  documentation
 
-This new version includes **real time astronomical calculations !**. 
+This new version includes **real time astronomical calculations !**
 
 The gravitational force of the planets of the Solar System, and the phase of the Moon will add a **very tiny variation** on the model over time. This is intended to keep the user's attention on the cyclic changes and address the common joke about the cosmic influnce of the Stars, Planets and the Moon on one's blood sugar variations.
 
-<br>
 ##Introduction
 
 This application is an **interactive real time simulation** of the effects of food and insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). Rather than blood glucose (BG) values, it displays a continuous glucose sensor (CGM) trace using <a href="https://nightscout.github.io/" target="_blank">Nightscout</a> as visualization tool. 

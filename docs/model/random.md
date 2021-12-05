@@ -24,7 +24,7 @@ As many diabetic patients say as a joke from time to time, their blood sugar var
 !!! warning "Disclaimer"
     - There is no scientific indication that the movements of the Stars or Planets above, or the phase of the Moon have any direct impact on a living person's blood sugar variation. 
   
-    - Including these variables in the model only adds a tiny variation over time, and some difficulty for the simulator user. Don't expect huge effects though!
+    - Including these variables in the model only adds a **tiny variation over time**, and some difficulty for the simulator user.
 
     ** This astronomical influence model could be replaced by any other calculation, and is mainly here as a fun factor!**  
 

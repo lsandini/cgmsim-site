@@ -1,6 +1,6 @@
 # Welcome to the CGMSIM  v2.5  documentation
 
-This new version includes **real time astronomical calculations !** [Read further here](model/random.md)
+This new version includes **real time astronomical calculations !** [Read further here](model/random.md#astronomy)
 
 The gravitational force of the planets of the Solar System, and the phase of the Moon will add a **very tiny variation** on the model over time. This is intended to keep the user's attention on the cyclic changes and address the common joke about the cosmic influnce of the Stars, Planets and the Moon on one's blood sugar variations.
 

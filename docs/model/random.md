@@ -17,6 +17,18 @@ This animation rendered in [p5.js](https://p5js.org/) illustrates a continuously
 
 ## Astronomy
 
-Did I say something about the influence of the moon phase and planet alignment earlier? Well, this might very well be integrated here very soon... :smile:
+!!! danger "Disclaimer"
+    There is no scientific indication that the movements of the stars or planets above, or the phase of the Moon have any direct impact on a living person's blood sugar variation. Including these variables in the model only adds a tiny variation over time, and some difficulty for the simulator user. Don't expect huge effects though!
+
+The coordinates of the Planets of the Solar System can be computed in various reference systems. Heliocentric (Sun-centered), or Geocentric (Earth-centered) for exmaple. I decided to centralize these computations as a separate application, running in the cloud here: [Astronomical Computations](https://astro6.herokuapp.com). CGMSIM will automatically retrieve data from that application at regular intervals. The data retieved are the geocentrical longitudes of Mercury, Venus, Mars, Jupiter, Saturn and Neptune and their distances, as seen from Earth and the phase of the Moon.
+
+Using the Newton's Law of Universal Gravitation, and knowing the mass and distance of planets, their individual gravitational attraction force applied to the simulated subject is computed. Since every planet is attracting the subject in a different direction, a global attraction vector is computed.
+
+If all planets were "aligned", they would be pulling in the same direction. This happens once in a gazillion years, and not in the near future. So I computed a "conjunction factor", describing how the planets are dispersed around us, or oppositely: "in conjunction". A low dispersion (or high conjuction) will further amplify the gravitational force. 
+
+Finally, the phase of the Moon will influence the CGM curve. The Moon's illumination factor is 100% at the Full Moon, and 0% at the New Moon. The Moon cycle is 29.53 days...
+
+
+
 
 <img src="https://user-images.githubusercontent.com/24463821/90344480-44543f00-dfe8-11ea-9b99-a640c0f26136.gif" alt="Solar system" width="200"/>

@@ -17,7 +17,7 @@ This animation rendered in [p5.js](https://p5js.org/) illustrates a continuously
 
 ## Astronomy
 
-As many T1D patients say as a joke from time to time, their blood sugar variations seem to be "influnced by the stars, the planets and the Moon...". Jokes apart, this CGMSIM simulation lacked this kind of variability over time, and was felt as "too static" by some users, despite the perlin variation described above. 
+As many T1D patients say as a joke from time to time, their blood sugar variations seem to be "influnced by the stars, the planets and the Moon...". Jokes apart, CGMSIM v2.0 lacked this kind of variability over time, and was felt as "too static" by some users, despite the perlin variation described above. 
 
 Adding cyclic monthly fluctuations (according to the Moon cycle), and some other slower varying fluctuation (based on the Planets' position in the Solar System), sounded like a fun coding challenge.
 
@@ -37,6 +37,5 @@ Using Newton's Law of Universal Gravitation, and using the mass and distance dat
 If all planets were "aligned", they all would be pulling in the same direction. This happens once in a gazillion years, and not in the near future... So I computed a "conjunction factor", describing how the planets are dispersed around us. A low dispersion (or high conjuction) will further amplify the apparent gravitational force. 
 
 Finally, the phase of the Moon will influence the CGM curve. The Moon's illumination factor is 100% at the Full Moon, and 0% at the New Moon. The Moon cycle is 29.53 days...
-
 
 <img src="https://user-images.githubusercontent.com/24463821/90344480-44543f00-dfe8-11ea-9b99-a640c0f26136.gif" alt="Solar system" width="200"/>

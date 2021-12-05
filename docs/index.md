@@ -2,7 +2,7 @@
 
 This new version includes **pseudo-random variability based on real time astronomical calculations !** 
 
-[Read further here for details.](model/random.md#astronomy)
+[Read further here for details about the new feature.](model/random.md#astronomy)
 
 ##Introduction
 

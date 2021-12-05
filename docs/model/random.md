@@ -17,12 +17,14 @@ This animation rendered in [p5.js](https://p5js.org/) illustrates a continuously
 
 ## Astronomy
 
+As many diabetic patients say as a joke from time to time, their blood sugar variations seem to be "influnced by the Stars, the Planets and the Moon...". Jokes apart, this CGMSIM simulation lacked this kind of variability over time, and was felt as "too static" by some users. Adding cyclic monthly fluctuations (according to the Moon cycle), and some other slower varying fluctuation (based on the Planets' position in the Solar System), sounded like a fun coding challenge.
+
 !!! warning "Disclaimer"
-    - There is no scientific indication that the movements of the stars or planets above, or the phase of the Moon have any direct impact on a living person's blood sugar variation. 
+    - There is no scientific indication that the movements of the Stars or Planets above, or the phase of the Moon have any direct impact on a living person's blood sugar variation. 
   
     - Including these variables in the model only adds a tiny variation over time, and some difficulty for the simulator user. Don't expect huge effects though!
 
-    - ** this astronomical influence model could be replaced by any other calculation, and is mainly here as a fun factor!**
+    - ** This astronomical influence model could be replaced by any other calculation, and is mainly here as a fun factor!**
 
 The coordinates of the Planets of the Solar System can be computed in various reference systems. Heliocentric (Sun-centered), or Geocentric (Earth-centered) for exmaple. I decided to centralize these computations in a separate application, running in the cloud here: [Astronomical Computations](https://astro6.herokuapp.com). This application uses precise formulas based on Jean Meeus 'Astronomical Algorithms' book and the VSOP87 theory. They are gathered in an [open-source bundle](https://github.com/andrmoel/astronomy-bundle-js).
 

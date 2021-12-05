@@ -200,7 +200,7 @@
 <p><br></p>
 <h2 id="astronomy">Astronomy<a class="headerlink" href="#astronomy" title="Permanent link">⌁</a></h2>
 <p>As many diabetic patients say as a joke from time to time, their blood sugar variations seem to be "influnced by the Stars, the Planets and the Moon...". Jokes apart, this CGMSIM simulation lacked this kind of variability over time, and was felt as "too static" by some users. Adding cyclic monthly fluctuations (according to the Moon cycle), and some other slower varying fluctuation (based on the Planets' position in the Solar System), sounded like a fun coding challenge.</p>
-<h3 id="welcome-cgmsim-v25">Welcome CGMSIM v2.5<a class="headerlink" href="#welcome-cgmsim-v25" title="Permanent link">⌁</a></h3>
+<p>### Welcome CGMSIM v2.5 !!!</p>
 <div class="admonition warning">
 <p class="admonition-title">Disclaimer</p>
 <ul>
@@ -210,10 +210,8 @@
 <li>
 <p>Including these variables in the model only adds a tiny variation over time, and some difficulty for the simulator user. Don't expect huge effects though!</p>
 </li>
-<li>
-<p><strong> This astronomical influence model could be replaced by any other calculation, and is mainly here as a fun factor!</strong></p>
-</li>
 </ul>
+<p><strong> This astronomical influence model could be replaced by any other calculation, and is mainly here as a fun factor!</strong>  </p>
 </div>
 <p>The coordinates of the Planets of the Solar System can be computed in various reference systems. Heliocentric (Sun-centered), or Geocentric (Earth-centered) for exmaple. I decided to centralize these computations in a separate application, running in the cloud here: <a href="https://astro6.herokuapp.com">Astronomical Computations</a>. This application uses precise formulas based on Jean Meeus 'Astronomical Algorithms' book and the VSOP87 theory. They are gathered in an <a href="https://github.com/andrmoel/astronomy-bundle-js">open-source bundle</a>.</p>
 <p>CGMSIM will automatically retrieve data from that application at regular intervals. The data retieved are the geocentrical longitudes of Mercury, Venus, Mars, Jupiter, Saturn and Neptune and their distances, as seen from Earth and the phase of the Moon.</p>

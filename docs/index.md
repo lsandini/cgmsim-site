@@ -1,4 +1,6 @@
-# Welcome to the CGMSIM documentation
+# Welcome to the CGMSIM v2.5 documentation
+
+This new version includes **real time astronomical calculations**. The gravitational force of the Planets in the Solar System, and the Phase of the Moon will add a **very tiny variation** on the model over time. Don't expect huge influences though, this is more intended to keep the user's attention on the cyclic changes and address the common joke about the cosmic influnce of the Stars, Planets and the Moon on one's blood sugar variations.
 
 ##Introduction
 

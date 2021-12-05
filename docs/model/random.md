@@ -19,8 +19,6 @@ This animation rendered in [p5.js](https://p5js.org/) illustrates a continuously
 
 As many T1D patients say as a joke from time to time, their blood sugar variations seem to be "influnced by the Stars, the Planets and the Moon...". Jokes apart, this CGMSIM simulation lacked this kind of variability over time, and was felt as "too static" by some users. Adding cyclic monthly fluctuations (according to the Moon cycle), and some other slower varying fluctuation (based on the Planets' position in the Solar System), sounded like a fun coding challenge.
 
-### Welcome CGMSIM v2.5 !!!
-
 !!! warning "Disclaimer"
     - There is no scientific indication that the movements of the Stars or Planets above, or the phase of the Moon have any direct impact on a living person's blood sugar variation. 
   

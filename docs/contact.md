@@ -40,6 +40,7 @@ Click the Donate button above to support my work, if you feel it was worth the e
 
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="lsandini" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
+
 Alternatively consider making a donation to [Tidepool](https://tidepool.salsalabs.org/tidepool-donate/index.html), the [Nightscout Foundation](https://www.nightscoutfoundation.org/donate), the [JDRF](https://www2.jdrf.org/site/Donation2?2376.donation=form1&df_id=2376&s_src=jdrf.org&s_subsrc=siteMenuButton) or any charitable organisation of your choice !
 
 

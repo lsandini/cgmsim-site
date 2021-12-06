@@ -32,7 +32,7 @@ The coordinates of the Planets of the Solar System can be computed in various re
 
 CGMSIM will automatically retrieve the geocentrical longitudes of Mercury, Venus, Mars, Jupiter, Saturn and Neptune and their distances, as seen from Earth. The phase of the Moon is also retrieved.
 
-Using Newton's Law of Universal Gravitation, and using the mass and distance data, each planet's individual gravitational attraction force applied to the simulated subject is computed. Since every planet is attracting the subject in a different direction, a global attraction vector is computed.
+Using Newton's Law of Universal Gravitation, and using the mass and distance data, each planet's individual gravitational attraction force (or "pull") applied to the simulated subject is computed. Since every planet is pulling the subject in a different direction, a global pull vector is computed.
 
 If all planets were "aligned", they all would be pulling in the same direction. This happens once in a gazillion years, and not in the near future... So I computed a "conjunction factor", describing how the planets are dispersed around us. A low dispersion (or high conjuction) will further amplify the apparent gravitational force. 
 

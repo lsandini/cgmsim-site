@@ -122,7 +122,7 @@
   border-right-color: #e67171;
   border-top-color: #e67171;
 }
-.admonition.admonition.failure .admonition-title {
+.admonition.failure .admonition-title {
   color: #e12929;
   background-color: #e67171;
   border-bottom-color: #e67171;

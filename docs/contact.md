@@ -13,6 +13,7 @@ There are quite a few good reasons to contact me:
 
     Create a new Nightscout branch, allowing easier long-acting insulin entries, heart rate or steps ? Displaying insulin activity ? 
 
+  
 Found a bug in the [source code](https://github.com/lsandini/cgmsim)? Squish it ! It took me a while to learn to write code, and I am sure a pro would smile nervously reading my scripts.
 
 If you have other suggestions or would like to contribute, feel free to contact me by email **<lsandini@gmail.com>**.
@@ -43,4 +44,4 @@ Click the Donate button above to support my work, if you feel it was worth the e
 
 Alternatively consider making a donation to [Tidepool](https://tidepool.salsalabs.org/tidepool-donate/index.html), the [Nightscout Foundation](https://www.nightscoutfoundation.org/donate), the [JDRF](https://www2.jdrf.org/site/Donation2?2376.donation=form1&df_id=2376&s_src=jdrf.org&s_subsrc=siteMenuButton) or any charitable organisation of your choice !
 
-
+  ![Kinkku](img/pigscout_white144.png)

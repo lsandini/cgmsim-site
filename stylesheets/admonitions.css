@@ -114,6 +114,23 @@
   border-bottom-color: #BAEAF8;
 }
 
+/* fail */
+.admonition.fail {
+  border-left-color: #e12929;
+  background-color: #e67171;
+  border-bottom-color: #e67171;
+  border-right-color: #e67171;
+  border-top-color: #e67171;
+}
+.admonition.fail .admonition-title {
+  color: #e12929;
+  background-color: #e67171;
+  border-bottom-color: #e67171;
+}
+
+
+
+
 /* Title */
 .admonition-title {
   padding: 1rem 1rem;

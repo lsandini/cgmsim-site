@@ -21,7 +21,7 @@ As many T1D patients say as a joke from time to time, their blood sugar variatio
 
 Adding cyclic monthly fluctuations (according to the Moon cycle), and some other slower varying fluctuation (based on the Planets' position in the Solar System), sounded like a fun coding challenge.
 
-!!! failure "Disclaimer"
+!!! warning "Disclaimer"
     - There is no scientific indication that the movements of the Stars or Planets above, or the phase of the Moon have any direct impact on a living person's blood sugar variation. 
   
     - Including these variables in the model only adds a **tiny variation over time**, and some difficulty for the simulator user.

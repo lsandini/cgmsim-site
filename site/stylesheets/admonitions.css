@@ -117,15 +117,15 @@
 /* failure */
 .admonition.failure {
   border-left-color: #e12929;
-  background-color: #e67171;
-  border-bottom-color: #e67171;
-  border-right-color: #e67171;
-  border-top-color: #e67171;
+  background-color: #ffb6b6;
+  border-bottom-color: #ffb6b6;
+  border-right-color: #ffb6b6;
+  border-top-color: #ffb6b6;
 }
 .admonition.failure .admonition-title {
   color: #e12929;
-  background-color: #e67171;
-  border-bottom-color: #e67171;
+  background-color: #ffb6b6;
+  border-bottom-color: #ffb6b6;
 }
 
 

@@ -5,7 +5,9 @@ As there is no dedicated feature in Nightscout for declaring long-acting insulin
 
 ## Announcements
 
-When logging the injection in Careportal, select "Announcement" in the drop-down list. Again, check "Sensor", under Glucose Reading, so that the entry will be superimposed with the SGV curve. **The syntax for the entry is important, as CGMSIM is not very error-tolerant. The most important are the 3 first letters and a blank space before the dose (in numbers)**
+When logging the injection in Careportal, select "Announcement" in the drop-down list. Again, check "Sensor", under Glucose Reading, so that the entry will be superimposed with the SGV curve. 
+
+**The syntax for the entry is important, as CGMSIM is not very error-tolerant. The most important are the 3 first letters and a blank space before the dose (in numbers). The first letter can either be upper, or lower case**
 
 !!! warning "Mind the spelling and syntax !"
     In the "notes" field, please write down the selected insulin first, and then the number of units, separated by a **single empty space**:
@@ -23,11 +25,12 @@ When logging the injection in Careportal, select "Announcement" in the drop-down
         - degludec 15
         - Tresiba 17 U  
   
-    These entries are not valid : 
+    These entries are NOT valid :
 
-        - detemir12  
-        - 12U glargine
-        - Livemir 20U  
+        - detemir12  (missing blank space)
+        - 12U glargine (insulin first, then dose)
+        - Livemir 20U (spelling error in the first 3 letters)
+        - TRESIBA 18 u (all capital letters)
 <br>
 
 ## Example

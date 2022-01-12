@@ -1,8 +1,8 @@
 # Welcome to the CGMSIM  v2.6  documentation
 
-This new version includes **pseudo-random variability based on real time astronomical calculations !** [Read further here for details about the new feature.](model/random.md#astronomy).
+Version 2.6 brings insulin **degludec (Tresiba®)** and **glargine U300 (Toujeo®)** as new long-acting insulin agonist options. Moreover, some **tolerance for spelling errors** was added.
 
-Version 2.6 brings insulin **degludec** and **glargine U300 (Toujeo®)** as new long-acting insulin agonist options. Moreover, some **tolerance for spelling errors** was added.
+Version 2.5 includes **pseudo-random variability based on real time astronomical calculations !** [Read further here for details about the new feature.](model/random.md#astronomy).
 
 ##Introduction
 

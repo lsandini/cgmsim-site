@@ -28,9 +28,9 @@ When logging the injection in Careportal, select "Announcement" in the drop-down
     These entries are NOT valid :
 
         - detemir12  (missing blank space)
-        - 12U glargine (insulin first, then dose)
+        - 12U glargine (indicate insulin first, then dose)
         - Livemir 20U (spelling error in the first 3 letters)
-        - TRESIBA 18 u (all capital letters)
+        - TRESIBA 18 u (all capital letters not allowed)
 <br>
 
 ## Example

@@ -7,9 +7,9 @@
 
 While this simulator was built as a training tool for Multiple Daily Injection (MDI) treatment, it can also be used to simulate Continuous Subcutaneous Insulin Infusion (CSII) or more familiarly "insulin pump" therapy. Moreover, it can be coupled to a DIYAPS solution as [openAPS](https://openaps.org).
 
-I have been doing this for a while on a "custom" setup, but now I added the required files to the repository for all to use. 
+I have been doing this for a while on a "custom" setup, but now I added the required files to the repository for all to use. In the live demo below, there might be downtime now and then, when the rig is powered down or the pump reservoir is empty.
 
-<span style="text-decoration: underline">**THIS IS A LIVE UNATTENDED  CGMSIM  PATIENT TAKEN CARE OF BY OPENAPS : **</span>
+<span style="text-decoration: underline">**THIS IS A LIVE UNATTENDED CGMSIM PATIENT TAKEN CARE OF BY OPENAPS : **</span>
 
 <iframe style="width: 640px; height: 480px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://dmpkl1.herokuapp.com/"></iframe>
 <br>

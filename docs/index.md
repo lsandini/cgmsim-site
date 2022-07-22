@@ -1,5 +1,9 @@
 # Welcome to the CGMSIM  v2.6  documentation
 
+##Announcement
+
+An important update is in the works. CGMSIM v3.0 is being ported to the Cloud, and soon there will be no need to install it locally anymore. You'll be able to sign in using an email and password, or using your Google or Fitbit credentials. Your personal physical activity data (steps and/or heartrate) will be downloaded from the Google Fit or Fitbit servers and they will impact your CGM curves. Some errors were found in CGMSIM v2.6 and they have been corrected in the new version already. So please be patient, the release will be announced on all major social media platorms in due time.
+
 Version 2.6 brings insulin **degludec (Tresiba®)** and **glargine U300 (Toujeo®)** as new long-acting insulin agonist options. Moreover, some **tolerance for spelling errors** was added.
 
 Version 2.5 includes **pseudo-random variability based on real time astronomical calculations !** [Read further here for details about the new feature.](model/random.md#astronomy).

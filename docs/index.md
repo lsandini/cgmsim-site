@@ -1,18 +1,32 @@
-# Welcome to the CGMSIM  v2.6  documentation
+# Welcome to the CGMSIM  v3.0  documentation
 
-##Announcement
+<br>
 
-An important update is in the works. CGMSIM v3.0 is being ported to the Cloud, and soon there will be no need to install it locally anymore. You'll be able to sign in using an email and password, or using your Google or Fitbit credentials. Your personal physical activity data (steps and/or heartrate) will be downloaded from the Google Fit or Fitbit servers and they will impact your CGM curves. Some errors were found in CGMSIM v2.6 and they have been corrected in the new version already. So please be patient, the release will be announced on all major social media platorms in due time.
+CGMSIM is a **Type I or juvenile Diabetes (T1D) real time interactive simulation**, allowing its users to effectively experience the effect of meals, physical activity and various insulin treatment modalities. These blood glucose (BG) variations are best depicted as a continuous glucose monitoring (CGM) system. 
 
-Version 2.6 brings insulin **degludec (Tresiba®)** and **glargine U300 (Toujeo®)** as new long-acting insulin agonist options. Moreover, some **tolerance for spelling errors** was added.
+Each simulated adult patient is coupled to a <a href="https://nightscout.github.io/" target="_blank"> Nightscout </a> website, used to display the CGM curve and to declare meals and insulin doses. Nightscout will be soon provided on request, but for now you have to set up your own Nightscout instance.
 
-Version 2.5 includes **pseudo-random variability based on real time astronomical calculations !** [Read further here for details about the new feature.](model/random.md#astronomy).
+## New features :
+
+Optionally, if you choose to wear a physical activity tracker, CGMSIM will fetch your **physical activity** data (steps and heart rate) data from the <a href="https://www.fitbit.com/" target="_blank"> Fitbit </a> or <a href="https://www.google.com/fit/" target="_blank"> Google Fit </a> APIs, and calculate their effect on your simulated patient's BG.
+
+Multiple daily injections (MDI) regimens and Continuous Subcutaneous Insulin Infusion (CSII or insulin pump) treatments can be modeled. The simulated T1D patient can be coupled to various DIY artificial pancreas software solutions (<a href="https://loopkit.github.io/loopdocs/" target="_blank"> iOS Loop</a>, <a href="https://androidaps.readthedocs.io/en/latest/" target="_blank"> AndroidAPS</a>, or <a href="https://openaps.org/" target="_blank"> openAPS</a>).
+
+In addition to the simplified model we developed, the mathematics of the UVA / Padova simulation have been rewritten by the developers of the <a href="https://lt1.org/" target="_blank"> LoopInsightT1 simulator</a> and included into CGMSIM.
+
+CGMSIM v3.0 is a web application. You can create an account, or sign-in using your Google or Fitbit credentials here : <a href="https://passport-auth-nodejs.herokuapp.com/" target="_blank"> https://passport-auth-nodejs.herokuapp.com/</a>
+
+$\textcolor{red}{\textsf{The URL above is temporary !!! .}}$ 
+
+**Email alerts** about HIGH and LOW blood glucose have been added. In addition, iOS and Android applications have been created, providing **push notifications** in the same situations.
+
+<br>
 
 ##Introduction
 
-This application is an **interactive real time simulation** of the effects of food and insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). Rather than blood glucose (BG) values, it displays a continuous glucose sensor (CGM) trace using <a href="https://nightscout.github.io/" target="_blank">Nightscout</a> as visualization tool. 
+This is what it looks like, in an accelerated view : 
+<br>
 
-This is what it looks like, in an accelerated view :
 ![Animation2](img/CGMSIM.gif)
 
 <br>
@@ -40,14 +54,14 @@ To understand the mechanics of the simulation, a few things must be considered.
 
 3. **Physical exercise** affects blood glucose in many ways. Short bouts of intense physical activity will trigger the release of adrenaline, which increases the EGP. In turn, the increased peripheral uptake of glucose in the muscle tissue will lower the blood glucose as physical activity continues. The same continues also during the post exercise phase, until the muscle glycogen stores are repleted.
 
-4. **Mealtime insulins** have a short duration of activity (DIA, ~3 hours), while **long-acting insulin analogs** are meant to be injected once or twice a day. Both will lower blood glucose and thus sensor glucose values.
+4. **Mealtime insulins** have a short duration of activity (DIA, ~3 hours), while **long-acting insulin analogs** are meant to be injected once or twice a day. Both will lower blood glucose and thus CGM values.
 
-5. The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle, the moon phase and the alignment of planets :wink: all seem to play a role. Adding a touch of **random variation** (or chaos) brings some realism in the simulation.  
+5. The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle, the moon phase and the alignment of planets and stars :wink: all seem to play a role. Adding a touch of **random variation** (or chaos) brings some realism in the simulation.  
 
 
 ## Why use a simulator ?
 
-Many scenario-based simulators have been written in the past, like [AIDA](http://www.2aida.org/) or the [UVA/Padova T1DMS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4454102/). In contrast, CGMSIM runs in **real time** like a "serious game". It requires time and dedication to reach its goal. It is not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time, making team training possible.
+Many **scenario-based** simulators have been written in the past, like [AIDA](http://www.2aida.org/) or the [UVA/Padova T1DMS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4454102/). In contrast, CGMSIM runs in **real time** like a "serious game". It requires time and dedication to reach its goal. It is not a matter of hours or days, but rather weeks or months. 
 
 !!! danger "Healthcare Professionals - HCPs"
     Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.
@@ -56,9 +70,9 @@ Many scenario-based simulators have been written in the past, like [AIDA](http:/
 
 
 !!! info "Not all patients are equal..."
-    Every simulated patient can be defined in terms of weight, insulin sensitivity, amplitude of EGP variability.
+    Every simulated patient can be defined in terms of weight, height, gender, age, insulin sensitivity, amplitude of EGP variability and carb ratio.
 
-This website will describe step by step how to install and kickstart the simulation as an administrator, and how to use it as an end-user.
+This website will describe step by step how create your virtual subject's profile, and how to use the simulator.
 
 ## Where is the source code ?
 

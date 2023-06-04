@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.oracle.cgmsim.com/build/linux/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Linux/Ubuntu - CGMSIM</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9DEJWGQQJ5');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">CGMSIM</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../model/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../model/mealtime/" class="dropdown-item">Mealtime Insulin</a>
+</li>
+                                    
+<li>
+    <a href="../../model/la-agonists/" class="dropdown-item">Long-acting insulin Agonists</a>
+</li>
+                                    
+<li>
+    <a href="../../model/food/" class="dropdown-item">Carb absorption from the gut</a>
+</li>
+                                    
+<li>
+    <a href="../../model/liver/" class="dropdown-item">Endogenous Glucose production</a>
+</li>
+                                    
+<li>
+    <a href="../../model/physical/" class="dropdown-item">Physical activity</a>
+</li>
+                                    
+<li>
+    <a href="../../model/random/" class="dropdown-item">Random variation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../nightscout/" class="dropdown-item">Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Linux/Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../clone/" class="dropdown-item">Download</a>
+</li>
+                                    
+<li>
+    <a href="../setupscript/" class="dropdown-item">Setup script</a>
+</li>
+                                    
+<li>
+    <a href="../kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Using the simulator <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../operate/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../operate/meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+</li>
+                                    
+<li>
+    <a href="../../operate/insulin/" class="dropdown-item">Declaring long-acting insulins</a>
+</li>
+                                    
+<li>
+    <a href="../../operate/pump/" class="dropdown-item">Pump mode and DIYAPS</a>
+</li>
+                                    
+<li>
+    <a href="../../operate/reports/" class="dropdown-item">View reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../contact/" class="nav-link">Contact me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../nightscout/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../clone/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#installing-linux-ubuntu" class="nav-link">Installing Linux Ubuntu</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#raspberry-pi" class="nav-link">Raspberry Pi</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="installing-linux-ubuntu">Installing Linux Ubuntu<a class="headerlink" href="#installing-linux-ubuntu" title="Permanent link">⌁</a></h1>
+<p>Two major options are available. </p>
+<ol>
+<li>
+<p>A cloud-based solution like <a href="https://www.digitalocean.com/products/linux-distribution/ubuntu/">Digital Ocean</a> or <a href="https://www.mvps.net/configure">MVPS</a>. They provide a virtual machines that you can create in seconds with just a few clicks, for a few euros/month.</p>
+</li>
+<li>
+<p>A computer running Linux at home.
+<br></p>
+</li>
+</ol>
+<h2 id="raspberry-pi">Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permanent link">⌁</a></h2>
+<p>I recommend using a <a href="https://www.raspberrypi.com/products/">Raspberry Pi (RPi)</a> micro-computer, as it is the cheapest and most energy efficient solution. I currently host 10 simulated patients on a headless RPi3, without any monthly cost other than my broadband internet subscription. The price of a Raspberry Pi Zero is less than 10 EUR, and if you prefer a more robust solution a Raspberry Pi 4 starter kit including a charger and a preloaded SD card, it costs less than 100 euros.</p>
+<p>You don't need to connect your RPi to a monitor, a keyboard or a mouse. Your installation won't even have a desktop interface. As soon as your linux computer is connected to your home network with LAN or WLAN, you will need a separate computer in order to login into your Linux computer remotely through the network.</p>
+<p>Linux Ubuntu is completely free and comes with all the software you need. Ubuntu Server is a lightweight version, with no desktop environment. Here are the <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview">full instructions for installing Ubuntu Server on a Raspberry 2, 3 or 4</a>. </p>
+<p>All the steps are described above in detail, and it will also take you some time, grab a cup of ☕️ and be patient.</p>
+<ol>
+<li>
+<p>Use the Raspberry Pi imager Tool to create the SD card with the onboard operating system</p>
+</li>
+<li>
+<p>Edit the network-config file so that your Rpi finds your WLAN</p>
+</li>
+<li>
+<p>Boot your Linux machine, (wait 3-4 minutes!)</p>
+</li>
+<li>
+<p>Locate it on your network, determine its IP address</p>
+</li>
+<li>
+<p>Your username is <strong>ubuntu</strong> and password <strong>ubuntu</strong>. Connect to your Rpi with a SSH client like <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a>.  <strong>You will be prompted to change your password on first login attempt</strong>.</p>
+</li>
+<li>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-20-04-quickstart">Create a regular new user with sudo privileges.</a> and reboot.</p>
+</li>
+</ol>
+<p>When you finally login as the new user, remember to update/upgrade all packages, so that your fresh installation is up-to-date. In your linux terminal, type :</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre>
+<p>You are ready to <a href="../clone/">download and deploy CGMSIM</a>, yay ! 😅</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../javascripts/config.js" defer></script>
+        <script src="../../javascripts/extra.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

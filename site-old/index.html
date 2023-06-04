@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        <link rel="canonical" href="https://www.oracle.cgmsim.com/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>CGMSIM</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+        <link href="stylesheets/admonitions.css" rel="stylesheet">
+        <link href="stylesheets/extra.css" rel="stylesheet">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9DEJWGQQJ5');
+        </script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">CGMSIM</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="model/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="model/mealtime/" class="dropdown-item">Mealtime Insulin</a>
+</li>
+                                    
+<li>
+    <a href="model/la-agonists/" class="dropdown-item">Long-acting insulin Agonists</a>
+</li>
+                                    
+<li>
+    <a href="model/food/" class="dropdown-item">Carb absorption from the gut</a>
+</li>
+                                    
+<li>
+    <a href="model/liver/" class="dropdown-item">Endogenous Glucose production</a>
+</li>
+                                    
+<li>
+    <a href="model/physical/" class="dropdown-item">Physical activity</a>
+</li>
+                                    
+<li>
+    <a href="model/random/" class="dropdown-item">Random variation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="build/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="build/nightscout/" class="dropdown-item">Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="build/linux/" class="dropdown-item">Linux/Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="build/clone/" class="dropdown-item">Download</a>
+</li>
+                                    
+<li>
+    <a href="build/setupscript/" class="dropdown-item">Setup script</a>
+</li>
+                                    
+<li>
+    <a href="build/kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Using the simulator <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="operate/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="operate/meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+</li>
+                                    
+<li>
+    <a href="operate/insulin/" class="dropdown-item">Declaring long-acting insulins</a>
+</li>
+                                    
+<li>
+    <a href="operate/pump/" class="dropdown-item">Pump mode and DIYAPS</a>
+</li>
+                                    
+<li>
+    <a href="operate/reports/" class="dropdown-item">View reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="contact/" class="nav-link">Contact me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="model/overview/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#welcome-to-the-cgmsim-v30-documentation" class="nav-link">Welcome to the CGMSIM  v3.0  documentation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#new-features" class="nav-link">New features :</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#human-physiology" class="nav-link">Human physiology</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-use-a-simulator" class="nav-link">Why use a simulator ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#where-is-the-source-code" class="nav-link">Where is the source code ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="welcome-to-the-cgmsim-v30-documentation">Welcome to the CGMSIM  v3.0  documentation<a class="headerlink" href="#welcome-to-the-cgmsim-v30-documentation" title="Permanent link">⌁</a></h1>
+<p><br></p>
+<p>CGMSIM is a <strong>Type I or juvenile Diabetes (T1D) real time interactive simulation</strong>, allowing its users to effectively experience the effect of meals, physical activity and various insulin treatment modalities. These blood glucose (BG) variations are best depicted as a continuous glucose monitoring (CGM) system. </p>
+<p>Each simulated adult patient is coupled to a <a href="https://nightscout.github.io/" target="_blank"> Nightscout </a> website, used to display the CGM curve and to declare meals and insulin doses. Nightscout will be soon provided on request, but for now you have to set up your own Nightscout instance.</p>
+<h2 id="new-features">New features :<a class="headerlink" href="#new-features" title="Permanent link">⌁</a></h2>
+<p>Optionally, if you choose to wear a physical activity tracker, CGMSIM will fetch your <strong>physical activity</strong> data (steps and heart rate) data from the <a href="https://www.fitbit.com/" target="_blank"> Fitbit </a> or <a href="https://www.google.com/fit/" target="_blank"> Google Fit </a> APIs, and calculate their effect on your simulated patient's BG.</p>
+<p>Multiple daily injections (MDI) regimens and Continuous Subcutaneous Insulin Infusion (CSII or insulin pump) treatments can be modeled. The simulated T1D patient can be coupled to various DIY artificial pancreas software solutions (<a href="https://loopkit.github.io/loopdocs/" target="_blank"> iOS Loop</a>, <a href="https://androidaps.readthedocs.io/en/latest/" target="_blank"> AndroidAPS</a>, or <a href="https://openaps.org/" target="_blank"> openAPS</a>).</p>
+<p>In addition to the simplified model we developed, the mathematics of the UVA / Padova simulation have been rewritten by the developers of the <a href="https://lt1.org/" target="_blank"> LoopInsightT1 simulator</a> and included into CGMSIM.</p>
+<p>CGMSIM v3.0 is a web application. You can create an account, or sign-in using your Google or Fitbit credentials here : <a href="https://passport-auth-nodejs.herokuapp.com/" target="_blank"> https://passport-auth-nodejs.herokuapp.com/</a></p>
+<p><span class="arithmatex">\(\textcolor{red}{\textsf{The URL above is temporary !!! .}}\)</span> </p>
+<p><strong>Email alerts</strong> about HIGH and LOW blood glucose have been added. In addition, iOS and Android applications have been created, providing <strong>push notifications</strong> in the same situations.</p>
+<p><br></p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⌁</a></h2>
+<p>This is what it looks like, in an accelerated view : 
+<br></p>
+<p><img alt="Animation2" src="img/CGMSIM.gif" /></p>
+<p><br>
+Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a living organism, the goal of this simulation is not even to try to match reality, but to provide a framework for practising, learning and/or teaching.</p>
+<p>The treatment goal in type 1 diabetes is to keep the BG or CGM curve values as close as possible to that of a healthy person. In realistic terms, it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Please understand that this simulation:</p>
+<ul>
+<li>cannot predict individual response to treatment</li>
+<li>cannot replace traditional patient/caregiver education</li>
+<li>does not depict 100% realistically human physiology</li>
+</ul>
+<p><strong>This is work in progress, and all feedback is welcome !</strong></p>
+</div>
+<h2 id="human-physiology">Human physiology<a class="headerlink" href="#human-physiology" title="Permanent link">⌁</a></h2>
+<p>To understand the mechanics of the simulation, a few things must be considered.</p>
+<ol>
+<li>
+<p>After a meal, the <strong>absorption of carbohydrates</strong> from the gut will also increase the blood glucose. Since insulin replacement is administered subcutaneously and not directly into the hepatic portal vein, some of the ingested food will be absorbed into the main bloodstream directly, bypassing the liver. After a short delay, the CGM will reflect the increase of blood glucose.</p>
+</li>
+<li>
+<p>The <strong>endogenous glucose production</strong> (EGP) is mainly du to the liver release of glucose into the bloodstream. Either by releasing stores (glycogenolysis) or by synthesizing new glucose (neoglucogenesis). Various biological states, alcohol and hormones can affect EGP. As glucose is released into the blood stream, the blood glucose concentration increases.</p>
+</li>
+<li>
+<p><strong>Physical exercise</strong> affects blood glucose in many ways. Short bouts of intense physical activity will trigger the release of adrenaline, which increases the EGP. In turn, the increased peripheral uptake of glucose in the muscle tissue will lower the blood glucose as physical activity continues. The same continues also during the post exercise phase, until the muscle glycogen stores are repleted.</p>
+</li>
+<li>
+<p><strong>Mealtime insulins</strong> have a short duration of activity (DIA, ~3 hours), while <strong>long-acting insulin analogs</strong> are meant to be injected once or twice a day. Both will lower blood glucose and thus CGM values.</p>
+</li>
+<li>
+<p>The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle, the moon phase and the alignment of planets and stars 😉 all seem to play a role. Adding a touch of <strong>random variation</strong> (or chaos) brings some realism in the simulation.  </p>
+</li>
+</ol>
+<h2 id="why-use-a-simulator">Why use a simulator ?<a class="headerlink" href="#why-use-a-simulator" title="Permanent link">⌁</a></h2>
+<p>Many <strong>scenario-based</strong> simulators have been written in the past, like <a href="http://www.2aida.org/">AIDA</a> or the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4454102/">UVA/Padova T1DMS</a>. In contrast, CGMSIM runs in <strong>real time</strong> like a "serious game". It requires time and dedication to reach its goal. It is not a matter of hours or days, but rather weeks or months. </p>
+<div class="admonition danger">
+<p class="admonition-title">Healthcare Professionals - HCPs</p>
+<p>Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.</p>
+<p>Living with incertainty 24/7, and facing reports of treatment "success" will teach some humility and empathy.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Not all patients are equal...</p>
+<p>Every simulated patient can be defined in terms of weight, height, gender, age, insulin sensitivity, amplitude of EGP variability and carb ratio.</p>
+</div>
+<p>This website will describe step by step how create your virtual subject's profile, and how to use the simulator.</p>
+<h2 id="where-is-the-source-code">Where is the source code ?<a class="headerlink" href="#where-is-the-source-code" title="Permanent link">⌁</a></h2>
+<p><strong>The source code and more technical details on how various scripts are excecuted and interact with each other can be found in the <a href="https://github.com/lsandini/cgmsim">CGMSIM project's repository</a></strong></p>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9DEJWGQQJ5');
+</script></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="javascripts/config.js" defer></script>
+        <script src="javascripts/extra.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2023-04-07 10:42:53.491608+00:00
+-->

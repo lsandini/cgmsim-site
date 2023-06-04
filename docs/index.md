@@ -1,33 +1,49 @@
-# Welcome to the CGMSIM  v3.0  documentation
+# VERSION 2.6 IS DEPRECATED IN FAVOR OF CGMSIM v.3
 
 <br>
+## Please head over to <a href="https://cgmsim.com/support" target="_blank"> CGMSIM v.3 </a>for the new version's documentation !
 
-CGMSIM is a **Type I or juvenile Diabetes (T1D) real time interactive simulation**, allowing its users to effectively experience the effect of meals, physical activity and various insulin treatment modalities. These blood glucose (BG) variations are best depicted as a continuous glucose monitoring (CGM) system. 
 
-Each simulated adult patient is coupled to a <a href="https://nightscout.github.io/" target="_blank"> Nightscout </a> website, used to display the CGM curve and to declare meals and insulin doses. Nightscout will be soon provided on request, but for now you have to set up your own Nightscout instance.
+
+![Animation2](img/deprecated.png)
+
+
+
+
+## Welcome to the CGMSIM  v2.6  documentation
+
+CGMSIM is an interactive simulation program designed for people without diabetes to experience the effects of different meals, physical activities, and insulin treatments on blood sugar levels in **Type I or juvenile diabetes (T1D)**. 
+
+It uses a **simulated** continuous glucose monitoring (CGM) system to depict changes in blood glucose levels over time, allowing users to better understand how their choices and treatments can affect the condition.
+
+Each simulated adult patient is coupled to a <a href="https://nightscout.github.io/" target="_blank"> Nightscout </a> website, used to display the CGM curve and to declare meals and insulin doses. Nightscout will be soon provided on request, unless you already have set up your own Nightscout instance.
+
+**Here's a quick overview of what it looks like when viewed in fast forward: **
+<br>
+
+![Animation2](img/CGMSIM.gif)
 
 ## New features :
 
-Optionally, if you choose to wear a physical activity tracker, CGMSIM will fetch your **physical activity** data (steps and heart rate) data from the <a href="https://www.fitbit.com/" target="_blank"> Fitbit </a> or <a href="https://www.google.com/fit/" target="_blank"> Google Fit </a> APIs, and calculate their effect on your simulated patient's BG.
+If you opt to use a **physical activity tracker**, CGMSIM can access your activity data (such as steps and heart rate) from the <a href="https://www.fitbit.com/" target="_blank"> Fitbit </a> or <a href="https://www.google.com/fit/" target="_blank"> Google Fit</a> APIs and incorporate them into the simulation to calculate their impact on your simulated patient's blood glucose levels.
 
-Multiple daily injections (MDI) regimens and Continuous Subcutaneous Insulin Infusion (CSII or insulin pump) treatments can be modeled. The simulated T1D patient can be coupled to various DIY artificial pancreas software solutions (<a href="https://loopkit.github.io/loopdocs/" target="_blank"> iOS Loop</a>, <a href="https://androidaps.readthedocs.io/en/latest/" target="_blank"> AndroidAPS</a>, or <a href="https://openaps.org/" target="_blank"> openAPS</a>).
+CGMSIM can simulate both Multiple Daily Injections (MDI) and Continuous Subcutaneous Insulin Infusion (CSII or insulin pump) treatment regimens. Additionally, users can couple the simulated T1D patient with various DIY artificial pancreas software solutions such as (<a href="https://loopkit.github.io/loopdocs/" target="_blank">iOS Loop</a>, <a href="https://androidaps.readthedocs.io/en/latest/" target="_blank"> AndroidAPS</a>, or <a href="https://openaps.org/" target="_blank"> openAPS</a>).
 
-In addition to the simplified model we developed, the mathematics of the UVA / Padova simulation have been rewritten by the developers of the <a href="https://lt1.org/" target="_blank"> LoopInsightT1 simulator</a> and included into CGMSIM.
+Apart from our simplified model, the developers of the <a href="https://lt1.org/" target="_blank"> LoopInsightT1 simulator</a> simulator have reworked the UVA/Padova simulation mathematics, and we have incorporated this into CGMSIM.
 
-CGMSIM v3.0 is a web application. You can create an account, or sign-in using your Google or Fitbit credentials here : <a href="https://passport-auth-nodejs.herokuapp.com/" target="_blank"> https://passport-auth-nodejs.herokuapp.com/</a>
+CGMSIM v3.0 is a brand new web application, with a completely rewritten codebase. To use it, you can either create an account or log in using your Google or Fitbit credentials via this link: <a href="https://passport-auth-nodejs.herokuapp.com/" target="_blank"> https://passport-auth-nodejs.herokuapp.com/</a>
 
-$\textcolor{red}{\textsf{The URL above is temporary !!! .}}$ 
+$\textcolor{red}{\textsf{The URL above is temporary !!!}}$ 
 
 **Email alerts** about HIGH and LOW blood glucose have been added. In addition, iOS and Android applications have been created, providing **push notifications** in the same situations.
+
+CGMSIM now includes optional **email alerts** for high and low blood glucose levels. Moreover, immediate **push notifications** for these same situations are possible, using an iOS or Android application.
 
 <br>
 
 ##Introduction
 
-This is what it looks like, in an accelerated view : 
-<br>
 
-![Animation2](img/CGMSIM.gif)
 
 <br>
 Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a living organism, the goal of this simulation is not even to try to match reality, but to provide a framework for practising, learning and/or teaching.

@@ -1,10 +1,10 @@
 site_name: CGMSIM
+
 theme: 
     name: flatly
     highlightjs: true
     logo: 'logo.png'
-    analytics:
-        gtag: G-9DEJWGQQJ5
+
 site_url: https://lsandini.github.io/cgmsim-site
 
 extra_javascript:
@@ -35,6 +35,54 @@ markdown_extensions:
                 - overrides/.icons
 nav:
 - Home: 'index.md'
+
+- Admin Panel:
+
+    - Login: 
+
+        - Google: 'admin/login/google.md'
+        - Fitbit: 'admin/login/fitbit.md'
+        - Local user: 'admin/login/local.md'
+
+    - Profile: 
+
+        - Preprofile: 'admin/profile/preprofile.md'
+        - Profile (desktop): 'admin/profile/profile.md'
+        - Profile (mobile): 'admin/profile/profile-mobile.md' 
+
+    - Create Nightscout: 'admin/create-nightscout.md'
+    - Subject: 'admin/subject.md'
+    - Parameters: 'admin/parameters.md'
+    - Kickstart: 'admin/kickstart.md'
+    - Activate: 'admin/activate.md'
+
+- Nightscout: 
+
+    - Profile: 'nightscout/profile.md'
+    - Treatments: 'nightscout/treatments.md'
+    - Activity: 'nightscout/activity.md'
+    - Pump mode: 'nightscout/pump-mode.md'
+
+- Mathematical models:
+
+    - CGMSIM:
+    
+        - mealtime insulin: 'model/mealtime.md'
+        - long-acting Agonists: 'model/la-agonists.md'
+        - carbs: 'model/food.md'
+        - endogenous glucose production: 'model/liver.md'
+        - physical activity: 'model/physical.md'
+        - random effects: 'model/random.md'
+
+    - UVA/Padova: 'model/uva-padova.md'
+
+- Contact: 'contact.md'
+
+
+
+
+
+
 - Mathematical Model: 
     - Overview: 'model/overview.md'
     - Mealtime Insulin: 'model/mealtime.md'
@@ -57,4 +105,3 @@ nav:
     - Pump mode and DIYAPS: 'operate/pump.md'
     - View reports: 'operate/reports.md'
 - Contact me: 'contact.md'
-

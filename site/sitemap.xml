@@ -1,103 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/contact/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/contact/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/build/clone/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/activate/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/build/kickstart/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/create-nightscout/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/build/linux/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/kickstart/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/build/nightscout/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/parameters/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/build/overview/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/subject/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/build/setupscript/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/login/fitbit/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/model/food/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/login/google/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/model/la-agonists/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/login/local/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/model/liver/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/profile/preprofile/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/model/mealtime/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/profile/profile-mobile/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/model/overview/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/admin/profile/profile/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/model/physical/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/build/clone/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/model/random/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/build/kickstart/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/operate/insulin/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/build/linux/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/operate/meals/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/build/nightscout/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/operate/overview/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/build/overview/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/operate/pump/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/build/setupscript/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lsandini.github.io/cgmsim-site/operate/reports/</loc>
-         <lastmod>2023-02-12</lastmod>
+         <loc>https://www.oracle.cgmsim.com/model/food/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/model/la-agonists/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/model/liver/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/model/mealtime/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/model/overview/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/model/physical/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/model/random/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/model/uva-padova/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/nightscout/activity/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/nightscout/profile/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/nightscout/pump-mode/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/nightscout/treatments/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/operate/insulin/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/operate/meals/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/operate/overview/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/operate/pump/</loc>
+         <lastmod>2023-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.oracle.cgmsim.com/operate/reports/</loc>
+         <lastmod>2023-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="None">
         
-        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/">
+        <link rel="canonical" href="https://www.oracle.cgmsim.com/">
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>CGMSIM</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/color-brewer.min.css">
         <link href="stylesheets/admonitions.css" rel="stylesheet">
         <link href="stylesheets/extra.css" rel="stylesheet">
 
@@ -45,6 +45,130 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem active">
                                 <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin Panel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Login</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="admin/login/google/" class="dropdown-item">Google</a>
+</li>
+            
+<li>
+    <a href="admin/login/fitbit/" class="dropdown-item">Fitbit</a>
+</li>
+            
+<li>
+    <a href="admin/login/local/" class="dropdown-item">Local user</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Profile</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="admin/profile/preprofile/" class="dropdown-item">Preprofile</a>
+</li>
+            
+<li>
+    <a href="admin/profile/profile/" class="dropdown-item">Profile (desktop)</a>
+</li>
+            
+<li>
+    <a href="admin/profile/profile-mobile/" class="dropdown-item">Profile (mobile)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="admin/create-nightscout/" class="dropdown-item">Create Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="admin/subject/" class="dropdown-item">Subject</a>
+</li>
+                                    
+<li>
+    <a href="admin/parameters/" class="dropdown-item">Parameters</a>
+</li>
+                                    
+<li>
+    <a href="admin/kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                    
+<li>
+    <a href="admin/activate/" class="dropdown-item">Activate</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="nightscout/profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="nightscout/treatments/" class="dropdown-item">Treatments</a>
+</li>
+                                    
+<li>
+    <a href="nightscout/activity/" class="dropdown-item">Activity</a>
+</li>
+                                    
+<li>
+    <a href="nightscout/pump-mode/" class="dropdown-item">Pump mode</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical models <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CGMSIM</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="model/mealtime/" class="dropdown-item">mealtime insulin</a>
+</li>
+            
+<li>
+    <a href="model/la-agonists/" class="dropdown-item">long-acting Agonists</a>
+</li>
+            
+<li>
+    <a href="model/food/" class="dropdown-item">carbs</a>
+</li>
+            
+<li>
+    <a href="model/liver/" class="dropdown-item">endogenous glucose production</a>
+</li>
+            
+<li>
+    <a href="model/physical/" class="dropdown-item">physical activity</a>
+</li>
+            
+<li>
+    <a href="model/random/" class="dropdown-item">random effects</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="model/uva-padova/" class="dropdown-item">UVA/Padova</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="contact/" class="nav-link">Contact</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
@@ -150,7 +274,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="model/overview/" class="nav-link">
+                                <a rel="next" href="admin/login/google/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -172,9 +296,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#welcome-to-the-cgmsim-v26-documentation" class="nav-link">Welcome to the CGMSIM  v2.6  documentation</a>
+            <li class="nav-item" data-level="1"><a href="#welcome-to-the-cgmsim-v30-documentation" class="nav-link">Welcome to the CGMSIM  v3.0  documentation</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#announcement" class="nav-link">Announcement</a>
+            <li class="nav-item" data-level="2"><a href="#new-features" class="nav-link">New features :</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -201,15 +325,23 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-the-cgmsim-v26-documentation">Welcome to the CGMSIM  v2.6  documentation<a class="headerlink" href="#welcome-to-the-cgmsim-v26-documentation" title="Permanent link">⌁</a></h1>
-<h2 id="announcement">Announcement<a class="headerlink" href="#announcement" title="Permanent link">⌁</a></h2>
-<p>An important update is in the works. CGMSIM v3.0 is being ported to the Cloud, and soon there will be no need to install it locally anymore. You'll be able to sign in using an email and password, or using your Google or Fitbit credentials. Your personal physical activity data (steps and/or heartrate) will be downloaded from the Google Fit or Fitbit servers and they will impact your CGM curves. Some errors were found in CGMSIM v2.6 and they have been corrected in the new version already. So please be patient, the release will be announced on all major social media platorms in due time.</p>
-<p>Version 2.6 brings insulin <strong>degludec (Tresiba®)</strong> and <strong>glargine U300 (Toujeo®)</strong> as new long-acting insulin agonist options. Moreover, some <strong>tolerance for spelling errors</strong> was added.</p>
-<p>Version 2.5 includes <strong>pseudo-random variability based on real time astronomical calculations !</strong> <a href="model/random/#astronomy">Read further here for details about the new feature.</a>.</p>
+<h1 id="welcome-to-the-cgmsim-v30-documentation">Welcome to the CGMSIM  v3.0  documentation<a class="headerlink" href="#welcome-to-the-cgmsim-v30-documentation" title="Permanent link">⌁</a></h1>
+<p>CGMSIM is an interactive simulation program designed for people without diabetes to experience the effects of different meals, physical activities, and insulin treatments on blood sugar levels in <strong>Type I or juvenile diabetes (T1D)</strong>. </p>
+<p>It uses a <strong>simulated</strong> continuous glucose monitoring (CGM) system to depict changes in blood glucose levels over time, allowing users to better understand how their choices and treatments can affect the condition.</p>
+<p>Each simulated adult patient is coupled to a <a href="https://nightscout.github.io/" target="_blank"> Nightscout </a> website, used to display the CGM curve and to declare meals and insulin doses. Nightscout will be soon provided on request, unless you already have set up your own Nightscout instance.</p>
+<p><strong>Here's a quick overview of what it looks like when viewed in fast forward: </strong>
+<br></p>
+<p><img alt="Animation2" src="img/CGMSIM.gif" /></p>
+<h2 id="new-features">New features :<a class="headerlink" href="#new-features" title="Permanent link">⌁</a></h2>
+<p>If you opt to use a <strong>physical activity tracker</strong>, CGMSIM can access your activity data (such as steps and heart rate) from the <a href="https://www.fitbit.com/" target="_blank"> Fitbit </a> or <a href="https://www.google.com/fit/" target="_blank"> Google Fit</a> APIs and incorporate them into the simulation to calculate their impact on your simulated patient's blood glucose levels.</p>
+<p>CGMSIM can simulate both Multiple Daily Injections (MDI) and Continuous Subcutaneous Insulin Infusion (CSII or insulin pump) treatment regimens. Additionally, users can couple the simulated T1D patient with various DIY artificial pancreas software solutions such as (<a href="https://loopkit.github.io/loopdocs/" target="_blank">iOS Loop</a>, <a href="https://androidaps.readthedocs.io/en/latest/" target="_blank"> AndroidAPS</a>, or <a href="https://openaps.org/" target="_blank"> openAPS</a>).</p>
+<p>Apart from our simplified model, the developers of the <a href="https://lt1.org/" target="_blank"> LoopInsightT1 simulator</a> simulator have reworked the UVA/Padova simulation mathematics, and we have incorporated this into CGMSIM.</p>
+<p>CGMSIM v3.0 is a brand new web application, with a completely rewritten codebase. To use it, you can either create an account or log in using your Google or Fitbit credentials via this link: <a href="https://passport-auth-nodejs.herokuapp.com/" target="_blank"> https://passport-auth-nodejs.herokuapp.com/</a></p>
+<p><span class="arithmatex">\(\textcolor{red}{\textsf{The URL above is temporary !!!}}\)</span> </p>
+<p><strong>Email alerts</strong> about HIGH and LOW blood glucose have been added. In addition, iOS and Android applications have been created, providing <strong>push notifications</strong> in the same situations.</p>
+<p>CGMSIM now includes optional <strong>email alerts</strong> for high and low blood glucose levels. Moreover, immediate <strong>push notifications</strong> for these same situations are possible, using an iOS or Android application.</p>
+<p><br></p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⌁</a></h2>
-<p>This application is an <strong>interactive real time simulation</strong> of the effects of food and insulin analogs on the blood glucose of a patient with type 1 diabetes (T1D). Rather than blood glucose (BG) values, it displays a continuous glucose sensor (CGM) trace using <a href="https://nightscout.github.io/" target="_blank">Nightscout</a> as visualization tool. </p>
-<p>This is what it looks like, in an accelerated view :
-<img alt="Animation2" src="img/CGMSIM.gif" /></p>
 <p><br>
 Since even the most accurate physiological simulators can at best provide only an approximation of what happens in a living organism, the goal of this simulation is not even to try to match reality, but to provide a framework for practising, learning and/or teaching.</p>
 <p>The treatment goal in type 1 diabetes is to keep the BG or CGM curve values as close as possible to that of a healthy person. In realistic terms, it means 3.9 – 10 mmol/l or 70-180 mg/dl for CGM curves. The Time In Range (TIR) should be at least 70%.</p>
@@ -236,14 +368,14 @@ Since even the most accurate physiological simulators can at best provide only a
 <p><strong>Physical exercise</strong> affects blood glucose in many ways. Short bouts of intense physical activity will trigger the release of adrenaline, which increases the EGP. In turn, the increased peripheral uptake of glucose in the muscle tissue will lower the blood glucose as physical activity continues. The same continues also during the post exercise phase, until the muscle glycogen stores are repleted.</p>
 </li>
 <li>
-<p><strong>Mealtime insulins</strong> have a short duration of activity (DIA, ~3 hours), while <strong>long-acting insulin analogs</strong> are meant to be injected once or twice a day. Both will lower blood glucose and thus sensor glucose values.</p>
+<p><strong>Mealtime insulins</strong> have a short duration of activity (DIA, ~3 hours), while <strong>long-acting insulin analogs</strong> are meant to be injected once or twice a day. Both will lower blood glucose and thus CGM values.</p>
 </li>
 <li>
-<p>The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle, the moon phase and the alignment of planets 😉 all seem to play a role. Adding a touch of <strong>random variation</strong> (or chaos) brings some realism in the simulation.  </p>
+<p>The intricate biological pathways affecting the blood glucose variations are difficult to replicate mathematically. The absorption of ingested food from the gut, the absorption of insulin from the subcutaneous tissue, the timing of exercise, the circadian rhythm, menstrual cycle, the moon phase and the alignment of planets and stars 😉 all seem to play a role. Adding a touch of <strong>random variation</strong> (or chaos) brings some realism in the simulation.  </p>
 </li>
 </ol>
 <h2 id="why-use-a-simulator">Why use a simulator ?<a class="headerlink" href="#why-use-a-simulator" title="Permanent link">⌁</a></h2>
-<p>Many scenario-based simulators have been written in the past, like <a href="http://www.2aida.org/">AIDA</a> or the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4454102/">UVA/Padova T1DMS</a>. In contrast, CGMSIM runs in <strong>real time</strong> like a "serious game". It requires time and dedication to reach its goal. It is not a matter of hours or days, but rather weeks or months. Many instances of the simulator can run on one computer, serving many users at a time, making team training possible.</p>
+<p>Many <strong>scenario-based</strong> simulators have been written in the past, like <a href="http://www.2aida.org/">AIDA</a> or the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4454102/">UVA/Padova T1DMS</a>. In contrast, CGMSIM runs in <strong>real time</strong> like a "serious game". It requires time and dedication to reach its goal. It is not a matter of hours or days, but rather weeks or months. </p>
 <div class="admonition danger">
 <p class="admonition-title">Healthcare Professionals - HCPs</p>
 <p>Unless you or your family member has T1D, it is hard to figure how treatment can be time-consuming, technically difficult or frustrating. Even without having to worry about the risk of long-term vascular complications or acute life-threatening hypoglycemia, early adopters of this simulator showed signs of treatment fatigue after a few weeks already.</p>
@@ -251,9 +383,9 @@ Since even the most accurate physiological simulators can at best provide only a
 </div>
 <div class="admonition info">
 <p class="admonition-title">Not all patients are equal...</p>
-<p>Every simulated patient can be defined in terms of weight, insulin sensitivity, amplitude of EGP variability.</p>
+<p>Every simulated patient can be defined in terms of weight, height, gender, age, insulin sensitivity, amplitude of EGP variability and carb ratio.</p>
 </div>
-<p>This website will describe step by step how to install and kickstart the simulation as an administrator, and how to use it as an end-user.</p>
+<p>This website will describe step by step how create your virtual subject's profile, and how to use the simulator.</p>
 <h2 id="where-is-the-source-code">Where is the source code ?<a class="headerlink" href="#where-is-the-source-code" title="Permanent link">⌁</a></h2>
 <p><strong>The source code and more technical details on how various scripts are excecuted and interact with each other can be found in the <a href="https://github.com/lsandini/cgmsim">CGMSIM project's repository</a></strong></p>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -349,5 +481,5 @@ Since even the most accurate physiological simulators can at best provide only a
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-02-12 12:40:30.471628+00:00
+Build Date UTC : 2023-04-08 14:22:50.541396+00:00
 -->

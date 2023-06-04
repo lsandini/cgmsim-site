@@ -1,0 +1,63 @@
+site_name: CGMSIM
+
+theme: 
+    name: flatly
+    highlightjs: true
+    logo: 'logo.png'
+    analytics:
+        gtag: G-9DEJWGQQJ5
+
+# site_url: https://lsandini.github.io/cgmsim-site
+
+site_url: https://www.oracle.cgmsim.com
+
+extra_javascript:
+  - javascripts/config.js
+  - javascripts/extra.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+    - stylesheets/admonitions.css
+    - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/kinkkuporsas
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<lsandini@gmail.com>
+markdown_extensions:
+    - admonition
+    - attr_list
+    - toc:
+        permalink: ⌁
+    - pymdownx.arithmatex:
+        generic: true
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_alt
+        options:
+            custom_icons:
+                - overrides/.icons
+nav:
+- Home: 'index.md'
+- Mathematical Model: 
+    - Overview: 'model/overview.md'
+    - Mealtime Insulin: 'model/mealtime.md'
+    - Long-acting insulin Agonists: 'model/la-agonists.md'
+    - Carb absorption from the gut: 'model/food.md'
+    - Endogenous Glucose production: 'model/liver.md'
+    - Physical activity: 'model/physical.md'
+    - Random variation: 'model/random.md'
+- Installation: 
+    - Overview: 'build/overview.md'
+    - Nightscout: 'build/nightscout.md'
+    - Linux/Ubuntu: 'build/linux.md'
+    - Download: 'build/clone.md'
+    - Setup script: 'build/setupscript.md'
+    - Kickstart: 'build/kickstart.md'
+- Using the simulator:
+    - Overview: 'operate/overview.md'
+    - Declaring meals and mealtime insulin: 'operate/meals.md'
+    - Declaring long-acting insulins: 'operate/insulin.md'
+    - Pump mode and DIYAPS: 'operate/pump.md'
+    - View reports: 'operate/reports.md'
+- Contact me: 'contact.md'

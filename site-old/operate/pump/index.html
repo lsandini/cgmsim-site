@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.oracle.cgmsim.com/operate/pump/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Pump mode and DIYAPS - CGMSIM</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9DEJWGQQJ5');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">CGMSIM</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../model/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../model/mealtime/" class="dropdown-item">Mealtime Insulin</a>
+</li>
+                                    
+<li>
+    <a href="../../model/la-agonists/" class="dropdown-item">Long-acting insulin Agonists</a>
+</li>
+                                    
+<li>
+    <a href="../../model/food/" class="dropdown-item">Carb absorption from the gut</a>
+</li>
+                                    
+<li>
+    <a href="../../model/liver/" class="dropdown-item">Endogenous Glucose production</a>
+</li>
+                                    
+<li>
+    <a href="../../model/physical/" class="dropdown-item">Physical activity</a>
+</li>
+                                    
+<li>
+    <a href="../../model/random/" class="dropdown-item">Random variation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../build/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../build/nightscout/" class="dropdown-item">Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="../../build/linux/" class="dropdown-item">Linux/Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../build/clone/" class="dropdown-item">Download</a>
+</li>
+                                    
+<li>
+    <a href="../../build/setupscript/" class="dropdown-item">Setup script</a>
+</li>
+                                    
+<li>
+    <a href="../../build/kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Using the simulator <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+</li>
+                                    
+<li>
+    <a href="../insulin/" class="dropdown-item">Declaring long-acting insulins</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Pump mode and DIYAPS</a>
+</li>
+                                    
+<li>
+    <a href="../reports/" class="dropdown-item">View reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../contact/" class="nav-link">Contact me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../insulin/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../reports/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#insulin-pump-mode-and-diyaps" class="nav-link">Insulin pump mode and DIYAPS</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#nightscout-setup" class="nav-link">Nightscout setup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cgmsim-setup" class="nav-link">CGMSIM setup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#surprise-meals" class="nav-link">Surprise meals</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="insulin-pump-mode-and-diyaps">Insulin pump mode and DIYAPS<a class="headerlink" href="#insulin-pump-mode-and-diyaps" title="Permanent link">⌁</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Nerdy stuff ahead !</p>
+<p>This has not been yet fully tested, and you might encounter a few 🐛 along the way. You have been warned !</p>
+</div>
+<p>While this simulator was built as a training tool for Multiple Daily Injection (MDI) treatment, it can also be used to simulate Continuous Subcutaneous Insulin Infusion (CSII) or more familiarly "insulin pump" therapy. Moreover, it can be coupled to a DIYAPS solution as <a href="https://openaps.org">openAPS</a>.</p>
+<p>I have been doing this for a while on a "custom" setup, but now I added the required files to the repository for all to use. In the live demo below, there might be downtime now and then, when the rig is powered down or the pump reservoir is empty.</p>
+<p><span style="text-decoration: underline"><strong>THIS IS A LIVE UNATTENDED CGMSIM PATIENT TAKEN CARE OF BY OPENAPS : </strong></span></p>
+<iframe style="width: 640px; height: 480px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://dmpkl-freeaps.herokuapp.com/"></iframe>
+<p><br></p>
+<h2 id="nightscout-setup">Nightscout setup<a class="headerlink" href="#nightscout-setup" title="Permanent link">⌁</a></h2>
+<p>First of all, make sure that your instance of Nightscout is set to be used with DIAPS systems. It involves adding a few terms in the ENABLE variable of Heroku. You will want to see a pillbox with details about the APS calculations and another one with details about the pumps activity.</p>
+<p><a href="https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html">Details on how to setup Nightscout for openAPS here.</a></p>
+<p><a href="https://loopkit.github.io/loopdocs/nightscout/update_user/">Details on how to setup Nightscout for iOS Loop here.</a></p>
+<p><br></p>
+<h2 id="cgmsim-setup">CGMSIM setup<a class="headerlink" href="#cgmsim-setup" title="Permanent link">⌁</a></h2>
+<p>A couple of modifications are required in order to compute the insulin activity based on what the pump has been administrating. The calculations include the insulin activity from basal rates and from boluses, and not mealtime doses and long-acting agonists anymore.</p>
+<p>If you have built an openAPS rig, it will read the pump's memory, and upload the basal profile, other settings and bolus history to Nightscout. We will first setup CGMSIM to download that data from Nightscout.</p>
+<p>If you need more info on how to modify your crontab, please check <a href="https://crontab.guru/">crontab.guru</a> !</p>
+<p><strong>In the suggested crontab for MDI mode, there were 4 lines :</strong></p>
+<pre><code>SHELL=/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+
+0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
+#30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
+</code></pre>
+<p><br>
+Lines starting with <strong>#</strong> are commented out and will not be executed. Remove the <strong>#</strong> to activate them !</p>
+<div class="admonition danger">
+<p class="admonition-title">You will need to:</p>
+<ul>
+<li>
+<p>Add a first line pointing to <strong>get-pump.sh</strong>, so that CGMSIM will download pump data from NS  </p>
+</li>
+<li>
+<p>Edit the 4th line, so that CGMSIM will upload SGVs based on pump insulin: <strong>upload-cgmsim-pump.sh</strong>  </p>
+</li>
+<li>
+<p>Add the 5th line if you want to run your rig unattended with meals issued automatically with matching boluses</p>
+</li>
+</ul>
+</div>
+<p><br>  </p>
+<p><strong>It should now look like this :</strong></p>
+<pre><code>SHELL=/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-pump.sh
+0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
+*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim-pump.sh
+#0 0 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
+#30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
+</code></pre>
+<p><br></p>
+<h3 id="timezone-issue-on-cloud-based-linux-vms">Timezone issue on cloud-based Linux VMs<a class="headerlink" href="#timezone-issue-on-cloud-based-linux-vms" title="Permanent link">⌁</a></h3>
+<p>The 5th line specifically triggers the execution of the bash script <strong>random_meal.sh</strong> at midnight 00:00 or 12PM. The 4 meals of the next day are computed (carb amounts and time of delivery).  These are saved in a file, that will be overwritten the next time the script runs, 24 hours later.</p>
+<p>The absolute time of the script execution refers to the <strong>timezone where your computer running CGMSIM is located</strong>. If you are using a cloud-based solution, notice the time difference with your location. </p>
+<p>For me, with a DigitalOcean droplet located in Europe, the time difference is +3 hours. So I execute the sript at 21:00 o'clock "server time", which is 24:00 at my location. The line starts with :</p>
+<pre><code>#0 21 * * * cd /home ...
+</code></pre>
+<p>If you are running CGMSIM on a local machine and running the script at midnight, then the line should start with :</p>
+<pre><code>#0 0 * * * cd /home ...
+</code></pre>
+<p>Finally, you have to <strong>uncomment</strong> a line in one of the scripts. Edit <strong>get-all.sh</strong> by typing:</p>
+<pre><code>nano get-all.sh
+</code></pre>
+<p>... and remove the <strong>#</strong> in front of:</p>
+<pre><code># node random_meal_upload.js  
+</code></pre>
+<p>Then save your changes. Voilà.
+<br>
+<br></p>
+<h2 id="surprise-meals">Surprise meals<a class="headerlink" href="#surprise-meals" title="Permanent link">⌁</a></h2>
+<p>Just as a reminder, the <strong>"surprise"</strong> feature on the 6th and last line of the crontab creates an automatic meal completing the 200g carbs daily goal at 11:30PM. No automatic bolus, so your "late snack" remains untreated. Use with caution 😄</p>
+<p><br>
+<br></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../javascripts/config.js" defer></script>
+        <script src="../../javascripts/extra.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

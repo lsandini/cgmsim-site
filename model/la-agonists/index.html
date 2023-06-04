@@ -19,15 +19,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9DEJWGQQJ5');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -45,6 +37,130 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin Panel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Login</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../admin/login/google/" class="dropdown-item">Google</a>
+</li>
+            
+<li>
+    <a href="../../admin/login/fitbit/" class="dropdown-item">Fitbit</a>
+</li>
+            
+<li>
+    <a href="../../admin/login/local/" class="dropdown-item">Local user</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Profile</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../admin/profile/preprofile/" class="dropdown-item">Preprofile</a>
+</li>
+            
+<li>
+    <a href="../../admin/profile/profile/" class="dropdown-item">Profile (desktop)</a>
+</li>
+            
+<li>
+    <a href="../../admin/profile/profile-mobile/" class="dropdown-item">Profile (mobile)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../admin/create-nightscout/" class="dropdown-item">Create Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/subject/" class="dropdown-item">Subject</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/parameters/" class="dropdown-item">Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/activate/" class="dropdown-item">Activate</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../nightscout/profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/treatments/" class="dropdown-item">Treatments</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/activity/" class="dropdown-item">Activity</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/pump-mode/" class="dropdown-item">Pump mode</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical models <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CGMSIM</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../mealtime/" class="dropdown-item">mealtime insulin</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item">long-acting Agonists</a>
+</li>
+            
+<li>
+    <a href="../food/" class="dropdown-item">carbs</a>
+</li>
+            
+<li>
+    <a href="../liver/" class="dropdown-item">endogenous glucose production</a>
+</li>
+            
+<li>
+    <a href="../physical/" class="dropdown-item">physical activity</a>
+</li>
+            
+<li>
+    <a href="../random/" class="dropdown-item">random effects</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../uva-padova/" class="dropdown-item">UVA/Padova</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../contact/" class="nav-link">Contact</a>
                             </li>
                             <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
@@ -113,23 +229,23 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../operate/overview/" class="dropdown-item">Overview</a>
+    <a href="../../operate/overview.md" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../../operate/meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+    <a href="../../operate/meals.md" class="dropdown-item">Declaring meals and mealtime insulin</a>
 </li>
                                     
 <li>
-    <a href="../../operate/insulin/" class="dropdown-item">Declaring long-acting insulins</a>
+    <a href="../../operate/insulin.md" class="dropdown-item">Declaring long-acting insulins</a>
 </li>
                                     
 <li>
-    <a href="../../operate/pump/" class="dropdown-item">Pump mode and DIYAPS</a>
+    <a href="../../operate/pump.md" class="dropdown-item">Pump mode and DIYAPS</a>
 </li>
                                     
 <li>
-    <a href="../../operate/reports/" class="dropdown-item">View reports</a>
+    <a href="../../operate/reports.md" class="dropdown-item">View reports</a>
 </li>
                                 </ul>
                             </li>
@@ -172,26 +288,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#modeling-the-activities-of-the-long-acting-agonists" class="nav-link">Modeling the activities of the long-acting agonists</a>
+            <li class="nav-item" data-level="1"><a href="#modeling-the-activity-of-the-long-acting-agonists" class="nav-link">Modeling the activity of the long-acting agonists</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#using-biexponential-models" class="nav-link">Using biexponential models</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#old-models" class="nav-link">OLD MODELS !</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#modeling-levemir-levemir" class="nav-link">Modeling Levemir (Levemir®)</a>
+            <li class="nav-item" data-level="2"><a href="#using-bi-exponential-models" class="nav-link">Using bi-exponential models</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#modeling-glargine-lantus-abasaglar-toujeo" class="nav-link">Modeling Glargine (Lantus®, Abasaglar®, Toujeo®)</a>
-              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -199,55 +301,22 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="modeling-the-activities-of-the-long-acting-agonists">Modeling the activities of the long-acting agonists<a class="headerlink" href="#modeling-the-activities-of-the-long-acting-agonists" title="Permanent link">⌁</a></h1>
-<p>For detemir and glargine instead, mathematical models are missing. Based on clamp studies in T1D, the intra-individual day-to-day variation is an important factor affecting the predictability of a single repeated dose. Moreover, the inter-individual variability makes modeling even more a challenge. Even with the best curve-fitting tools, no “global model” was achieved.</p>
-<p>Since the goal is not to make a perfect model, I first decided to use a sinusoidal curve to model detemir, and a half-ellipse for glargine. The obvious reasons are that the mathematics of those functions are simple 😬</p>
-<h2 id="using-biexponential-models">Using biexponential models<a class="headerlink" href="#using-biexponential-models" title="Permanent link">⌁</a></h2>
-<p>While the very basic mathematical models of long acting insulin analogs are good enough for training (see below "old models"), getting closer to published "curves" and physiological activity is necessary. I decided to adapt the <a href="../mealtime/">biexponential model used for mealtime insulins</a> to long-acting insulin agonists.</p>
-<p>The activity of detemir and glargine-U100 depend on the absolute amount (units), but also on the dose in relation to the patient's weight (U/kg). Also, the peak of action is achieved at different timepoints. The DIA of detemir is more variable and dose dependent than that of glargine.</p>
-<p>Models for glargine U300 and degludec will be added later on, if anyone finds them useful.</p>
+<h1 id="modeling-the-activity-of-the-long-acting-agonists">Modeling the activity of the long-acting agonists<a class="headerlink" href="#modeling-the-activity-of-the-long-acting-agonists" title="Permanent link">⌁</a></h1>
+<p>While the activity of mealtime insulins has been well studied and modeled, mathematical models are missing for long-acting insulin agonists. Based on clamp studies in T1D, the intra-individual day-to-day variation is an important factor affecting the predictability of a single repeated dose. Moreover, the inter-individual variability makes modeling even more a challenge. Even with the best curve-fitting tools, no “global model” was achieved.</p>
+<p>In addition to <strong>detemir (Levemir®)</strong> and <strong>glargine U100 (Lantus®, Abasaglar®)</strong>, new long-acting insulin agonists <strong>degludec (Tresiba®)</strong> and <strong>glargine U300 (Toujeo®)</strong> have been added.</p>
+<p><br></p>
+<h2 id="using-bi-exponential-models">Using bi-exponential models<a class="headerlink" href="#using-bi-exponential-models" title="Permanent link">⌁</a></h2>
+<p>The activity of detemir and glargine U100 depend on the absolute amount (units), but also on the dose in relation to the patient's weight (U/kg). Also, the peak of action is achieved at different timepoints. The DIA of detemir is more variable and dose-dependent than that of glargine.</p>
 <div class="admonition danger">
 <p class="admonition-title">Bi-exponential models</p>
 <p>For detemir, the duration of action is 14h + (24* dose/weight), and the peak is at duration/3.</p>
 <p>For glargine U100, the duration of action is 22h + (12* dose/weight), and the peak is at duration/2.5.</p>
+<p>For glargine U300, the duration of action is 24 +  (14* dose/weight), and the peak is at duration/2.5.</p>
+<p>For degludec, the duration is 42, with a peak at 14h after injection.</p>
 </div>
 <p><img alt="models 3" src="https://user-images.githubusercontent.com/18611419/135437260-89bf584b-e412-41d9-bcba-026e6b27d3cc.jpg" /></p>
 <p>Here are some activity curves as depicted in many publications. Notice that the curve colours are different, and some of the activity curves seem to derived from steady-state euglycemic clamps, not from single injection clamps :</p>
-<p><img alt="nature" src="https://user-images.githubusercontent.com/18611419/135437277-8fe8c4d8-9bea-4466-8820-1240de922e2c.jpg" /></p>
-<p><br>
-<br></p>
-<h1 id="old-models">OLD MODELS !<a class="headerlink" href="#old-models" title="Permanent link">⌁</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The old models for detemir and glargine-U100 are still in use in the current version of the simulator, so here is the technical explanation for those still using them. They will be deprecated after the new model have been thoroughly tested.</p>
-</div>
-<h2 id="modeling-levemir-levemir">Modeling Levemir (Levemir®)<a class="headerlink" href="#modeling-levemir-levemir" title="Permanent link">⌁</a></h2>
-<p>The clamp studies show that the dose-response curve is linear. With increasing doses from 0.1U/kg to 1.6U/kg, the total activity, or area under the curve (AUC) of the glucose infusion rate (GIR) needed to maintain normal blood glucose, follows a straight line.</p>
-<p><img alt="image" src="https://user-images.githubusercontent.com/18611419/109794079-26fe5f80-7c1e-11eb-916c-3944d259f2a3.png" /></p>
-<p>However, the DIA seems related to the dose/kg, so that had to be considered in the model. The AUC precisely reflects the injected number of units and is identical for 12U @0.1U/kg and 12U @0.4U/kg.
-However, when increasing the do dose from 12U @0.4U/kg to 24U @0.4U/kg, you can see that the DIA increases:</p>
-<p><img alt="image" src="https://user-images.githubusercontent.com/18611419/109794111-3382b800-7c1e-11eb-92b6-b04351691c5f.png" /></p>
-<p>Duration of Levemir action = 16 + (20 * U/weight)
-So for 0.1 U/kg, the duration of action is 16 + (20 * 0.1) = 18 hours, and for 0.4U/kg, the DIA is 16 + (20 * 0.4) = 24 hours.</p>
-<p>And the model itself is:
-y = units * (Math.PI/(duration * 2)) * (Math.sin(time * Math.PI/duration));</p>
-<p>(for the biexponential model in detemir2.js, the duration of activity = (14 + (24 * dose/weight)), and the peak is duration/3.</p>
-<h1 id="modeling-glargine-lantus-abasaglar-toujeo">Modeling Glargine (Lantus®, Abasaglar®, Toujeo®)<a class="headerlink" href="#modeling-glargine-lantus-abasaglar-toujeo" title="Permanent link">⌁</a></h1>
-<p>For the time being, only glargine-U100 is basically modeled here, with a DIA of 27 hours. Again, the AUC reflects the injected dose.</p>
-<p><img alt="image" src="https://user-images.githubusercontent.com/18611419/109794202-4c8b6900-7c1e-11eb-9c47-69054578e68f.png" /></p>
-<p>I “chopped” the equation in little bits fo clarity :</p>
-<p>b = (2 * basalDose)/(Math.PI * duration);  // duration is 27 hours</p>
-<p>x = (Date.now() - time0)/(60 * 60 * 1000); //time0 is the time of injection</p>
-<p>g = x - (duration / 2);</p>
-<p>gg = Math.pow(g,2);</p>
-<p>h = duration / 2;</p>
-<p>hh= Math.pow(h,2);</p>
-<p>z = (x - gg) / hh;</p>
-<p>bb = Math.pow(b,2);</p>
-<p>y = 2 * Math.sqrt(bb * (1+z)); // where y is the activity of glargine over time</p>
-<p>(for the biexponential model in glargine2.js, the duration of activity = (22 + (12 * dose/weight)), and the peak is duration/2.5).</p>
-<p>Here is a visual aid illustrating the differences between the activity curves of detemir and glargine at different doses:</p>
-<p><img alt="image" src="https://user-images.githubusercontent.com/18611419/109794249-5745fe00-7c1e-11eb-9d94-839c4a34d706.png" /></p></div>
+<p><img alt="nature" src="https://user-images.githubusercontent.com/18611419/135437277-8fe8c4d8-9bea-4466-8820-1240de922e2c.jpg" /></p></div>
             </div>
         </div>
 

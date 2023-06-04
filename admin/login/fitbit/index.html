@@ -6,34 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/operate/overview/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Overview - CGMSIM</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/admin/login/fitbit/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Fitbit - CGMSIM</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
-        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
-        <link href="../../stylesheets/extra.css" rel="stylesheet">
+        <link href="../../../stylesheets/admonitions.css" rel="stylesheet">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9DEJWGQQJ5');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">CGMSIM</a>
+                <a class="navbar-brand" href="../../..">CGMSIM</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -44,38 +36,162 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="../.." class="nav-link">Home</a>
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin Panel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Login</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../google/" class="dropdown-item">Google</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Fitbit</a>
+</li>
+            
+<li>
+    <a href="../local/" class="dropdown-item">Local user</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Profile</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../profile/preprofile/" class="dropdown-item">Preprofile</a>
+</li>
+            
+<li>
+    <a href="../../profile/profile/" class="dropdown-item">Profile (desktop)</a>
+</li>
+            
+<li>
+    <a href="../../profile/profile-mobile/" class="dropdown-item">Profile (mobile)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../create-nightscout/" class="dropdown-item">Create Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="../../subject/" class="dropdown-item">Subject</a>
+</li>
+                                    
+<li>
+    <a href="../../parameters/" class="dropdown-item">Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../../kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                    
+<li>
+    <a href="../../activate/" class="dropdown-item">Activate</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../nightscout/profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="../../../nightscout/treatments/" class="dropdown-item">Treatments</a>
+</li>
+                                    
+<li>
+    <a href="../../../nightscout/activity/" class="dropdown-item">Activity</a>
+</li>
+                                    
+<li>
+    <a href="../../../nightscout/pump-mode/" class="dropdown-item">Pump mode</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical models <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CGMSIM</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../model/mealtime/" class="dropdown-item">mealtime insulin</a>
+</li>
+            
+<li>
+    <a href="../../../model/la-agonists/" class="dropdown-item">long-acting Agonists</a>
+</li>
+            
+<li>
+    <a href="../../../model/food/" class="dropdown-item">carbs</a>
+</li>
+            
+<li>
+    <a href="../../../model/liver/" class="dropdown-item">endogenous glucose production</a>
+</li>
+            
+<li>
+    <a href="../../../model/physical/" class="dropdown-item">physical activity</a>
+</li>
+            
+<li>
+    <a href="../../../model/random/" class="dropdown-item">random effects</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../model/uva-padova/" class="dropdown-item">UVA/Padova</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../contact/" class="nav-link">Contact</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../model/overview/" class="dropdown-item">Overview</a>
+    <a href="../../../model/overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../../model/mealtime/" class="dropdown-item">Mealtime Insulin</a>
+    <a href="../../../model/mealtime/" class="dropdown-item">Mealtime Insulin</a>
 </li>
                                     
 <li>
-    <a href="../../model/la-agonists/" class="dropdown-item">Long-acting insulin Agonists</a>
+    <a href="../../../model/la-agonists/" class="dropdown-item">Long-acting insulin Agonists</a>
 </li>
                                     
 <li>
-    <a href="../../model/food/" class="dropdown-item">Carb absorption from the gut</a>
+    <a href="../../../model/food/" class="dropdown-item">Carb absorption from the gut</a>
 </li>
                                     
 <li>
-    <a href="../../model/liver/" class="dropdown-item">Endogenous Glucose production</a>
+    <a href="../../../model/liver/" class="dropdown-item">Endogenous Glucose production</a>
 </li>
                                     
 <li>
-    <a href="../../model/physical/" class="dropdown-item">Physical activity</a>
+    <a href="../../../model/physical/" class="dropdown-item">Physical activity</a>
 </li>
                                     
 <li>
-    <a href="../../model/random/" class="dropdown-item">Random variation</a>
+    <a href="../../../model/random/" class="dropdown-item">Random variation</a>
 </li>
                                 </ul>
                             </li>
@@ -84,57 +200,57 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../build/overview/" class="dropdown-item">Overview</a>
+    <a href="../../../build/overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../../build/nightscout/" class="dropdown-item">Nightscout</a>
+    <a href="../../../build/nightscout/" class="dropdown-item">Nightscout</a>
 </li>
                                     
 <li>
-    <a href="../../build/linux/" class="dropdown-item">Linux/Ubuntu</a>
+    <a href="../../../build/linux/" class="dropdown-item">Linux/Ubuntu</a>
 </li>
                                     
 <li>
-    <a href="../../build/clone/" class="dropdown-item">Download</a>
+    <a href="../../../build/clone/" class="dropdown-item">Download</a>
 </li>
                                     
 <li>
-    <a href="../../build/setupscript/" class="dropdown-item">Setup script</a>
+    <a href="../../../build/setupscript/" class="dropdown-item">Setup script</a>
 </li>
                                     
 <li>
-    <a href="../../build/kickstart/" class="dropdown-item">Kickstart</a>
+    <a href="../../../build/kickstart/" class="dropdown-item">Kickstart</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Using the simulator <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Overview</a>
+    <a href="../../../operate/overview.md" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+    <a href="../../../operate/meals.md" class="dropdown-item">Declaring meals and mealtime insulin</a>
 </li>
                                     
 <li>
-    <a href="../insulin/" class="dropdown-item">Declaring long-acting insulins</a>
+    <a href="../../../operate/insulin.md" class="dropdown-item">Declaring long-acting insulins</a>
 </li>
                                     
 <li>
-    <a href="../pump/" class="dropdown-item">Pump mode and DIYAPS</a>
+    <a href="../../../operate/pump.md" class="dropdown-item">Pump mode and DIYAPS</a>
 </li>
                                     
 <li>
-    <a href="../reports/" class="dropdown-item">View reports</a>
+    <a href="../../../operate/reports.md" class="dropdown-item">View reports</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../../contact/" class="nav-link">Contact me</a>
+                                <a href="../../../contact/" class="nav-link">Contact me</a>
                             </li>
                         </ul>
 
@@ -145,12 +261,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../build/kickstart/" class="nav-link">
+                                <a rel="prev" href="../google/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../meals/" class="nav-link">
+                                <a rel="next" href="../local/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -171,32 +287,12 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#overview" class="nav-link">Overview</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#careportal" class="nav-link">Careportal</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⌁</a></h1>
-<p>You will have to declare meals, mealtime insulins and long-acting insulin agonists in Nightscout, in order for CGMSIM to make calculations. For this, you will have to <strong>authorize the device</strong>, on which you declare these events. 
-<br></p>
-<h2 id="careportal">Careportal<a class="headerlink" href="#careportal" title="Permanent link">⌁</a></h2>
-<p>On the top right corner of your Nightscout website, you should see a lock. </p>
-<p><img alt="Nightscout lock" src="../../img/lock.jpg" /></p>
-<p>Click on the lock and you will be prompted to enter your API secret: </p>
-<p><img alt="Authorization" src="../../img/auth.jpg" /></p>
-<p>Enter your API secret or "Nightscout password". Tick "Remember this device", so you won't have to do this every time, and click <strong>Authenticate</strong>. You will have to repeat this step whenever you open your Nightscout website on a different browser or device.</p>
-<p>When it's done, the lock on the upper-right corner has been replaced with a <strong>"+"</strong> mark.</p>
-<p><img alt="Careportal" src="../../img/careportal.jpg" /></p>
-<p>Let's move on to <a href="../meals/">declare our first meal</a>.</p></div>
+</div>
             </div>
         </div>
 
@@ -205,15 +301,15 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "../..",
+            var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../javascripts/config.js" defer></script>
-        <script src="../../javascripts/extra.js" defer></script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/config.js" defer></script>
+        <script src="../../../javascripts/extra.js" defer></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/operate/pump/">
+        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/nightscout/treatments/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Pump mode and DIYAPS - CGMSIM</title>
+        <title>Treatments - CGMSIM</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -19,15 +19,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9DEJWGQQJ5');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -45,6 +37,130 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin Panel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Login</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../admin/login/google/" class="dropdown-item">Google</a>
+</li>
+            
+<li>
+    <a href="../../admin/login/fitbit/" class="dropdown-item">Fitbit</a>
+</li>
+            
+<li>
+    <a href="../../admin/login/local/" class="dropdown-item">Local user</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Profile</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../admin/profile/preprofile/" class="dropdown-item">Preprofile</a>
+</li>
+            
+<li>
+    <a href="../../admin/profile/profile/" class="dropdown-item">Profile (desktop)</a>
+</li>
+            
+<li>
+    <a href="../../admin/profile/profile-mobile/" class="dropdown-item">Profile (mobile)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../admin/create-nightscout/" class="dropdown-item">Create Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/subject/" class="dropdown-item">Subject</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/parameters/" class="dropdown-item">Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/activate/" class="dropdown-item">Activate</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Treatments</a>
+</li>
+                                    
+<li>
+    <a href="../activity/" class="dropdown-item">Activity</a>
+</li>
+                                    
+<li>
+    <a href="../pump-mode/" class="dropdown-item">Pump mode</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical models <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CGMSIM</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../model/mealtime/" class="dropdown-item">mealtime insulin</a>
+</li>
+            
+<li>
+    <a href="../../model/la-agonists/" class="dropdown-item">long-acting Agonists</a>
+</li>
+            
+<li>
+    <a href="../../model/food/" class="dropdown-item">carbs</a>
+</li>
+            
+<li>
+    <a href="../../model/liver/" class="dropdown-item">endogenous glucose production</a>
+</li>
+            
+<li>
+    <a href="../../model/physical/" class="dropdown-item">physical activity</a>
+</li>
+            
+<li>
+    <a href="../../model/random/" class="dropdown-item">random effects</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../model/uva-padova/" class="dropdown-item">UVA/Padova</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../contact/" class="nav-link">Contact</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
@@ -108,28 +224,28 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Using the simulator <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../overview/" class="dropdown-item">Overview</a>
+    <a href="../../operate/overview.md" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+    <a href="../../operate/meals.md" class="dropdown-item">Declaring meals and mealtime insulin</a>
 </li>
                                     
 <li>
-    <a href="../insulin/" class="dropdown-item">Declaring long-acting insulins</a>
+    <a href="../../operate/insulin.md" class="dropdown-item">Declaring long-acting insulins</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Pump mode and DIYAPS</a>
+    <a href="../../operate/pump.md" class="dropdown-item">Pump mode and DIYAPS</a>
 </li>
                                     
 <li>
-    <a href="../reports/" class="dropdown-item">View reports</a>
+    <a href="../../operate/reports.md" class="dropdown-item">View reports</a>
 </li>
                                 </ul>
                             </li>
@@ -145,12 +261,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../insulin/" class="nav-link">
+                                <a rel="prev" href="../profile/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../reports/" class="nav-link">
+                                <a rel="next" href="../activity/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -171,107 +287,12 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#insulin-pump-mode-and-diyaps" class="nav-link">Insulin pump mode and DIYAPS</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#nightscout-setup" class="nav-link">Nightscout setup</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#cgmsim-setup" class="nav-link">CGMSIM setup</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#surprise-meals" class="nav-link">Surprise meals</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="insulin-pump-mode-and-diyaps">Insulin pump mode and DIYAPS<a class="headerlink" href="#insulin-pump-mode-and-diyaps" title="Permanent link">⌁</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Nerdy stuff ahead !</p>
-<p>This has not been yet fully tested, and you might encounter a few 🐛 along the way. You have been warned !</p>
 </div>
-<p>While this simulator was built as a training tool for Multiple Daily Injection (MDI) treatment, it can also be used to simulate Continuous Subcutaneous Insulin Infusion (CSII) or more familiarly "insulin pump" therapy. Moreover, it can be coupled to a DIYAPS solution as <a href="https://openaps.org">openAPS</a>.</p>
-<p>I have been doing this for a while on a "custom" setup, but now I added the required files to the repository for all to use. In the live demo below, there might be downtime now and then, when the rig is powered down or the pump reservoir is empty.</p>
-<p><span style="text-decoration: underline"><strong>THIS IS A LIVE UNATTENDED CGMSIM PATIENT TAKEN CARE OF BY OPENAPS : </strong></span></p>
-<iframe style="width: 640px; height: 480px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://dmpkl-freeaps.herokuapp.com/"></iframe>
-<p><br></p>
-<h2 id="nightscout-setup">Nightscout setup<a class="headerlink" href="#nightscout-setup" title="Permanent link">⌁</a></h2>
-<p>First of all, make sure that your instance of Nightscout is set to be used with DIAPS systems. It involves adding a few terms in the ENABLE variable of Heroku. You will want to see a pillbox with details about the APS calculations and another one with details about the pumps activity.</p>
-<p><a href="https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/nightscout-setup.html">Details on how to setup Nightscout for openAPS here.</a></p>
-<p><a href="https://loopkit.github.io/loopdocs/nightscout/update_user/">Details on how to setup Nightscout for iOS Loop here.</a></p>
-<p><br></p>
-<h2 id="cgmsim-setup">CGMSIM setup<a class="headerlink" href="#cgmsim-setup" title="Permanent link">⌁</a></h2>
-<p>A couple of modifications are required in order to compute the insulin activity based on what the pump has been administrating. The calculations include the insulin activity from basal rates and from boluses, and not mealtime doses and long-acting agonists anymore.</p>
-<p>If you have built an openAPS rig, it will read the pump's memory, and upload the basal profile, other settings and bolus history to Nightscout. We will first setup CGMSIM to download that data from Nightscout.</p>
-<p>If you need more info on how to modify your crontab, please check <a href="https://crontab.guru/">crontab.guru</a> !</p>
-<p><strong>In the suggested crontab for MDI mode, there were 4 lines :</strong></p>
-<pre><code>SHELL=/bin/bash
-PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
-
-0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
-*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
-*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim.sh
-#30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
-</code></pre>
-<p><br>
-Lines starting with <strong>#</strong> are commented out and will not be executed. Remove the <strong>#</strong> to activate them !</p>
-<div class="admonition danger">
-<p class="admonition-title">You will need to:</p>
-<ul>
-<li>
-<p>Add a first line pointing to <strong>get-pump.sh</strong>, so that CGMSIM will download pump data from NS  </p>
-</li>
-<li>
-<p>Edit the 4th line, so that CGMSIM will upload SGVs based on pump insulin: <strong>upload-cgmsim-pump.sh</strong>  </p>
-</li>
-<li>
-<p>Add the 5th line if you want to run your rig unattended with meals issued automatically with matching boluses</p>
-</li>
-</ul>
-</div>
-<p><br>  </p>
-<p><strong>It should now look like this :</strong></p>
-<pre><code>SHELL=/bin/bash
-PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
-
-*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-pump.sh
-0 */6 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash perlin.sh
-*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash get-all.sh
-*/5 * * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash upload-cgmsim-pump.sh
-#0 0 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp;/bin/bash random_meal.sh
-#30 23 * * * cd /home/MYUSERNAME/cgmsim &amp;&amp; /bin/bash surprise.sh
-</code></pre>
-<p><br></p>
-<h3 id="timezone-issue-on-cloud-based-linux-vms">Timezone issue on cloud-based Linux VMs<a class="headerlink" href="#timezone-issue-on-cloud-based-linux-vms" title="Permanent link">⌁</a></h3>
-<p>The 5th line specifically triggers the execution of the bash script <strong>random_meal.sh</strong> at midnight 00:00 or 12PM. The 4 meals of the next day are computed (carb amounts and time of delivery).  These are saved in a file, that will be overwritten the next time the script runs, 24 hours later.</p>
-<p>The absolute time of the script execution refers to the <strong>timezone where your computer running CGMSIM is located</strong>. If you are using a cloud-based solution, notice the time difference with your location. </p>
-<p>For me, with a DigitalOcean droplet located in Europe, the time difference is +3 hours. So I execute the sript at 21:00 o'clock "server time", which is 24:00 at my location. The line starts with :</p>
-<pre><code>#0 21 * * * cd /home ...
-</code></pre>
-<p>If you are running CGMSIM on a local machine and running the script at midnight, then the line should start with :</p>
-<pre><code>#0 0 * * * cd /home ...
-</code></pre>
-<p>Finally, you have to <strong>uncomment</strong> a line in one of the scripts. Edit <strong>get-all.sh</strong> by typing:</p>
-<pre><code>nano get-all.sh
-</code></pre>
-<p>... and remove the <strong>#</strong> in front of:</p>
-<pre><code># node random_meal_upload.js  
-</code></pre>
-<p>Then save your changes. Voilà.
-<br>
-<br></p>
-<h2 id="surprise-meals">Surprise meals<a class="headerlink" href="#surprise-meals" title="Permanent link">⌁</a></h2>
-<p>Just as a reminder, the <strong>"surprise"</strong> feature on the 6th and last line of the crontab creates an automatic meal completing the 200g carbs daily goal at 11:30PM. No automatic bolus, so your "late snack" remains untreated. Use with caution 😄</p>
-<p><br>
-<br></p></div>
             </div>
         </div>
 

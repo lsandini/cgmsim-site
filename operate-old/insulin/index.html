@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/model/random/">
+        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/operate-old/insulin/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Random variation - CGMSIM</title>
+        <title>Long acting insulin agonists - CGMSIM</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -129,69 +129,69 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../mealtime/" class="dropdown-item">mealtime insulin</a>
+    <a href="../../model/mealtime/" class="dropdown-item">mealtime insulin</a>
 </li>
             
 <li>
-    <a href="../la-agonists/" class="dropdown-item">long-acting Agonists</a>
+    <a href="../../model/la-agonists/" class="dropdown-item">long-acting Agonists</a>
 </li>
             
 <li>
-    <a href="../food/" class="dropdown-item">carbs</a>
+    <a href="../../model/food/" class="dropdown-item">carbs</a>
 </li>
             
 <li>
-    <a href="../liver/" class="dropdown-item">endogenous glucose production</a>
+    <a href="../../model/liver/" class="dropdown-item">endogenous glucose production</a>
 </li>
             
 <li>
-    <a href="../physical/" class="dropdown-item">physical activity</a>
+    <a href="../../model/physical/" class="dropdown-item">physical activity</a>
 </li>
             
 <li>
-    <a href="./" class="dropdown-item">random effects</a>
+    <a href="../../model/random/" class="dropdown-item">random effects</a>
 </li>
     </ul>
   </li>
                                     
 <li>
-    <a href="../uva-padova/" class="dropdown-item">UVA/Padova</a>
+    <a href="../../model/uva-padova/" class="dropdown-item">UVA/Padova</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
                                 <a href="../../contact/" class="nav-link">Contact</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../overview/" class="dropdown-item">Overview</a>
+    <a href="../../model/overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../mealtime/" class="dropdown-item">Mealtime Insulin</a>
+    <a href="../../model/mealtime/" class="dropdown-item">Mealtime Insulin</a>
 </li>
                                     
 <li>
-    <a href="../la-agonists/" class="dropdown-item">Long-acting insulin Agonists</a>
+    <a href="../../model/la-agonists/" class="dropdown-item">Long-acting insulin Agonists</a>
 </li>
                                     
 <li>
-    <a href="../food/" class="dropdown-item">Carb absorption from the gut</a>
+    <a href="../../model/food/" class="dropdown-item">Carb absorption from the gut</a>
 </li>
                                     
 <li>
-    <a href="../liver/" class="dropdown-item">Endogenous Glucose production</a>
+    <a href="../../model/liver/" class="dropdown-item">Endogenous Glucose production</a>
 </li>
                                     
 <li>
-    <a href="../physical/" class="dropdown-item">Physical activity</a>
+    <a href="../../model/physical/" class="dropdown-item">Physical activity</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Random variation</a>
+    <a href="../../model/random/" class="dropdown-item">Random variation</a>
 </li>
                                 </ul>
                             </li>
@@ -260,16 +260,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../physical/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../../build/overview/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -288,13 +278,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#random-effects" class="nav-link">Random effects</a>
+            <li class="nav-item" data-level="1"><a href="#long-acting-insulin-agonists" class="nav-link">Long acting insulin agonists</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#perlin-noise" class="nav-link">Perlin noise</a>
+            <li class="nav-item" data-level="2"><a href="#announcements" class="nav-link">Announcements</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#astronomy" class="nav-link">Astronomy</a>
+            <li class="nav-item" data-level="2"><a href="#example" class="nav-link">Example</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -305,36 +295,42 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="random-effects">Random effects<a class="headerlink" href="#random-effects" title="Permanent link">⌁</a></h1>
-<h2 id="perlin-noise">Perlin noise<a class="headerlink" href="#perlin-noise" title="Permanent link">⌁</a></h2>
-<p>Since random number generators produce very "jumpy" values with various distributions between defined limits, I preferred trying a smoother, more "organic" noise function curve. </p>
-<p>If you have never heard or Ken Perlin, he developed an algorithm generating natural looking textures, used for example in Disney's computer animated sci-fi movie <a href="https://www.imdb.com/title/tt0084827">Tron</a> in 1982. It can be used to generate 1-, 2-, 3- or n-dimensional arrays of values, which is perfect for this simulation.  </p>
-<p>Using a <a href="https://github.com/andrewrk/node-perlin-noise#readme">one-dimensional perlin-noise generator</a>, an array of 17 * 17 = 289 values is produced at regular intervals. A period of 24 hours has 1440 minutes, or 288 intervals of 5 minutes. Each value is attributed a timestamp in 5 minute increments. </p>
-<p>The mean variation is 0, which means that this background noise will cause temporary increases and decreases in BG, without major interference on the deflections caused by insulin, food or EGP.</p>
-<p>This animation rendered in <a href="https://p5js.org/">p5.js</a> illustrates a continuously oscillating perlin noise curve:</p>
-<iframe style="width: 400px; height: 250px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/lsandini/full/F1CtK8SNk"></iframe>
-<p><br></p>
-<h2 id="astronomy">Astronomy<a class="headerlink" href="#astronomy" title="Permanent link">⌁</a></h2>
-<p>As many T1D patients say as a joke from time to time, their blood sugar variations seem to be "influnced by the stars, the planets and the Moon...". Jokes apart, CGMSIM v2.0 lacked this kind of variability over time, and was felt as "too static" by some users, despite the perlin variation described above. </p>
-<p>Adding cyclic monthly fluctuations (according to the Moon cycle), and some other slower varying fluctuation (based on the Planets' position in the Solar System), sounded like a fun coding challenge.</p>
+<h1 id="long-acting-insulin-agonists">Long acting insulin agonists<a class="headerlink" href="#long-acting-insulin-agonists" title="Permanent link">⌁</a></h1>
+<p>As there is no dedicated feature in Nightscout for declaring long-acting insulin injections, you will have to do it as an "Announcement" in Careportal.
+<br></p>
+<h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">⌁</a></h2>
+<p>When logging the injection in Careportal, select "Announcement" in the drop-down list. Again, check "Sensor", under Glucose Reading, so that the entry will be superimposed with the SGV curve. </p>
+<p><strong>The syntax for the entry is important, as CGMSIM is not very error-tolerant. The most important are the 3 first letters and a blank space before the dose (in numbers). The first letter can either be upper, or lower case</strong></p>
 <div class="admonition warning">
-<p class="admonition-title">Disclaimer</p>
-<ul>
-<li>
-<p>There is no scientific indication that the movements of the Stars or Planets above, or the phase of the Moon have any direct impact on a living person's blood sugar variation. </p>
-</li>
-<li>
-<p>Including these variables in the model only adds a <strong>tiny variation over time</strong>, and some difficulty for the simulator user.</p>
-</li>
-</ul>
-<p><strong> This astronomical influence model could be replaced by any other calculation, and is mainly here as a fun factor!</strong>  </p>
+<p class="admonition-title">Mind the spelling and syntax !</p>
+<p>In the "notes" field, please write down the selected insulin first, and then the number of units, separated by a <strong>single empty space</strong>:</p>
+<p>Valid entries are for example:  </p>
+<pre><code>- detemir 12  
+- Detemir 14 U  
+- levemir 10
+- glargine 22  
+- Glargine 18 Units
+- Lantus 17 u
+- Toujeo 16 U
+- touj 14
+- degludec 15
+- Tresiba 17 U
+</code></pre>
+<p>These entries are NOT valid :</p>
+<pre><code>- detemir12  (missing blank space)
+- 12U glargine (indicate insulin first, then dose)
+- Livemir 20U (spelling error in the first 3 letters)
+- TRESIBA 18 u (all capital letters not allowed)
+</code></pre>
 </div>
-<p>The coordinates of the Planets of the Solar System can be computed in various reference systems. Heliocentric (Sun-centered), or Geocentric (Earth-centered) for example. I decided to centralize these computations in a separate application, running in the cloud here: <a href="https://astro6.herokuapp.com">Astronomical Computations</a>. This application uses precise formulas based on Jean Meeus 'Astronomical Algorithms' book and the VSOP87 theory. They are gathered in an <a href="https://github.com/andrmoel/astronomy-bundle-js">open-source bundle</a>.</p>
-<p>CGMSIM will automatically retrieve the geocentrical longitudes of Mercury, Venus, Mars, Jupiter, Saturn and Neptune and their distances, as seen from Earth. The phase of the Moon is also retrieved.</p>
-<p>Using Newton's Law of Universal Gravitation, and using the mass and distance data, each planet's individual gravitational attraction force (or "pull") applied to the simulated subject is computed. Since every planet is pulling the subject in a different direction, a global pull vector is computed.</p>
-<p>If all planets were "aligned", they all would be pulling in the same direction. This happens once in a gazillion years, and not in the near future... So I computed a "conjunction factor", describing how the planets are dispersed around us. A low dispersion (or high conjuction) will further amplify the apparent gravitational force. </p>
-<p>Finally, the phase of the Moon will influence the CGM curve. The Moon's illumination factor is 100% at the Full Moon, and 0% at the New Moon. The Moon cycle is 29.53 days...</p>
-<p><img src="https://user-images.githubusercontent.com/24463821/90344480-44543f00-dfe8-11ea-9b99-a640c0f26136.gif" alt="Solar system" width="200"/></p></div>
+<p><br></p>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">⌁</a></h2>
+<p><img alt="Long" src="../../img/longacting1.jpg" /></p>
+<p><br>
+The announced injection will appear as an orange dot on the SGV curve:</p>
+<p><img alt="Long2" src="../../img/longacting2.jpg" /></p>
+<p><br>
+After a while you'll want to look at your treatment results. Nightscout provides a <a href="../reports/">very convenient and flexible tool for that</a>.</p></div>
             </div>
         </div>
 

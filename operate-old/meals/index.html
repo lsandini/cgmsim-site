@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/operate/insulin/">
+        <link rel="canonical" href="https://lsandini.github.io/cgmsim-site/operate-old/meals/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Declaring long-acting insulins - CGMSIM</title>
+        <title>Declaring meals and mealtime insulins - CGMSIM</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -19,15 +19,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DEJWGQQJ5"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9DEJWGQQJ5');
-        </script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -45,6 +37,130 @@
                         <ul class="nav navbar-nav">
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin Panel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Login</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../admin/login/google/" class="dropdown-item">Google</a>
+</li>
+            
+<li>
+    <a href="../../admin/login/fitbit/" class="dropdown-item">Fitbit</a>
+</li>
+            
+<li>
+    <a href="../../admin/login/local/" class="dropdown-item">Local user</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Profile</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../admin/profile/preprofile/" class="dropdown-item">Preprofile</a>
+</li>
+            
+<li>
+    <a href="../../admin/profile/profile/" class="dropdown-item">Profile (desktop)</a>
+</li>
+            
+<li>
+    <a href="../../admin/profile/profile-mobile/" class="dropdown-item">Profile (mobile)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../admin/create-nightscout/" class="dropdown-item">Create Nightscout</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/subject/" class="dropdown-item">Subject</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/parameters/" class="dropdown-item">Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/kickstart/" class="dropdown-item">Kickstart</a>
+</li>
+                                    
+<li>
+    <a href="../../admin/activate/" class="dropdown-item">Activate</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../nightscout/profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/treatments/" class="dropdown-item">Treatments</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/activity/" class="dropdown-item">Activity</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/pump-mode/" class="dropdown-item">Pump mode</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical models <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CGMSIM</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../model/mealtime/" class="dropdown-item">mealtime insulin</a>
+</li>
+            
+<li>
+    <a href="../../model/la-agonists/" class="dropdown-item">long-acting Agonists</a>
+</li>
+            
+<li>
+    <a href="../../model/food/" class="dropdown-item">carbs</a>
+</li>
+            
+<li>
+    <a href="../../model/liver/" class="dropdown-item">endogenous glucose production</a>
+</li>
+            
+<li>
+    <a href="../../model/physical/" class="dropdown-item">physical activity</a>
+</li>
+            
+<li>
+    <a href="../../model/random/" class="dropdown-item">random effects</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../model/uva-padova/" class="dropdown-item">UVA/Padova</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../contact/" class="nav-link">Contact</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mathematical Model <b class="caret"></b></a>
@@ -108,28 +224,28 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Using the simulator <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../overview/" class="dropdown-item">Overview</a>
+    <a href="../../operate/overview.md" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="../meals/" class="dropdown-item">Declaring meals and mealtime insulin</a>
+    <a href="../../operate/meals.md" class="dropdown-item">Declaring meals and mealtime insulin</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Declaring long-acting insulins</a>
+    <a href="../../operate/insulin.md" class="dropdown-item">Declaring long-acting insulins</a>
 </li>
                                     
 <li>
-    <a href="../pump/" class="dropdown-item">Pump mode and DIYAPS</a>
+    <a href="../../operate/pump.md" class="dropdown-item">Pump mode and DIYAPS</a>
 </li>
                                     
 <li>
-    <a href="../reports/" class="dropdown-item">View reports</a>
+    <a href="../../operate/reports.md" class="dropdown-item">View reports</a>
 </li>
                                 </ul>
                             </li>
@@ -144,16 +260,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../meals/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../pump/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -172,13 +278,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#long-acting-insulin-agonists" class="nav-link">Long acting insulin agonists</a>
+            <li class="nav-item" data-level="1"><a href="#declaring-meals-and-mealtime-insulins" class="nav-link">Declaring meals and mealtime insulins</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#announcements" class="nav-link">Announcements</a>
+            <li class="nav-item" data-level="2"><a href="#declaring-food-alone" class="nav-link">Declaring food alone</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#example" class="nav-link">Example</a>
+            <li class="nav-item" data-level="2"><a href="#declaring-food-and-insulin" class="nav-link">Declaring food and insulin</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -189,42 +295,31 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="long-acting-insulin-agonists">Long acting insulin agonists<a class="headerlink" href="#long-acting-insulin-agonists" title="Permanent link">⌁</a></h1>
-<p>As there is no dedicated feature in Nightscout for declaring long-acting insulin injections, you will have to do it as an "Announcement" in Careportal.
+<h1 id="declaring-meals-and-mealtime-insulins">Declaring meals and mealtime insulins<a class="headerlink" href="#declaring-meals-and-mealtime-insulins" title="Permanent link">⌁</a></h1>
+<h2 id="declaring-food-alone">Declaring food alone<a class="headerlink" href="#declaring-food-alone" title="Permanent link">⌁</a></h2>
+<p>Open Careportal by pressing the <strong>"+"</strong> sign on the upper right corner of Nightscout.</p>
+<p><img alt="Careportal" src="../../img/careportal.jpg" /></p>
+<p>You are presented with the option to "Log a Treatment". Next to "Event Type", a drop-down menu lists all items you can choose from. Let's assume you want to enter some carbs due to a low glucose value. </p>
+<ol>
+<li>Select "Carb Correction"</li>
+<li>Under Glucose Reading, leave the filed blank, and instead tick the "Sensor" box.</li>
+<li>Next to Carbs Given, enter 20</li>
+<li>Protein and Fat are unaccounted for, so leave them blank</li>
+<li>Add Notes (optional)</li>
+<li>Entered By : enter your initials, or anything identifying you as the author of the entry</li>
+<li>Select the correct time for the entry</li>
+<li>Submit the form. You will be prompted to review the details and accept.</li>
+</ol>
+<p><img alt="Meal" src="../../img/meal.jpg" /></p>
+<p>Now you should see the meal appear on the Nightscout curve. Placing your cursor on top of the meal marker, the details should appear.</p>
+<p><img alt="Meal2" src="../../img/meal2.jpg" />
+<br>
 <br></p>
-<h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">⌁</a></h2>
-<p>When logging the injection in Careportal, select "Announcement" in the drop-down list. Again, check "Sensor", under Glucose Reading, so that the entry will be superimposed with the SGV curve. </p>
-<p><strong>The syntax for the entry is important, as CGMSIM is not very error-tolerant. The most important are the 3 first letters and a blank space before the dose (in numbers). The first letter can either be upper, or lower case</strong></p>
-<div class="admonition warning">
-<p class="admonition-title">Mind the spelling and syntax !</p>
-<p>In the "notes" field, please write down the selected insulin first, and then the number of units, separated by a <strong>single empty space</strong>:</p>
-<p>Valid entries are for example:  </p>
-<pre><code>- detemir 12  
-- Detemir 14 U  
-- levemir 10
-- glargine 22  
-- Glargine 18 Units
-- Lantus 17 u
-- Toujeo 16 U
-- touj 14
-- degludec 15
-- Tresiba 17 U
-</code></pre>
-<p>These entries are NOT valid :</p>
-<pre><code>- detemir12  (missing blank space)
-- 12U glargine (indicate insulin first, then dose)
-- Livemir 20U (spelling error in the first 3 letters)
-- TRESIBA 18 u (all capital letters not allowed)
-</code></pre>
-</div>
-<p><br></p>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">⌁</a></h2>
-<p><img alt="Long" src="../../img/longacting1.jpg" /></p>
-<p><br>
-The announced injection will appear as an orange dot on the SGV curve:</p>
-<p><img alt="Long2" src="../../img/longacting2.jpg" /></p>
-<p><br>
-After a while you'll want to look at your treatment results. Nightscout provides a <a href="../reports/">very convenient and flexible tool for that</a>.</p></div>
+<h2 id="declaring-food-and-insulin">Declaring food and insulin<a class="headerlink" href="#declaring-food-and-insulin" title="Permanent link">⌁</a></h2>
+<p>To declare mealtime insulin at the same time as carbs, the Event Type should be either "Snack Bolus" or "Meal Bolus". (Combo Bolus is not supported !).</p>
+<p>You will have to specify the "Carb Time", which is the time of the meal in relation to the insulin injection. So if you inject first, and eat 20 minutes later, Carb Time should be "20 min later". When submitting the entry, the time is the time of the insulin injection. </p>
+<p><img alt="Meal3" src="../../img/meal3.jpg" /></p>
+<p>Let's move on to <a href="../insulin/">declaring long acting insulin agonist injections (detemir and glargine).</a></p></div>
             </div>
         </div>
 
